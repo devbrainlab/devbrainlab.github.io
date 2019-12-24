@@ -1,0 +1,36 @@
+{
+  "name": "kate_site",
+  "version": "1.0.0",
+  "description": "kate lab website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run-script clean:project && webpack --env=dev --progress --profile --colors && concurrently \"webpack-dev-server --env=dev\" \"bundle exec jekyll serve\"",
+    "build": "npm run-script clean:project && cross-env NODE_ENV=production webpack --env=prod --progress --profile --colors && cross-env JEKYLL_ENV=production bundle exec jekyll build",
+    "clean:project": "rimraf ./_site ./assets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sneakers-the-rat/kate_site.git"
+  },
+  "author": "jonny saunders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sneakers-the-rat/kate_site/issues"
+  },
+  "homepage": "https://github.com/sneakers-the-rat/kate_site#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "concurrently": "^5.0.2",
+    "eslint": "^6.8.0",
+    "eslint-loader": "^3.0.3",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
+  }
+}
