@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<!-- 
+Warning! 
+Only edit the template default.html in 
+_src/template/default.html
+any edits to 
+/jekyll/_layouts/default.html
+will be automatically overwritten on build! 
+
+consider putting your edits in _layouts/head.html 
+or inheriting from default!
+-->
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
   <head>
@@ -12,7 +23,9 @@
     {{ content }}
     </main>
 
+    {% if page.layout != "home" %}
     {% include footer.html %}
+    {% endif %}
 
   </body>
 

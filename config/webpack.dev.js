@@ -9,7 +9,7 @@ const webpack = require('webpack');
 module.exports = Merge(CommonConfig, {
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve('assets'),
+    path: path.resolve('./assets'),
     publicPath: '/assets/',
   },
   devtool: 'inline-source-map',
@@ -20,7 +20,7 @@ module.exports = Merge(CommonConfig, {
         host: 'localhost',
         port: 3000,
         proxy: 'http://localhost:8080',
-        files: ['site', 'src'],
+        files: ['_site', '_src'],
       },
       {
         reload: false,
@@ -40,7 +40,7 @@ module.exports = Merge(CommonConfig, {
   },
   devServer: {
     contentBase: [
-      path.resolve('site'),
+      path.resolve('_site'),
     ],
     hot: true,
   },

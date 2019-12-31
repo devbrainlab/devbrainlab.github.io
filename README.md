@@ -15,4 +15,10 @@ webpack does tree-shaking js transpiling
 * Gemfile - lists *logical* ruby package dependencies
 * Gemfile.lock - lists *actual* ruby versions used to build the page
 ls
-* _config.yml - Jekyll configuration
+* \_config.yml - Jekyll configuration
+
+## Folders
+
+* config - webpack configurations
+* pages - jekyll folder w/ posts/pages etc.
+* src - webpack sources
