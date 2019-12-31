@@ -109,3 +109,5 @@ dist
 minima
 boilerplate
 .jekyll-cache
+assets
+_site

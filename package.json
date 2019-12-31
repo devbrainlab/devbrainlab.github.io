@@ -7,6 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run-script clean:project && webpack --env=dev --progress --profile --colors && concurrently \"webpack-dev-server --env=dev\" \"bundle exec jekyll serve --trace\"",
     "build": "npm run-script clean:project && NODE_ENV=production webpack --env=prod --progress --profile --colors && JEKYLL_ENV=production bundle exec jekyll build",
+    "deploy": "npm run-script clean:docs && npm run-script build && cp -r _site/ docs/ && cp -r assets docs && git add ./docs && git commit -m \"deploy site\" && git push",
+    "clean:docs": "rimraf ./docs",
     "clean:project": "rimraf ./_site ./assets"
   },
   "repository": {
