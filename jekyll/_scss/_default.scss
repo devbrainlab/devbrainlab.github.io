@@ -1,0 +1,81 @@
+// Variables
+
+
+// width of the largest container
+$container-width: 1200px;
+$container-padding: 30px;
+
+// Width of the content area for .wrapper -- for smaller, text areas
+$content-width:    800px !default;
+
+$primary-color:    #FF385A;
+$text-color:       #eee;
+$link-color:       #83B1E7;
+$text-color:       #eee !default;
+$background-color: #151515 !default;
+$brand-color:      #2a7ae2 !default;
+$grey-color:       #CCCCCC !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+$footer-color:     darken($background-color, 2.5%);
+
+// Fonts
+$system-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+$primary-font-family: $system-font-family;
+
+$font-xl: 58px;
+$font-md: 22px;
+$font-sm: 18px;
+$font-xs: 16px;
+$font-xxs: 14px;
+
+$base-font-weight: 400 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+$table-text-align: left !default;
+
+
+// Sizes of different media
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+
+// Mixins -- sorta like functions that can be used elsewhere in the style
+
+
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+
+@mixin container($padding) {
+  max-width: $container-width;
+  padding: 0 $padding;
+  margin: auto;
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $font-xs * $ratio;
+}
+
+
+// The rest of the style is split out into subfiles
+
+@import 
+  'base.scss',         // basic styling properties for all pages
+  'layout.scss',       // layouts and spacing
+  'navigation.scss',   // styles for the navigation
+  'components.scss',    // styles for page-specific components
+  'min_syntax_highlighting.scss' // syntax highlighting borrowed from minima
+;

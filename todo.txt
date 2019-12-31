@@ -1,0 +1,16 @@
+collapse nav to hamburger w/ phone screen
+typography 
+mock content bodies for all pages
+layouts for all subpages
+	- research
+		including sectioning
+	- people
+		markdown to include photo, email, link 
+		* ask if should include photo stylizer into toolchain
+
+	- gallery
+		photo gallery, nuff said
+	- news
+		check blog styling
+
+SEO
