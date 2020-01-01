@@ -1,27 +1,42 @@
-
 .navigation {
 
   @include container($container-padding);
-
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  margin-top: 10px;
+  // margin-top: 10px;
 
-  padding-bottom: 10px;
+  // padding-bottom: 10px;
   border-bottom: 1px solid lighten($link-color, 40%);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
 
   &__branding {
       display: flex;
-      align-items: center;
+      // background-color: $text-color;
+      // color: $background-color;
+      // text-transform: uppercase;
+      align-items: flex-end;
+      text-align: right;
+      padding: 1rem 2rem 1rem 2rem;
   }
 
   &__title {
     color: $text-color !important;
     font-size: $font-md;
-    font-weight: 500;
+    font-family: $header-font;
+    font-weight: 700;
+    float: right;
+    // position: absolute;
+    top:10%;
+    text-align: right;
+    // color: $background-color !important;
   }
 
   &__logo {
@@ -31,16 +46,25 @@
   &__logo-img {
     height: 40px;
     width: 40px;
+    margin-right: 10px;
+
   }
 
   &__links {
     display: flex;
     flex-direction: row;
+    // text-transform: uppercase;
+    padding-right:30px;
   }
 
   &__link {
     margin-left: 30px;
-    font-size: $font-xs;
+    font-size: $font-sm;
+    font-family: $nav-font;
+    font-weight: 300;
+    
+    mix-blend-mode: screen;
+    
 
     &--active {
       color: $primary-color;

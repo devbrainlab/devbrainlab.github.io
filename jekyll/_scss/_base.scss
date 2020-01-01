@@ -17,11 +17,30 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
+
+}
+
+
+/**
+ * Headings
+ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font;
+  font-weight: 700;
+  color: $primary-color;
+}
+
+h1 {
+  font-size: $font-xl;
 }
 
 // Basic page elements
 body {
-  font-family: $primary-font-family;
+  font-family: $body-font;
+  // font-weight: 300;
+  font-size: $font-sm;
+  letter-spacing: 0.5px;
   color: $text-color;
   display: flex;
   min-height: 100vh;
@@ -47,11 +66,12 @@ a {
   }
 
   &:visited {
-    color: darken($link-color, 15%);
+    color: darken($link-color, 10%);
   }
 
   &:hover {
     color: $text-color;
+    text-decoration: underline;
     
   }
 }
@@ -64,6 +84,11 @@ a {
 img {
   max-width: 100%;
   vertical-align: middle;
+}
+
+// recolor svgs to be the accent color
+.recolor-glyph {
+  fill: $primary-color;
 }
 
 
@@ -95,14 +120,6 @@ li {
   }
 }
 
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
-}
 
 /**
  * Blockquotes

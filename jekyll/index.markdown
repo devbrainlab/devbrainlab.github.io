@@ -10,6 +10,7 @@ home:
       link: /blog
 footer:
   love: 'Made with <span class="accent">❤</span>'
+title: home
 ---
 
 Test in the browser

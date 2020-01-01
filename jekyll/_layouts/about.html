@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="container stretch">
+    {% include title_gutter.html %}
+    <div class="row">
+        <div class="col-md-3">
+            <h1 class="page-heading">{{ page.title }}</h1>
+        </div>
+        <div class="col-md-9"></div>
+    </div>
+    <!--Define sections in frontmatter of about.markdown
+    Fields:
+    - title
+    - image
+    - body
+    -->
+    <!-- iterate through sections -->
+    {%- for section in page.sections -%}
+    {% include section_about.html section=section %}
+    <!-- end iteration -->
+    {%- endfor -%}
+    <!-- 		<div class="col">
+			<img src="{{ page.image }}"/>
+		</div>-->
+
+	
+    </div>

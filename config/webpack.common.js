@@ -44,6 +44,22 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
+    },
       // {
       //   test: /\.(css|scss)$/,
       //   use: ExtractTextPlugin.extract({
@@ -106,7 +122,7 @@ module.exports = {
       //   ],
       // },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|jpg|gif)$/,
         use: [
           'file-loader',
         ],
