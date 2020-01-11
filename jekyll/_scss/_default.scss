@@ -14,13 +14,20 @@ $container-padding: 30px;
 // Width of the content area for .wrapper -- for smaller, text areas
 $content-width:    800px !default;
 
-$accent-color: #FF385A;
+$red-accent-color: lighten(#EB1555,5%);
+$ltblu-accent-color: #8ECAEF;
+$ylw-accent-color: #F9CD0F;
+$grn-accent-color: rgb(64, 211, 117);
+
+$accent-color: $red-accent-color;
+
 //$primary-color:    #FF385A;
-$primary-color:    #8ECAEF;
+$primary-color:    $accent-color;
 $text-color:       #eee;
-$link-color:       #8ECAEF;
+$link-color:       $accent-color;
 $text-color:       #eee !default;
-$primary-dark: darken($primary_color, 45%) !default;
+// $primary-dark: darken($primary_color, 45%) !default;
+$primary-dark: darken($primary_color, 25%) !default;
 
 $background-color: #0B0B0B !default;
 $background-lighter: lighten($background-color,5%);
@@ -36,6 +43,7 @@ $header-font: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxy
 $nav-font: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;;
 
 $font-xl: 58px;
+$font-ml: 48px;
 $font-md: 22px;
 $font-sm: 18px;
 $font-xs: 16px;
@@ -46,6 +54,7 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 $table-text-align: left !default;
+$list-spacing: 10px;
 
 
 // Sizes of different media
@@ -90,5 +99,6 @@ $col-md-width:     992px !default;
   'layout.scss',       // layouts and spacing
   'navigation.scss',   // styles for the navigation
   'components.scss',    // styles for page-specific components
-  'min_syntax_highlighting.scss' // syntax highlighting borrowed from minima
+  'min_syntax_highlighting.scss', // syntax highlighting borrowed from minima
+  'citation_detail.scss' // iframe styling for embedded citation details
 ;

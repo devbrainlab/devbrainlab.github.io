@@ -2,4 +2,7 @@
 // @import '../_scss/default';
 // @import '../_scss/minima';
 @import "~bootstrap/scss/bootstrap";
+@import '@fancyapps/fancybox/dist/jquery.fancybox.css';
+
+// import our styles last so they overwrite any conflicts
 @import '../jekyll/_scss/default';

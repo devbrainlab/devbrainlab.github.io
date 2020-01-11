@@ -1,2 +1,7 @@
-import './index.scss';
+
+import './fancybox.js';
 import 'bootstrap';
+
+import './index.scss';
+
+

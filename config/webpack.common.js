@@ -6,6 +6,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 // const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const isDevelopment = process.env.NODE_ENV === 'development'
+const webpack = require('webpack');
 
 module.exports = {
   entry: {
@@ -28,6 +29,15 @@ module.exports = {
       from: path.resolve('_images'),
       to: 'images/',
     }]),
+    new CopyWebpackPlugin([{
+      from: path.resolve('jekyll/_papers'),
+      to: 'papers/',
+    }]),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    })
   ],
   // resolve: {
   //   extensions: ['.js', '.jsx', '.scss']

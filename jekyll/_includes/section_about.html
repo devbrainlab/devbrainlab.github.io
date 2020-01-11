@@ -6,6 +6,6 @@
         </div>
         <div class="col-md-9 horz-section">
         <h4 class='post-title'>{{ section.title }}</h4>
-        {{ section.body }}
+        {{ section.body | markdownify}}
     	</div>
 </div>

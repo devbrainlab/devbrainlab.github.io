@@ -1,0 +1,56 @@
+.fancybox-slide--iframe .fancybox-content {
+    // width  : 800px;
+    // height : 600px;
+    max-width  : $content-width;
+    max-height : 80%;
+    margin: 0;
+}
+
+.citation-container{
+	max-width: $content-width;
+	padding: $spacing-unit*2;
+}
+
+.paper-title {
+	
+}
+
+.paper-authors {
+	color: darken($text-color, 10%);
+	font-size: $font-sm;
+	font-weight: bold;
+	border-bottom: 1px solid lighten($link-color, 40%);
+
+}
+
+.paper-abstract {
+	font-size: $font-xxs;
+}
+
+
+// Formatting bibliography entries
+ol.bibliography li {
+  margin-bottom: $list-spacing;
+  position: relative;
+  margin-left: 80px;
+}
+
+ol.bibliography a.pdficon {
+  width: 35px;
+  height: 35px;
+  display: block;
+  position: absolute;
+  left: -65px;
+  top: 3px;
+
+}
+
+ol.bibliography a.detailicon {
+  width: 35px;
+  height: 35px;
+  display: block;
+  position: absolute;
+  left: -110px;
+  top: 3px;
+
+}

@@ -46,6 +46,22 @@ navigation_pages:
   - about.markdown
   - blog.markdown
 
+# style for citations
+# see https://github.com/inukshuk/jekyll-scholar
+scholar:
+  style: _layouts/apa_web.csl
+  bibliography_template: citation
+  source: _bibliography
+  bibliography: kate_site.bib
+  sort_by: year,month
+  order: descending
+  group_by: year
+  group_order: descending
+  repository: _papers
+  details_layout: citationdetail.html
+  details_link: ""
+
+
 # Build settings
 markdown: kramdown
 plugins:
@@ -60,6 +76,9 @@ destination: _site
 
 # where the site will be built from
 source: jekyll
+
+collections:
+  - sections_about
 
 # directories & files to exlude from jekyll processing
 exclude: ['node_modules']

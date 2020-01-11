@@ -14,3 +14,4 @@ layouts for all subpages
 		check blog styling
 
 SEO
+add detail pages for pubs with abstract https://github.com/inukshuk/jekyll-scholar

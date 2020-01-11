@@ -1,3 +1,9 @@
 ---
-layout: default
+layout: page
 ---
+
+Research 
+========
+
+
+{% bibliography %}

@@ -162,10 +162,19 @@
   // padding-bottom: 100%;
   // position:absolute;
 
-  text-align:right;
+  text-align: center;
 
   @include media-query($col-md-width){
-    text-align:left;
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+}
+
+.gutter-heading {
+  text-align: center;
+  
+  @include media-query($col-md-width){
+    text-align: left;
     padding-bottom: 1rem;
   }
 }
