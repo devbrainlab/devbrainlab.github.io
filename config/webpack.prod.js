@@ -10,6 +10,7 @@ const ImageminPlugin = require('imagemin-webpack-plugin').default;
 module.exports = Merge(CommonConfig, {
   output: {
     filename: '[name]-[hash].bundle.js',
+    chunkFilename: '[name]-[chunkhash].js', 
     path: path.resolve('assets'),
     publicPath: 'assets/',
   },
@@ -23,6 +24,9 @@ module.exports = Merge(CommonConfig, {
     new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
   ],
   optimization: {
-    minimize: true
-  }
+    minimize: true,
+    splitChunks: {
+      chunks: 'async',
+    },
+  },
 });

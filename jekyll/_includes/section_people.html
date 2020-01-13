@@ -1,0 +1,13 @@
+<div class="row" id="{{ person.name | slugify }}_container">
+        <div class="col-md-3 horz-section-img-wrap" >
+        	{%- if person.image -%}
+			<div id="{{ person.name | slugify }}" imgsrc="{{ person.image }}" class="portrait-image" height=70% width=70%>
+			</div>
+        	{%- endif -%}
+        </div>
+        <div class="col-md-9 horz-section">
+        <h4 class='post-title'>{{ person.name }}</h4>
+        {{ person.body | markdownify}}
+    	</div>
+        
+</div>

@@ -8,7 +8,7 @@
 
 
 // width of the largest container
-$container-width: 1200px;
+$container-width: 1000px;
 $container-padding: 30px;
 
 // Width of the content area for .wrapper -- for smaller, text areas
@@ -100,5 +100,6 @@ $col-md-width:     992px !default;
   'navigation.scss',   // styles for the navigation
   'components.scss',    // styles for page-specific components
   'min_syntax_highlighting.scss', // syntax highlighting borrowed from minima
-  'citation_detail.scss' // iframe styling for embedded citation details
+  'citation_detail.scss', // iframe styling for embedded citation details
+  'portraits.scss' // classes to pop in portaits
 ;

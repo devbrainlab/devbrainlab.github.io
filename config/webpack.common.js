@@ -11,6 +11,7 @@ const webpack = require('webpack');
 module.exports = {
   entry: {
     app: './_src/index.js',
+    // portraits: './_src/portrait_trace_loader.js',
   },
   plugins: [
     // new FaviconsWebpackPlugin({
@@ -134,9 +135,38 @@ module.exports = {
       {
         test: /\.(png|jpg|gif)$/,
         use: [
-          'file-loader',
+          {
+            loader: "image-trace-loader",
+            options: {
+              // turnPolicy: 'TURNPOLICY_MINORITY',
+              // turdSize: 100,
+              // alphaMax: 1,
+              // optCurve: true,
+              // optTolerance: 0.2,
+              // threshold: 'THRESHOLD_AUTO',
+              // flipColors: false,
+              color: '#0B0B0B',
+              // background: 'COLOR_TRANSPARENT',
+              // skipTraceIfBase64: false
+            }
+          },
+          {
+            loader: 'file-loader'
+          }
         ],
       },
+      // trace portraits for 'people' page from _images/people
+      // {
+      //   test: /\.(gif|png|jpe?g)$/i,
+      //   include: [
+      //   path.resolve(__dirname, "images/people")
+      //   ],
+      //   use: [
+      //     {
+      //       loader: 'image-trace-loader'
+      //     }
+      //   ]
+      // }
       // {
       //   test: /\.(woff|woff2|eot|ttf|otf)$/,
       //   use: [
