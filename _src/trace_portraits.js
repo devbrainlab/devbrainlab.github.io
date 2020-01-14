@@ -6,6 +6,10 @@ import { Potrace } from './potrace.js';
 
 import { addLoadEvent } from './index.js';
 
+// import "scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap";
+
+import { TimelineMax, TweenMax, Linear } from 'gsap';
+
 // var potrace = require('potrace'),
 //     Jimp = require('jimp');
 //     // fs = require('fs');

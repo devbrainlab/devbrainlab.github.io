@@ -2,17 +2,27 @@ import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
 
+// import scrollmagic and gsap for scroll fx
 import ScrollMagic from 'scrollmagic';
+// import 'imports?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+// // import { TimelineMax, TweenMax, Linear } from 'gsap';
+// import 'gsap';
+// import '../../vendor/gsap/MorphSVGPlugin';
 
+// var kute = require('kute.js');
+// require('kute.js/kute-svg');
 
-window.setImageLoaded=function(){
-	var this_div = $(this);
-	console.log('imageloaded');
-	console.log(this_div);
-	setTimeout(function(){
-        this_div.addClass('loaded');
-	}, 500+Math.random()*1500);
-};
+// import { interpolate } from 'polymorph-js';
+// import { easeInOutCubic } from 'just-curves';
+
+// window.setImageLoaded=function(){
+// 	var this_div = $(this);
+// 	console.log('imageloaded');
+// 	console.log(this_div);
+// 	setTimeout(function(){
+//         this_div.addClass('loaded');
+// 	}, 500+Math.random()*1500);
+// };
 
 // import {
 //   src,
@@ -51,30 +61,68 @@ function trace_portraits(){
 			var parentdiv = $('<div>', {
 				class: 'image-wrapper'
 			});
-			var trace_overlay = $("<img />", {
-				class: "portrait-image portrait-trace",
-				src: imgmodule.trace
-				
-				});
+
+			// var trace_overlay = $("<img />", {
+			// 	class: "portrait-image portrait-trace",
+			// 	src: imgmodule.trace,
+			// 	id: parentname+"_trace"
+			// 	});
+			// console.log(imgmodule.trace);
+			var trace_overlay = $("<svg "+decodeURIComponent(imgmodule.trace));
+			trace_overlay.addClass("portrait-trace");
+			trace_overlay.addClass("portrait-image");
+			var width = $(trace_overlay).attr('width');
+			var height = $(trace_overlay).attr('height');
+
+			$(trace_overlay).attr('height', "100%");
+			$(trace_overlay).attr('width', "100%");
+			$(trace_overlay).attr('viewBox', "0 0 "+width+" "+height);
+			// add class and id to path itself for morphing
+			trace_overlay.children()[0].id = parentname+"_tracepath";
+			trace_overlay.children()[0].classList.add('trace-path');
+			// scale to fit
+			// trace_overlay.
+
+			// make reference that doesn't change
+			// var trace_reference = $("<svg "+decodeURIComponent(imgmodule.trace)+"/>");
+			// trace_reference.addClass("reference-svg");
+			// trace_reference.children()[0].id = parentname+"_traceref";
+			// $(trace_reference).attr('height', "100%");
+			// $(trace_reference).attr('width', "100%");
+			// $(trace_reference).attr('viewBox', "0 0 "+width+" "+height);
+
+
 			var image_overlay = $("<img />", {
 				class: "image-overlay portrait-image",
 				src: imgmodule.src,
 				id: parentname+"_image"
-			});
-			// debugger;
-			// trace_overlay.src = imgmodule.trace;
+				});
+
+
 			parentdiv.append(trace_overlay);
 			parentdiv.append(image_overlay);
 			this_div.append(parentdiv);
+
+			// append reference to hidden container
+			// $("#reference-svg").append(trace_reference);
 			// debugger;
 			// $("#"+parentname+"_container").hover(function(e) {
    //  		$("#"+parentname+"_image").trigger(e.type);
 
-			new ScrollMagic.Scene({triggerElement: "#"+parentname+"_container",
+   			new ScrollMagic.Scene({triggerElement: "#"+parentname+"_container",
 				triggerHook: 'onCenter',
 			    offset: 200})
-				.setClassToggle("#"+parentname+"_image", "visible") // add class toggle
+   				.on("enter leave", function(){
+   					$("#"+parentname+"_image").toggleClass('visible');
+   					$("#"+parentname+"_container").toggleClass('inactive-section');
+   				})
+				// .setClassToggle("#"+parentname+"_image", "visible") // add class toggle
+				// .setClassToggle("#"+parentname+"_container", "inactive-section")
 				.addTo(controller);
+			});
+			// debugger;
+			// trace_overlay.src = imgmodule.trace;
+
     	// });
 			// parentdiv.appendTo(this_div);
 
@@ -95,9 +143,16 @@ function trace_portraits(){
 		// 	            "</div>");
 
 		// this_div.append($addDiv);
-	});
 };
 trace_portraits();
+
+// $(function(){
+// 	// kute.fromTo('#person-2_tracepath',  {path: "#person-2_traceref"},{path: "#person-3_traceref"}).start();
+// 	// kute.fromTo('#person-2_tracepath',  {path: "#person-3_traceref"},{path: "#person-2_traceref"}).start();
+// 	var interp1 = interpolate(["#person-2_tracepath", "#person-3_traceref"]);
+// 	interp1()
+// })
+
 
 // $(function () { // wait for document ready
 // 		// init
