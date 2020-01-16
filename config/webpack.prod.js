@@ -20,7 +20,7 @@ module.exports = Merge(CommonConfig, {
     new HtmlWebpackPlugin({
       template: './_src/template/default.html',
       filename: '../jekyll/_layouts/default.html',
-      base:"http://jon-e.net/kate_site/"
+      // base:"http://jon-e.net/kate_site/"
     }),
     // new CleanWebpackPlugin(['_site/assets'], { root: path.resolve(__dirname, '../jekyll'), verbose: true }),
     new webpack.LoaderOptionsPlugin({

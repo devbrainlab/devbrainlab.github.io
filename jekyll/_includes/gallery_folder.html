@@ -8,7 +8,7 @@
 	{% for file in site.static_files %}
 		{% if file.path contains include.folder.path %}
 		<div class="gallery-square-container {{ include.folder.name | slugify }}_container">
-		<a href="{{ file.path | relative-url }}" class="gallery-square"><img src="{{ file.path | relative-url  }}" class="gallery-square {{ include.folder.name | slugify }}_image"/></a>
+		<a href="{{ file.path | relative_url }}" class="gallery-square"><img src="{{ file.path | relative_url  }}" class="gallery-square {{ include.folder.name | slugify }}_image"/></a>
 		
 		</div>
 		{% endif %}

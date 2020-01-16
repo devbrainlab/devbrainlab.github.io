@@ -19,3 +19,5 @@ try this for image textures: https://tympanus.net/codrops/2019/02/19/svg-filter-
 
 use masonry to repack gallery
 https://masonry.desandro.com/methods.html
+
+ask about rss link?

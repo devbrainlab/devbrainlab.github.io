@@ -12,7 +12,7 @@ export function addLoadEvent(func) {
   }
 };
 
-import('oridomi');
+
 import './fancybox.js';
 // import './trace_portraits.js';
 import './portrait_trace_loader.js';
