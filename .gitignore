@@ -109,6 +109,6 @@ dist
 minima
 boilerplate
 .jekyll-cache
-assets
+/assets
 _site
 screenshots
