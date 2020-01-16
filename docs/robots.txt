@@ -1,1 +1,1 @@
-Sitemap: /kate_site/sitemap.xml
+Sitemap: http://jon-e.net/kate_site/sitemap.xml
