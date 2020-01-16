@@ -29,12 +29,83 @@
  * Site footer
  */
 .site-footer {
+  bottom:0;
   background-color: $footer-color;
   @include container($container-padding);
   border-top: 1px solid $grey-color-light;
   padding-top: $spacing-unit;
   // padding: $spacing-unit 0;
+
+  
+  
+   &.hidden-footer {
+    display: none;
+
+    transition: display 300ms ease-in;
+    
+    // &.open {
+    //   height:300px;
+    // }
+
+
+
+
+  
+  }
+
+
 }
+
+
+
+.footer-button {
+  background-color: $background-color;
+  
+  position: relative;
+  border-left:solid 0px #CCC;
+  border-top:solid 0px #CCC;
+  border-right:solid 0px #CCC;
+  border-bottom:solid 0px #000;
+  width:148px;
+  height: 20px;
+  bottom:0;
+  right:0px;
+  float: right;
+  color: $text-color;
+  // margin-top:-11px;
+  // z-index:-1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: $text-color;
+    transition: background-color 0.5s ease;
+
+  }
+}
+
+.footer-button-arrow {
+  border: solid $text-color;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg) translate(10px,10px);
+  transition-duration: 0.5s;
+  // transform-origin: 50% 60%;
+  &.arrow-toggle {
+    border: solid $primary-color;
+  }
+}
+
+
+
+.button-rotate {
+  transform: rotate(45deg) translate(-10px,-10px);
+  // transform-origin: 50% 60%;
+  transition-duration: 0.5s;
+}
+
 
 .footer-heading {
   @include relative-font-size(1.125);
@@ -95,7 +166,6 @@
     width:         calc(100% - (#{$spacing-unit} / 2));
   }
 }
-
 
 
 /**
@@ -266,6 +336,11 @@
 
 .container {
   max-width: $container-width;
+}
+
+.description * {
+  font-size: $font-sm;
+  line-height: $font-sm;
 }
 
 

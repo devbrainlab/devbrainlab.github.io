@@ -1,0 +1,17 @@
+<!-- div to place images before rendering into oridomi -->
+<!-- {{ site.static_files | jsonify }}
+{{ include.folder.path | jsonify }}
+ -->
+
+<div class="gallery-folder" id="{{ include.folder.name | slugify }}"><div class="gallery-square-container {{ include.folder.name | slugify }}_container">
+	<a class="gallery-square-header"><div><div>{{ include.folder.name }}</div></div></a></div>
+	{% for file in site.static_files %}
+		{% if file.path contains include.folder.path %}
+		<div class="gallery-square-container {{ include.folder.name | slugify }}_container">
+		<a href="{{ file.path | relative-url }}" class="gallery-square"><img src="{{ file.path | relative-url  }}" class="gallery-square {{ include.folder.name | slugify }}_image"/></a>
+		
+		</div>
+		{% endif %}
+	{% endfor %}
+</div>
+

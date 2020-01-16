@@ -1,6 +1,6 @@
 
 // Load fonts
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:300|Open+Sans:300,700|Cutive+Mono|Nixie+One|Abel|Julius+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300|Open+Sans:300,700|Cutive+Mono|Nixie+One|Abel|Julius+Sans+One|Montserrat:400,700,900&display=swap");
 
 // Variables
 
@@ -39,11 +39,12 @@ $footer-color:     darken($background-color, 2.5%);
 
 // Fonts
 $body-font: "Work Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-$header-font: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+$header-font: "Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 $nav-font: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;;
 
 $font-xl: 58px;
-$font-ml: 48px;
+$font-lg: 48px;
+$font-ml: 32px;
 $font-md: 22px;
 $font-sm: 18px;
 $font-xs: 16px;
@@ -101,5 +102,7 @@ $col-md-width:     992px !default;
   'components.scss',    // styles for page-specific components
   'min_syntax_highlighting.scss', // syntax highlighting borrowed from minima
   'citation_detail.scss', // iframe styling for embedded citation details
-  'portraits.scss' // classes to pop in portaits
+  'portraits.scss', // classes to pop in portaits
+  'gallery.scss',
+  'blog.scss'
 ;

@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 #baseurl: "kate_site" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://jon-e.net" # the base hostname & protocol for your site, e.g. http://example.com
 author: Jonny Saunders
 logo: images/logo.png
 
@@ -70,6 +70,11 @@ plugins:
   - jekyll-seo-tag
   - octopress-minify-html
 
+# pages that have the footer hidden by default
+hidden_footer: 
+  - "home"
+  - "gallery"
+
 
 # where the site will build to
 destination: _site
@@ -79,6 +84,18 @@ source: jekyll
 
 collections:
   - sections_about
+
+# jekyll-tagging config
+# https://github.com/pattex/jekyll-tagging
+tag_page_layout: tag_page
+tag_page_dir: tag
+
+# show post excerpts on blog
+show_excerpts: true
+summary_tags: true
+
+###############################
+# Excludes
 
 # directories & files to exlude from jekyll processing
 exclude: ['node_modules']
@@ -102,3 +119,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  

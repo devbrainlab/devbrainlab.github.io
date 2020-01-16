@@ -38,6 +38,10 @@ $(document).ready(function() {
 		return false;
 	});
 
+	$("a.gallery-square").fancybox({
+		'titleShow'     : false
+	});
+
 	// $('.detailicon').fancybox({
 	// 	iframe : {
 	// 		preload: true

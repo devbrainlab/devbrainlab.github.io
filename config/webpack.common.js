@@ -17,17 +17,13 @@ module.exports = {
     // new FaviconsWebpackPlugin({
     //   logo: './icon.png',
     // }),
-    new HtmlWebpackPlugin({
-      template: './_src/template/default.html',
-      filename: '../jekyll/_layouts/default.html',
-    }),
     // new MiniCssExtractPlugin({
     //   filename: isDevelopment ? '[name].css' : '[name].[hash].css',
     //   chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css'
     // }),
     new ExtractTextPlugin('[name].css'),
     new CopyWebpackPlugin([{
-      from: path.resolve('_images'),
+      from: path.resolve('jekyll/images'),
       to: 'images/',
     }]),
     new CopyWebpackPlugin([{

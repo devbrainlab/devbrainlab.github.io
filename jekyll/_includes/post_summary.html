@@ -1,0 +1,27 @@
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+<div class="row">
+	<div class="col-md-3">
+		{% if include.post.image %}
+			<img src="{{ include.post.image }}" class="post-thumbnail"/>
+		{% else %}
+			<canvas class="generative-thumbnail" id="{{ include.post.title | slugify }}"></canvas>
+		{% endif %}
+	</div>
+<div class="col-md-9">
+<span class="post-meta">{{ include.post.date | date: date_format }}</span>
+
+<h3>
+    <a class="post-link" href="{{ post.url | relative_url }}">
+        {{ include.post.title | escape }}
+    </a>
+</h3>
+{%- if site.show_excerpts -%}
+{{ include.post.excerpt }}
+{%- endif -%}
+
+{%- if site.summary_tags -%}
+<span class="post-meta">{{ include.post | tags }}</span>
+{%- endif -%}
+</div>
+</div>

@@ -23,8 +23,10 @@ or inheriting from default!
     {{ content }}
     </main>
 
-    {% if page.layout != "home" %}
-    {% include footer.html %}
+    {% if site.hidden_footer contains page.layout %}
+    {% include footer.html hidden="true" %}
+    {% else %}
+    {% include footer.html hidden="false" %}
     {% endif %}
 
   </body>

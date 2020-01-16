@@ -4,6 +4,7 @@ const CommonConfig = require('./webpack.common.js');
 const path = require('path');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = Merge(CommonConfig, {
@@ -15,6 +16,10 @@ module.exports = Merge(CommonConfig, {
   devtool: 'inline-source-map',
   mode: 'development',
   plugins: [
+    new HtmlWebpackPlugin({
+      template: './_src/template/default.html',
+      filename: '../jekyll/_layouts/default.html'
+    }),
     new BrowserSyncPlugin(
       {
         host: 'localhost',

@@ -1,4 +1,11 @@
-<footer class="site-footer h-card">
+
+{% if include.hidden == "true" %}
+<!-- <div> -->
+<button class="footer-button"><div class="footer-button-arrow"></div></button>
+<footer class="site-footer h-card hidden-footer">
+{% else %}
+  <footer class="site-footer h-card">
+{% endif %}
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
 <!--   <div class="wrapper"> -->
@@ -33,3 +40,6 @@
 <!--   </div> -->
 
 </footer>
+{% if include.hidden == "true" %}
+<!-- </div> -->
+{% endif %}

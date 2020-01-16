@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<!-- https://jekyllrb.com/docs/static-files/ -->
+<!-- get images in assets/images/gallery -->
+
+<!-- {% assign image_files = site.static_files | where: "gallery", true %} -->
+
+
+<!-- {% for file in image_files %}
+<div src=file.path/>
+{% endfor %} -->
+<div class="container stretch">
+<div class="gallery-container">
+{% for folder in page.folders %}
+
+	{% include gallery_folder.html folder=folder %}
+
+{% endfor %}
+</div>
+</div>

@@ -5,6 +5,7 @@ const path = require('path');
 const webpack = require('webpack');
 // const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = Merge(CommonConfig, {
@@ -12,10 +13,15 @@ module.exports = Merge(CommonConfig, {
     filename: '[name]-[hash].bundle.js',
     chunkFilename: '[name]-[chunkhash].js', 
     path: path.resolve('assets'),
-    publicPath: 'assets/',
+    publicPath: '/kate_site/assets/',
   },
   mode:'production',
   plugins: [
+    new HtmlWebpackPlugin({
+      template: './_src/template/default.html',
+      filename: '../jekyll/_layouts/default.html',
+      base:"http://jon-e.net/kate_site/"
+    }),
     // new CleanWebpackPlugin(['_site/assets'], { root: path.resolve(__dirname, '../jekyll'), verbose: true }),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
@@ -25,8 +31,8 @@ module.exports = Merge(CommonConfig, {
   ],
   optimization: {
     minimize: true,
-    splitChunks: {
-      chunks: 'async',
-    },
+    // splitChunks: {
+    //   chunks: 'async',
+    // },
   },
 });

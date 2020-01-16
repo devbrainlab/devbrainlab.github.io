@@ -14,7 +14,7 @@ or inheriting from default!
 
   <head>
     {% include head.html %}
-  <link href="/assets/app.css" rel="stylesheet"></head>
+  <link href="/kate_site/assets/app.css" rel="stylesheet"></head>
 
   <body>
 
@@ -23,10 +23,12 @@ or inheriting from default!
     {{ content }}
     </main>
 
-    {% if page.layout != "home" %}
-    {% include footer.html %}
+    {% if site.hidden_footer contains page.layout %}
+    {% include footer.html hidden="true" %}
+    {% else %}
+    {% include footer.html hidden="false" %}
     {% endif %}
 
-  <script type="text/javascript" src="/assets/app.bundle.js"></script></body>
+  <script type="text/javascript" src="/kate_site/assets/app-0a600a2b673e3b6b90d2.bundle.js"></script></body>
 
 </html>

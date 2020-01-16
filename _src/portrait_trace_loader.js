@@ -56,7 +56,7 @@ function trace_portraits(){
 		//   trace
 		// } from "!!image-trace-loader?color=#DB7093&background=#FFF!"+imgSrc;
 		console.log(imgSrc);
-		import("../_images/people/"+imgSrc)
+		import("../jekyll/images/people/"+imgSrc)
 		.then((imgmodule) => {
 			var parentdiv = $('<div>', {
 				class: 'image-wrapper'
