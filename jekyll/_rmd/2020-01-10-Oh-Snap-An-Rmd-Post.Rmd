@@ -1,0 +1,31 @@
+---
+layout: post
+title: Oh Snap, an RMD Post
+date: 2020-01-10 23:18:45 -0800
+tags: code cucumbers
+---
+
+## Oh no u mean we can also do like code in this thing
+
+See the .rmd file in  `jekyll/_rmd`
+
+
+## a table
+
+```{r}
+options(digits = 3)
+knitr::kable(head(mtcars))
+```
+
+## a yno ggplot
+
+```{r}
+library(ggplot2)
+ggplot(mtcars, aes(x=wt, y=mpg))+
+	geom_point()
+```
+
+## toggling code visibility
+```{r, toggle=TRUE}
+now_u_see_me <- seq(100)
+```

@@ -4,6 +4,13 @@ height: 100%;
 display: block;
 }
 
+.generative-header {
+	height: 200px;
+	width: $container-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #tag-cloud{
 	text-align: center;
 	margin-top: 100px;
@@ -11,4 +18,112 @@ display: block;
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.post-summary {
+
+	& h3 {
+		margin-bottom: 0;
+	}
+}
+
+.post-summary-tags {
+	// bottom: 0;
+	font-size: $font-xxs;
+	font-family: $mono-font;
+	margin-bottom: 14px;
+
+	& a {
+	  font-size: $font-xxs;
+	}
+}
+
+
+.post {
+
+  @include container($container-padding);
+  margin-top: 10px;
+
+
+  &__container {
+    padding: 0 $container-padding;
+  }
+
+  &__meta {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid lighten($link-color, 40%);
+  }
+
+}
+
+
+.post-list-heading {
+  @include relative-font-size(1.75);
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  font-size: $font-xxs;
+  color: $grey-color;
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(1.5);
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  // @include relative-font-size(2.625);
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h2 {
+    @include relative-font-size(2);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.625);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.375);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.25);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
+    }
+  }
 }

@@ -14,5 +14,5 @@ title: home
 ---
 
 <div class="generative-homepage">
-	<canvas class="generative" id="gen-homepage" nPoints=1500></canvas>
+	<canvas class="generative initialization-full generation-sequential" id="gen_uniform_dynamic" movementPeriod="0.001" pPeriod="0.01"></canvas>
 </div>

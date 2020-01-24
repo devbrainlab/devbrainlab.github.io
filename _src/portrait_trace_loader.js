@@ -2,6 +2,8 @@ import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
 
+const path = require('path');
+
 // import scrollmagic and gsap for scroll fx
 import ScrollMagic from 'scrollmagic';
 // import 'imports?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
@@ -56,7 +58,10 @@ function trace_portraits(){
 		//   trace
 		// } from "!!image-trace-loader?color=#DB7093&background=#FFF!"+imgSrc;
 		console.log(imgSrc);
+		import(path.resolve('jekyll/images/people/', imgSrc))
 		import("../jekyll/images/people/"+imgSrc)
+		// debugger;
+		// import(imgSrc)
 		.then((imgmodule) => {
 			var parentdiv = $('<div>', {
 				class: 'image-wrapper'

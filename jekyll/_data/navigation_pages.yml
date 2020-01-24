@@ -1,16 +1,40 @@
 pages:
 
-- title: About
-  url: about.html
+# - title: About
+#   url: about.html
 
-- title: Research
-  url: research.html
+# - title: Research
+#   url: research.html
 
-- title: People
-  url: people.html
+# - title: People
+#   url: people.html
 
-- title: Gallery
-  url: gallery.html
+# - title: Gallery
+#   url: gallery.html
 
-- title: News
-  url: news.html
+# - title: News
+#   url: news.html
+
+- title: Index
+  url: index.html
+
+- title: Gaussian
+  url: index_gaussian.html
+
+- title: Uniform
+  url: index_uniform.html
+
+- title: Sequential
+  url: index_sequential.html
+
+- title: Tau
+  url: index_dynamic_tau.html
+
+- title: Period
+  url: index_dynamic_period.html
+
+- title: Both
+  url: index_dynamic_both.html
+
+- title: Seed
+  url: index_dynamic_seed.html

@@ -104,13 +104,13 @@ function generateThumb(canvas_id, time) {
 
 		let speed = $(canvas).attr('speed');
 	// if (typeof speed === 'undefined'){
-		speed = 0.05;
+		speed = 0.5;
 	// } else {
 		// speed = parseFloat(speed);
 	// }
 
     if (class_list.contains('generative-thumbnail')) {
-        n_points = 1000;
+        n_points = 200;
         period_movement = 0;
         tau_movement = 0;
     };
@@ -184,18 +184,16 @@ function generateThumb(canvas_id, time) {
 	            // x: Math.random()*w,
 	            // y: Math.random()*h,
 	            a: 0,
-                size: 0,
-                intspeed: (Math.random()+1)**1.5
+                shape: new Path2D()
 	        };
 	        particles.push(p1);
 	        particles.push({
 	            x: p1.x,
-	            y: 0, // x velocity
-                xv: 0,
+	            y: p1.y,
+	            xv: 0, // x velocity
 	            yv: 0, // y velocity
 	            a: TAU / 2,
-                size: 0,
-                intspeed: (Math.random()+1)**2
+                shape: new Path2D()
 	        });
 	    }
 	    return (particles);
@@ -271,17 +269,16 @@ function generateThumb(canvas_id, time) {
 
             current_speed = (Math.abs(p.xv)+Math.abs(p.yv))/2;
             max_speed = Math.max(current_speed, max_speed);
-            p.size = Math.ceil(((1-(current_speed/max_speed))**5)*40+(p.intspeed));
+
 
             v = noise.perlin2((p.x+x_shift) * period, (p.y+y_shift) * period, seed.perm, seed.gradP);
-            ctx.fillStyle = "hsla(" + (Math.floor(v * 360)) + ", "+(Math.floor((_j/particles.length)*100))+"%, 50%, 0." +(40-p.size)+")";
-            // p.shape.moveTo(p.x, p.y);
+            ctx.fillStyle = "hsla(" + (Math.floor(v * 360)) + ", "+(Math.floor((_j/particles.length)*100))+"%, 50%, 0.10)";
+            p.shape.moveTo(p.x, p.y);
             // console.log((p.x+p.x)/2);
             // p.shape.arc(p.x, p.y,1+Math.ceil(5*(current_speed/max_speed)), 0, 2 * Math.PI);
-            ctx.beginPath();
-            ctx.arc(p.x, p.y,p.size, 0, 2 * Math.PI);
+            ctx.arc(p.x, p.y,1+Math.ceil(5*(current_speed/max_speed)), 0, 2 * Math.PI);
             // circle.arc(p.x, p.y, 1/((p.xv+p.xy)/2), 0, 2 * Math.PI);
-            ctx.fill();
+            // ctx.fill(p.shape);
             // debugger;
             // ctx.fillRect(p.x, p.y, 2, 2);
 
@@ -290,20 +287,20 @@ function generateThumb(canvas_id, time) {
         	}
             p.h++;
 
-            p.xv = p.xv*0.8;
-            p.yv = p.yv*0.8;
+            p.xv = p.xv*0.9;
+            p.yv = p.yv*0.9;
 
             a = v * 2 * Math.PI + p.a;
             if (Math.random()<p_wayward){
-			p.xv += Math.cos(a)*1;
-            p.yv += Math.sin(a)*1;
+			p.xv += Math.cos(a)*10;
+            p.yv += Math.sin(a)*10;
             p.x += p.xv*speed;
             p.y += p.yv*speed;
             }else {
-            p.xv += Math.cos(a)*0.3*p.intspeed;
-            p.yv += Math.sin(a)*0.3*p.intspeed;
-            p.x += p.xv*speed*p.intspeed;
-            p.y += p.yv*speed*p.intspeed;
+            p.xv += Math.cos(a)*0.3;
+            p.yv += Math.sin(a)*0.3;
+            p.x += p.xv*speed;
+            p.y += p.yv*speed;
         }
 
             if (gen_mode == "seq"){

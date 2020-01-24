@@ -128,6 +128,7 @@ DEPENDENCIES
   jekyll-tagging
   minima (~> 2.5)
   octopress-minify-html
+  rouge (~> 3.14)
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)

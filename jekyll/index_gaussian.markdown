@@ -14,5 +14,5 @@ title: home
 ---
 
 <div class="generative-homepage">
-	<canvas class="generative" id="gen-homepage" nPoints=1500></canvas>
+	<canvas class="generative random-gaussian" id="gen_gaussian"></canvas>
 </div>
