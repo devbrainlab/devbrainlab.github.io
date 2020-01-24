@@ -127,26 +127,28 @@ function generateThumb(canvas_id, time){
 }
 
 
+$(function() {
+    let time = 0;
+    const time_delta = 200;
+    $('.generative').each(function() {
+        // var this_div = $(this)[0].id;
+        // var parentname = this_div[0].id;
+        // debugger;
+        generateThumb($(this)[0].id, time);
+        time += time_delta;
+        // $(this).resize(function(){
+        // 	$(this).width($(this).parent().width());
+        // 	$(this).height($(this).parent().height());
+        // })
 
-$(function(){
-	var time = 0;
-	const time_delta = 200;
-	$('.generative-thumbnail').each(function(){
-		// var this_div = $(this)[0].id;
-		// var parentname = this_div[0].id;
-		// debugger;
-		generateThumb($(this)[0].id, time);
-		time += time_delta;
-		// $(this).resize(function(){
-		// 	$(this).width($(this).parent().width());
-		// 	$(this).height($(this).parent().height());
-		// })
+    });
 
-	})
+    // $('.generative').width($('.generative').parent().width());
+    // $('.generative').height($('.generative').parent().height());
 
-	$(window).resize(function(){
-		$('.generative-thumbnail').width($('.generative-thumbnail').parent().width());
-		$('.generative-thumbnail').height($('.generative-thumbnail').parent().height());
-	})
+    $(window).resize(function() {
+        $('.generative').width($('.generative').parent().width());
+        $('.generative').height($('.generative').parent().height());
+    });
 
 });

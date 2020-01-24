@@ -1,0 +1,1 @@
+install.packages(c("knitr", "blogdown", "xfun"), repos="https://cran.rstudio.com/") 

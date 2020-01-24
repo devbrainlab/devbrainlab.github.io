@@ -1,11 +1,11 @@
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 
-<div class="row">
+<div class="row post-summary">
 	<div class="col-md-3">
 		{% if include.post.image %}
 			<img src="{{ include.post.image | relative_url }}" class="post-thumbnail"/>
 		{% else %}
-			<canvas class="generative-thumbnail" id="{{ include.post.title | slugify }}"></canvas>
+			<canvas class="generative generative-thumbnail" id="{{ include.post.title | slugify }}"></canvas>
 		{% endif %}
 	</div>
 <div class="col-md-9">
@@ -16,12 +16,12 @@
         {{ include.post.title | escape }}
     </a>
 </h3>
-{%- if site.show_excerpts -%}
-{{ include.post.excerpt }}
-{%- endif -%}
 
 {%- if site.summary_tags -%}
-<span class="post-meta">{{ include.post | tags }}</span>
+<div class="post-summary-tags">{{ include.post | tags }}</div>
+{%- endif -%}
+{%- if site.show_excerpts -%}
+{{ include.post.excerpt }}
 {%- endif -%}
 </div>
 </div>

@@ -60,6 +60,7 @@ scholar:
   repository: _papers
   details_layout: citationdetail.html
   details_link: ""
+  details_dir: "./cites/"
 
 
 # Build settings
@@ -94,11 +95,14 @@ tag_page_dir: tag
 show_excerpts: true
 summary_tags: true
 
+# syntax highlighting
+highlighter: rouge
+
 ###############################
 # Excludes
 
 # directories & files to exlude from jekyll processing
-exclude: ['node_modules']
+# exclude: ['node_modules']
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -109,6 +113,7 @@ exclude: ['node_modules']
 # their entries' file path in the `include:` list.
 #
 exclude:
+  - node_modules
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
@@ -119,4 +124,5 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - '*.Rmd'
   

@@ -1,4 +1,16 @@
 ---
 ---
 
-<a href="/bibliography/{{key}}.html" data-fancybox data-type="iframe" data-src="/bibliography/{{key}}.html" class="detailicon"><img alt="Details" src="/assets/images/glyph/details.svg"></a> {% if links.pdf %}<a href="/assets/papers/{{key}}.pdf" class="pdficon"><img alt="PDF" src="/assets/images/glyph/pdf.svg"></a>{% endif %}{% if links.zip %} [<a href="{{links.zip}}">Supporting Materials</a>]{% endif %} {{ reference }}
+{% assign cite_url = "/cites/" | append: key | append: ".html" %}
+
+<a href="{{ cite_url | relative_url }}" data-fancybox data-type="iframe" data-src="{{ cite_url | relative_url }}" class="detailicon">
+	<img alt="Details" src="{{ "/assets/images/glyph/details.svg" | relative_url }}">
+</a> 
+{% if links.pdf %}
+{% assign pdf_url = "/assets/papers/" | append: key | append: ".pdf" %}
+<a href="{{ pdf_url | relative_url }}" class="pdficon">
+	<img alt="PDF" src="{{ "/assets/images/glyph/pdf.svg" | relative_url }}">
+</a>
+{% endif %}
+<!-- {% if links.zip %} [<a href="{{links.zip}}">Supporting Materials</a>]{% endif %} --> 
+{{ reference }}

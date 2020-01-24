@@ -13,4 +13,6 @@ footer:
 title: home
 ---
 
-Test in the browser
+<div class="generative-homepage">
+	<canvas class="generative" id="gen-homepage" nPoints=1500></canvas>
+</div>

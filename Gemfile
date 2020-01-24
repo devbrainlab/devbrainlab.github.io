@@ -36,3 +36,5 @@ gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 gem "minima", "~> 2.5"
 
 gem "jekyll-scholar", "~> 6.5"
+
+gem "rouge", "~> 3.14"

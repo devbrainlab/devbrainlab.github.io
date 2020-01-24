@@ -8,6 +8,9 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
+hr {
+  border-color: $accent-color;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -226,25 +229,36 @@ pre {
  */
 table {
   margin-bottom: $spacing-unit;
-  width: 100%;
+  width: 80%;
   text-align: $table-text-align;
   color: lighten($text-color, 18%);
   border-collapse: collapse;
-  border: 1px solid $grey-color-light;
+  // border: 1px solid $grey-color-light;
+  margin-left: auto;
+  margin-right: auto;
   tr {
     &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
+       background-color: lighten($background-color, 10%);
     }
   }
   th, td {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
   }
   th {
-    background-color: lighten($grey-color-light, 3%);
+    font-weight: bold;
     border: 1px solid darken($grey-color-light, 4%);
+    // background-color: lighten($grey-color-light, 3%);
     border-bottom-color: darken($grey-color-light, 12%);
+    // border: 1px solid darken($grey-color-light, 4%);
+    border-top: 1px solid darken($text-color, 12%);
+    border-bottom: 1px solid darken($text-color, 12%);
+    // border-top-color: darken($grey-color-light, 12%);
+    // border-bottom-color: darken($grey-color-light, 12%);
   }
   td {
-    border: 1px solid $grey-color-light;
+    // border: 1px solid $grey-color-light;
+  }
+  tbody {
+    border-bottom: 1px solid darken($text-color, 12%);
   }
 }
