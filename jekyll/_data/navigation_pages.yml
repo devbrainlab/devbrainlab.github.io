@@ -2,6 +2,7 @@ pages:
 
 - title: About
   url: about.html
+  image: test
 
 - title: Research
   url: research.html

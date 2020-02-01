@@ -38,12 +38,14 @@ function generateThumb(canvas_id, time){
 
 
 	canvas = document.getElementById(canvas_id);
+	let class_list = $(canvas)[0].classList;
 	// debugger;
 	fpselem = document.getElementById('fps');
 
 	w = canvas.width = $(canvas).parent().width();
 
 	h = canvas.height = $(canvas).parent().height();
+	console.log(h);
 
 	TAU = 2 * Math.PI;
 
@@ -59,44 +61,190 @@ function generateThumb(canvas_id, time){
 	// debugger;
 	var seed = noise.seed(Math.random());
 
-	particles = [];
+	let x_generator, y_generator;
+	let n_points;
 
-	var seed_x = (Math.random()*w*0.5)+(Math.random()*w*0.25);
-	var spread_x = (Math.random()*0.2)+0.8;
-	var seed_y = (Math.random()*h*0.5)+(Math.random()*h*0.25);
-	var spread_y = (Math.random()*0.2)+0.8;
+	let randomness;
+    if (class_list.contains('random-gaussian')) {
+        randomness = gaussianRand;
+    } else if (class_list.contains('random-simplex')) {
+        // https://www.w3schools.com/js/js_function_closures.asp
+        randomness = (function() {
+            var seed = noise.seed(Math.random());
+            return function() {
+                var rand = (noise.simplex2(Math.random() * w, Math.random() * h, seed.perm, seed.gradP) + 1) / 2;
+                return rand
+            };
+        })();
+    } else {
+        randomness = Math.random;
+    };
 
-	for (_i = 1; _i <= 200; _i++) {
-	  p1 = {
-	    x: seed_x + ((gaussianRand()-0.5)*spread_x*w),
-	    // y: h / 2 + Math.random() * 50,
-	    y: seed_y + ((gaussianRand()-0.5)*spread_y*h),
-	    // x: Math.random()*w,
-	    // y: Math.random()*h,
-	    a: 0
-	  };
-	  particles.push(p1);
-	  particles.push({
-	    x: p1.x,
-	    y: p1.y,
-	    a: TAU / 2
-	  });
+    let period_movement = $(canvas).attr('movementPeriod');
+    let tau_movement = $(canvas).attr('movementTau');
+
+	if (typeof period_movement === 'undefined'){
+		period_movement = 0;
+	}
+		if (typeof tau_movement === 'undefined'){
+		tau_movement = 0;
+	}
+
+
+
+
+    if (class_list.contains('initialization-full')) {
+        x_generator = function() {
+            return (randomness() * w);
+        };
+        y_generator = function() {
+            return (randomness() * h);
+        };
+    } else if (class_list.contains('initialization-home')){
+    	x_generator = (function() {
+            const seed_x = w * 0.75;
+            const spread_x = (Math.random() * 0.5) + 0.5;
+            return function() {
+                return ((seed_x + ((gaussianRand() - 0.5) * spread_x * w)));
+            };
+        })();
+
+        y_generator = (function() {
+            const seed_y = h * 0.5;
+            const spread_y = (Math.random() * 0.5) + 0.5;
+            return function() {
+                return ((seed_y + ((gaussianRand() - 0.5) * spread_y * h)));
+            };
+        })();
+
+} else if (class_list.contains('initialization-clumped') || true) {
+        x_generator = (function() {
+            const seed_x = (gaussianRand() * w * 0.5) + (Math.random() * w * 0.25);
+            const spread_x = (Math.random() * 0.2) + 0.8;
+            return function() {
+                return ((seed_x + ((gaussianRand() - 0.5) * spread_x * w)));
+            };
+        })();
+
+        y_generator = (function() {
+            const seed_y = (gaussianRand() * h * 0.5) + (Math.random() * h * 0.25);
+            const spread_y = (Math.random() * 0.2) + 0.8;
+            return function() {
+                return ((seed_y + ((gaussianRand() - 0.5) * spread_y * h)));
+            };
+        })();
+    }
+
+    n_points = $(canvas).attr('nPoints');
+	if (typeof n_points === 'undefined'){
+		n_points = 100;
+	}
+
+
+    let gen_mode = "all";
+    let generated_points = 0;
+    if (class_list.contains('generation-sequential')) {
+        gen_mode = "seq";
+        
+    };
+
+    let seq_n = $(canvas).attr('nSeq');
+	if (typeof seq_n === "undefined"){
+		seq_n = 1;
+	}
+
+	    if (gen_mode === "seq") {
+        particles = generate_points(x_generator, y_generator, seq_n);
+    } else if (gen_mode === "all" || true) {
+        particles = generate_points(x_generator, y_generator, n_points);
+    }
+
+
+
+
+	function generate_points(x_generator, y_generator, n_points, particles = []) {
+	    for (let _i = 1; _i <= n_points; _i++) {
+
+	        let p1 = {
+	            x: x_generator(),
+	            // y: h / 2 + Math.random() * 50,
+	            y: y_generator(),
+	            xv: 0, // x velocity
+	            yv: 0, // y velocity
+	            // x: Math.random()*w,
+	            // y: Math.random()*h,
+	            a: 0,
+                size: 0,
+                intspeed: (Math.random()+1)**1.5
+	        };
+	        particles.push(p1);
+	        particles.push({
+	            x: p1.x,
+	            y: p1.y, // x velocity
+                xv: 0,
+	            yv: 0, // y velocity
+	            a: TAU / 2,
+                size: 0,
+                intspeed: (Math.random()+1)**2
+	        });
+	    }
+	    return (particles);
 	}
 
 	draw = function() {
 	  var a, p, v, _j, _len, _results;
 	  _results = [];
 	  resize(canvas);
-	  for (_j = 0, _len = particles.length; _j < _len; _j++) {
+
+	  // TAU += (Math.random()-0.5)*tau_movement;
+	  TAU += (Math.random()-0.5)*0.5;
+
+	  if (gen_mode === "seq") {
+            if (generated_points < n_points) {
+                particles = generate_points(x_generator, y_generator, seq_n, particles);
+            }
+            generated_points += 1;
+        }
+
+
+      var iter_until = particles.length;
+	  for (_j = 0;  _j < iter_until; _j++) {
 	    p = particles[_j];
 	    v = noise.perlin2(p.x * period, p.y * period, seed.perm, seed.gradP);
-	    ctx.fillStyle = "hsla(" + (Math.floor(v * 360)) + ", 100%, 70%, 0.10)";
+	    ctx.fillStyle = "hsla(" + (Math.floor(v * 360)) + ", 90%, 60%, 0.05)";
 	    ctx.fillRect(p.x, p.y, 2, 2);
 	    p.h++;
 	    a = v * 2 * Math.PI + p.a;
 	    p.x += Math.cos(a);
-	    _results.push(p.y += Math.sin(a));
+	    
+
+	    if (gen_mode == "seq"){
+            	if (p.x < 0 || p.x > w || p.y < 0 || p.y > h){
+            		particles.splice(_j, 1);
+            		iter_until -= 1;
+            	} else {
+
+        			_results.push(p.y += Math.sin(a));
+            	}
+            } else {
+            if (p.x < 0){
+            	p.x = w;
+            } else if (p.x > w){
+            	p.x = 0;
+            };
+            
+            if (p.y < 0){
+            	p.y = h;
+            } else if (p.y > h){
+            	p.y = 0;
+            }
+
+
+        	_results.push(p.y += Math.sin(a));
+        }
 	  }
+
+
 	  return _results;
 	};
 

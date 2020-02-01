@@ -10,9 +10,9 @@ home:
       link: /blog
 footer:
   love: 'Made with <span class="accent">❤</span>'
-title: home
+title: The Kate Lab
 ---
 
 <div class="generative-homepage">
-	<canvas class="generative" id="gen-homepage" nPoints=1500></canvas>
+	<canvas class="generative generation-sequential initialization-home" id="gen-homepage" movementTau=1 nPoints=500></canvas>
 </div>

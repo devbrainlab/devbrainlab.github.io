@@ -65,7 +65,45 @@
 }
 
 .page-heading {
-  color: $background-color;
+  // color: $background-color;
+  // position: absolute;
+  top: $title-top;
+  width: $container-width;
+  margin: auto;
+  margin-top: $title-top;
+
+  &.heading-home {
+    top: $title-top-home;
+    margin-top: $title-top-home;
+
+    div {
+      width: $title-width-home;
+
+      h1 {
+        transform: translateX(0);
+      }
+    }
+  }
+
+
+
+    div {
+      width: $title-width;
+
+      h1 {
+        text-align: right;
+        font-weight: $title-weight;
+        font-size: $font-title;
+        font-family: $header-font;
+        font-style: italic;
+        color: $text-color;
+        // mix-blend-mode: difference;
+        letter-spacing: $title-spacing;
+        transform: translateX($title-shift);
+        text-transform: uppercase;
+        // text-shadow: 10px 10px #ff0000;
+      }
+  }
 }
 
 .blog {
