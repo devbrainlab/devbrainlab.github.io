@@ -23,11 +23,8 @@ or inheriting from default!
     {{ content }}
     </main>
 
-    {% if site.hidden_footer contains page.layout %}
-    {% include footer.html hidden="true" %}
-    {% else %}
-    {% include footer.html hidden="false" %}
-    {% endif %}
+    {% include footer.html %}
+
 
   {% include navigation_overlay.html %}
   <script type="text/javascript" src="/assets/app.bundle.js"></script></body>

@@ -9,6 +9,7 @@
 
 // width of the largest container
 $container-width: 1000px;
+$title-container-width: 80%;
 $container-padding: 30px;
 
 // Width of the content area for .wrapper -- for smaller, text areas
@@ -49,6 +50,7 @@ $footer-color:     darken($background-color, 2.5%);
 $body-font: "Work Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 $header-font: "Raleway",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 $nav-font: "Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+$detail-font: "Raleway",sans-serif;
 $mono-font: "Cutive Mono",monospace;
 
 $font-size-home: 120px;
@@ -81,6 +83,7 @@ $nav-font-size: $font-xl;
 
 
 // Sizes of different media
+$half-screen: 840px;
 $on-palm:          768px !default;
 $on-laptop:        800px !default;
 $col-md-width:     992px !default;
@@ -104,8 +107,8 @@ $col-md-width:     992px !default;
 //   }
 // }
 
-@mixin container($padding) {
-  max-width: $container-width;
+@mixin container($padding, $width:$container-width) {
+  max-width: $width;
   padding: 0 $padding;
   margin: auto;
 }

@@ -1,23 +1,29 @@
 {% assign default_paths = site.pages | map: "path" %}
 {% assign page_paths = site.data.navigation_pages.pages | default: default_paths %}
-
 <div class="overlay overlay-boxify">
-    <nav>
-        <a class="navigation__branding" href="{{ "/" | relative_url }}">
-    <span class="navigation__logo"><img src="{{ "/assets/images/glyph/logo.svg" | relative_url }}" class="navigation__logo-img" alt=""></span>
-    <span class="navigation__title">{{ site.title | escape }}</span>
-  </a>
-
+    <nav class="overlay__links">
+        <a class="overlay__links__branding" href="{{ "/" | relative_url }}">
+            <span class="overlay__links__logo"><img src="{{ "/assets/images/glyph/logo.svg" | relative_url }}" class="overlay__links__logo-img" alt=""></span>
+            <span class="overlay__links__title">{{ site.title | escape }}</span>
+        </a>
         {% if page_paths %}
         <ul>
             {% for nav_page in page_paths %}
-
-            <li><a class="navigation__link{% if nav_page.url == page.url %} navigation__link--active{% endif %}" href="{{ nav_page.url | relative_url }}"><span>{{ nav_page.title | escape }}</span>
+            <li><a class="overlay__links__link{% if nav_page.url == page.url %} overlay__links__link--active{% endif %}" href="{{ nav_page.url | relative_url }}"><span>{{ nav_page.title | escape }}</span>
                 </a></li>
-
             {% endfor %}
         </ul>
         {% endif %}
-        
     </nav>
+    <div class="overlay__detail">
+        <!--   <div class="wrapper"> -->
+        <!-- <h2 class="footer-heading">{{ site.title | escape }}</h2> -->
+            <div class="site-description">
+                <p>{{- site.description | escape -}}</p>
+            </div>
+            <div class="site-social">
+                {%- include social.html -%}
+            </div>
+
+    </div>
 </div>

@@ -21,7 +21,8 @@
 
 .home {
 
-  @include container($container-padding);
+  // @include container($container-padding, $title-container-width);
+  // max-width: $title-width;
 
   height: 65vh;
   display: flex;
@@ -68,7 +69,7 @@
   // color: $background-color;
   // position: absolute;
   top: $title-top;
-  width: $container-width;
+  width: $title-container-width;
   margin: auto;
   margin-top: $title-top;
 
@@ -91,19 +92,24 @@
       width: $title-width;
 
       h1 {
-        text-align: right;
+        text-align: left;
         font-weight: $title-weight;
         font-size: $font-title;
         font-family: $header-font;
-        font-style: italic;
-        color: $text-color;
+        // font-style: italic;
+        color: $background-color;
         // mix-blend-mode: difference;
         letter-spacing: $title-spacing;
-        transform: translateX($title-shift);
+        // transform: translateX($title-shift);
         text-transform: uppercase;
-        // text-shadow: 10px 10px #ff0000;
+        text-shadow:  
+        -1px -1px 0 $text-color,
+        1px -1px 0 $text-color,
+        -1px 1px 0 $text-color,
+        1px 1px 0 $text-color;
       }
   }
+  
 }
 
 .blog {
