@@ -129,11 +129,11 @@
 
 .horz-section {
 
-  margin: 1rem 0rem 1rem 0rem;
-  padding: 1rem 1rem 1rem 1rem;
-  background-color: $background-lighter;
-  box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.5);
-  border-radius: 4px;
+  // margin: 1rem 0rem 1rem 0rem;
+  // padding: 1rem 1rem 1rem 1rem;
+  // background-color: $background-lighter;
+  // box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.5);
+  // border-radius: 4px;
   // border-top: 1px solid $grey-color-dark;
   // border-right: 1px solid $grey-color-dark;
   // border-bottom: 1px solid $grey-color-dark;
@@ -195,10 +195,23 @@
 }
 
 .horz-section-img-wrap {
+  background-color: $text-color;
+  border-radius: 0 10px 10px 0;
+
   display:flex;
   justify-content:center;
   align-items:center;
   flex-direction: row;
+
+  &:before {
+    content:"";
+    background-color:$text-color;
+    position: absolute;
+    height: 100%;
+    width: 200%;
+    left: -200%;
+    z-index: -1;
+}
 
   @include media-query($on-palm){
     height: 100px;

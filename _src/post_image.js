@@ -117,6 +117,23 @@ function generateThumb(canvas_id, time){
             };
         })();
 
+} else if (class_list.contains('initialization-page')){
+        x_generator = (function() {
+            const seed_x = (w * 0.9);
+            const spread_x = (Math.random() * 0.5);
+            return function() {
+                return ((seed_x + ((gaussianRand() - 0.5) * spread_x * w)));
+            };
+        })();
+
+        y_generator = (function() {
+            const seed_y = h * 0.5;
+            const spread_y = (Math.random() * 0.5) + 0.5;
+            return function() {
+                return ((seed_y + ((gaussianRand() - 0.5) * spread_y * h)));
+            };
+        })();
+
 } else if (class_list.contains('initialization-clumped') || true) {
         x_generator = (function() {
             const seed_x = (gaussianRand() * w * 0.5) + (Math.random() * w * 0.25);

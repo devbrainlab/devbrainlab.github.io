@@ -43,8 +43,11 @@ display: block;
 
 .post {
 
-  @include container($container-padding);
+  // @include container($container-padding);
+  max-width: 80%;
   margin-top: 10px;
+  margin: auto;
+  // background: adjust-color($background-color, $alpha: -.5);;
 
 
   &__container {
@@ -103,6 +106,8 @@ display: block;
 }
 
 .post-content {
+  // @include container($container-padding);
+  max-width: $content-width;
   margin-bottom: $spacing-unit;
 
   h2 {

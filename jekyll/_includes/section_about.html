@@ -1,11 +1,12 @@
-<div class="row">
-        <div class="col-md-3 horz-section-img-wrap" >
+<div class="row section-container">
+    	<div class="col-md-3 horz-section-img-wrap" >
         	{%- if section.image -%}
 			<img src="{{ section.image | relative_url }}" class="horz-section-img" height=70%/>
         	{%- endif -%}
         </div>
         <div class="col-md-9 horz-section">
-        <h4 class='post-title'>{{ section.title }}</h4>
+        <h2 class='post-title'>{{ section.title }}</h2>
         {{ section.body | markdownify}}
     	</div>
+
 </div>

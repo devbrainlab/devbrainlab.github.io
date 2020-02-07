@@ -139,7 +139,7 @@ module.exports = {
               // optCurve: true,
               // optTolerance: 0.2,
               // threshold: 'THRESHOLD_AUTO',
-              // flipColors: false,
+              // flipColors: true,
               color: '#0B0B0B',
               // background: 'COLOR_TRANSPARENT',
               // skipTraceIfBase64: false

@@ -233,3 +233,26 @@
   height: 100%;
   width: 100%;
 }
+
+.generative-container {
+  position: fixed;
+  z-index:-2;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 100%;
+}
+
+.content-gradient {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba($background-color, 0.8) , rgba($background-color, 0) );
+}
+
+.section-container {
+  padding: 1rem 0 1rem 0;
+}

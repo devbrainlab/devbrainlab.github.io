@@ -5,11 +5,22 @@ layout: default
 {% include page_title.html %}
 {% endif %}
 
+
+
+<div class="generative-container">
+	<canvas class="generative generation-sequential initialization-page" id="gen-page" movementTau=1 nPoints=500></canvas>
+</div>
+
+<div class="content-gradient"></div>
+
+
 <article class="post">
 
-  <header class="post-header">
+
+
+<!--   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
+  </header> -->
 
   <div class="post-content">
     {{ content }}
