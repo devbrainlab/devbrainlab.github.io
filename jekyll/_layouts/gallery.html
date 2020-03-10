@@ -10,12 +10,15 @@ layout: default
 <!-- {% for file in image_files %}
 <div src=file.path/>
 {% endfor %} -->
-<div class="container stretch">
-<div class="gallery-container">
+<!-- <div class="container stretch"> -->
+<div class="gallery-container-hidden">
 {% for folder in page.folders %}
 
-	{% include gallery_folder.html folder=folder %}
+	{% include gallery_folder_hidden.html folder=folder %}
 
 {% endfor %}
 </div>
+
+<div class="gallery-container">
 </div>
+<!-- </div> -->

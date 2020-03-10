@@ -12,7 +12,7 @@ export function addLoadEvent(func) {
   }
 };
 
-
+ 
 
 
 import './fancybox.js';
@@ -22,7 +22,8 @@ import 'bootstrap';
 
 import './index.scss';
 import './toggle_footer.js';
-import './gallery_oridomi.js';
+// import './gallery_oridomi.js';
+import './gallery_masonry.js';
 import './post_image.js';
 
 /* When user clicks the Icon */

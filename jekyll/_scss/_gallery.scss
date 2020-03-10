@@ -4,17 +4,25 @@ $pink-color: #ff00ff;
 
 .gallery-container {
 	margin-top: $spacing-unit;
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: repeat(3, 1fr);
-	grid-auto-flow: rows;
+	// display: grid;
+	// grid-gap: 10px;
+	// grid-template-columns: repeat(3, 1fr);
+	// grid-auto-flow: rows;
 	// flex-direction: row;
 	// justify-content: space-evenly;
 	// align-items: flex-start;
 	// flex-wrap: wrap;
 }
 
+.gallery-container-hidden {
+	display: none;
+}
+
 .gallery-folder-hidden {
+	display: none;
+}
+
+.gallery-image-hidden {
 	display: none;
 }
 
@@ -36,8 +44,11 @@ $pink-color: #ff00ff;
 
 .gallery-square-container {
 	// display: block;
-	width: 250px;
-	height: 250px;
+	width: 275px;
+	// width: 100%;
+	margin: auto;
+	padding-top: 40px;
+	// height: 250px;
 	// position: relative;
 	// overflow: hidden;
 	object-fit: cover;
@@ -47,8 +58,9 @@ $pink-color: #ff00ff;
 	display: block;
 	// max-height: 200px;
 	// max-width: 200px;
-	width: 250px;
-	height: 250px;
+	width: 300px;
+	margin: auto;
+	// height: 250px;
 	// position: absolute;
 	// width: auto;
 	object-fit: cover;
@@ -62,8 +74,8 @@ $underline-animate: all 0.2s ease-in-out;
 	// max-width: 200px;
 	// background-color: darken(desaturate($accent-color, 5%), 5%);
 	background-color: $background-color;
-	width: 250px;
-	height: 250px;
+	width: 300px;
+	height: 300px;
 	// position: absolute;
 	// width: auto;
 	object-fit: cover;
@@ -112,8 +124,8 @@ $underline-animate: all 0.2s ease-in-out;
 
 	&>div {
 		background-color: $background-color;
-		height: 220px;
-		width: 220px;
+		height: 250px;
+		width: 250px;
 		// margin: 20px;
 		border: 2px solid $text-color;
 		border-radius: 10px;
