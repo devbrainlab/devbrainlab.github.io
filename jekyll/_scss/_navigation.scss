@@ -539,7 +539,7 @@ Navigation
 .nav-toggle {
     position: absolute;
     // background-color: $text-color;
-    top: 20%;
+    top: $title-top + ($font-title/2);
     right: 10%;
     // margin-top: 10%;
     z-index: 999999;
