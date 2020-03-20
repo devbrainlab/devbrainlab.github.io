@@ -2,10 +2,17 @@
 layout: default
 ---
 <div class="generative-header">
+
 <canvas class="generative" id="gen-header"></canvas>
+{% include page_title.html titleoverride="news" ahref="/news.html" %}
 </div>
+
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
+  <div class="post-splitpage">
+
+    <div class="post-container">
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
@@ -25,6 +32,28 @@ layout: default
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
   {%- endif -%}
+  </div>
+
+  <div class="archive-container">
+            {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %b'" %}
+            {% for yearMonth in postsByYearMonth %}
+            <!-- <h3>{{ yearMonth.name }}</h3> -->
+            <button type="button" class="archive-collapsible">{{ yearMonth.name }}</button>
+            <div class="archive-collapsible-content">
+                <ul>
+                    {% for post in yearMonth.items %}
+                    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+            <div id="tag-cloud">
+                <h4>TAGS</h4>
+                {{ site | tag_cloud }}
+            </div>
+        </div>
+
+  </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

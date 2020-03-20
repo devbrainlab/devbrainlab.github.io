@@ -1,4 +1,5 @@
-<div class="row inactive-section section-container" id="{{ person.name | slugify }}_container">
+<!-- <div class="row inactive-section section-container" id="{{ person.name | slugify }}_container"> -->
+    <div class="row section-container" id="{{ person.name | slugify }}_container">
         <div class="col-md-3 horz-section-img-wrap" >
         {%- if person.image -%}
                     {% assign portrait_url = "/assets/images/people/" | append: person.image %}

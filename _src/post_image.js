@@ -244,17 +244,20 @@ function generateThumb(canvas_id, time){
         			_results.push(p.y += Math.sin(a));
             	}
             } else {
-            if (p.x < 0){
-            	p.x = w;
-            } else if (p.x > w){
-            	p.x = 0;
-            };
+            // if (p.x < 0){
+            // 	p.x = w;
+            // } else if (p.x > w){
+            // 	p.x = 0;
+            // };
             
-            if (p.y < 0){
-            	p.y = h;
-            } else if (p.y > h){
-            	p.y = 0;
-            }
+            // if (p.y < 0){
+            // 	p.y = h;
+            // } else if (p.y > h){
+            // 	p.y = 0;
+            // }
+            if (p.x < 0 || p.x > w || p.y < 0 || p.y > h){
+                    particles.splice(_j, 1);
+                }
 
 
         	_results.push(p.y += Math.sin(a));

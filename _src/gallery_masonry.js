@@ -12,7 +12,7 @@ console.log($(document).width()/5)
 
 var $gallery = $('.gallery-container').masonry({
 	itemSelector: '.gallery-square-container',
-	columnWidth: $(window).width()/5
+	columnWidth: '.gallery-square-container'
 	});
 
 // $('.gallery-square-container').css('width', $(document).width()/5);
@@ -38,8 +38,35 @@ $('.gallery-square-header').click(function(){
 		$gallery.masonry('remove', $images).masonry('layout');
 	}
 
+	$("a.gallery-square").fancybox({
+		'titleShow'     : false
+	});
+
 	// $gallery.masonry('layout');
 });
+
+function resize_gallery() {
+	let col_width;
+	let n_cols;
+
+	let win_width = $(window).width()
+
+	if (win_width <= 600 ){
+		n_cols = 1;
+	} else {
+	n_cols = Math.ceil(win_width/400);
+	}
+
+	col_width = win_width/n_cols;
+	$('.gallery-square-container').css('width', col_width);
+};
+
+$(window).resize(function() {
+    resize_gallery();
+});
+
+// resize on first layout
+
 
 addLoadEvent(function(){
 	var $gallery_headers = $('.gallery-folder-header');
@@ -48,4 +75,11 @@ addLoadEvent(function(){
 	$gallery.append($gallery_headers).masonry(
 		'appended', $gallery_headers);
 
+	resize_gallery();
+
+	$gallery.masonry();
+
+	
+	// $grid.on('layoutComplete', resize_gallery);
+	
 	});

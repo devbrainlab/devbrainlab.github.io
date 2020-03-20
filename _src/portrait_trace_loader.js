@@ -45,7 +45,7 @@ import ScrollMagic from 'scrollmagic';
 // });
 
 function trace_portraits(){
-	window.controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 300}});
+	window.controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 500}});
 
 
 	$(".portrait-image").each(function( index ){
@@ -118,10 +118,11 @@ function trace_portraits(){
 
    			new ScrollMagic.Scene({triggerElement: "#"+parentname+"_container",
 				triggerHook: 'onCenter',
-			    offset: 200})
+				duration: 500,
+			    offset: -200})
    				.on("enter leave", function(){
    					$("#"+parentname+"_image").toggleClass('visible');
-   					$("#"+parentname+"_container").toggleClass('inactive-section');
+   					// $("#"+parentname+"_container").toggleClass('inactive-section');
    				})
 				// .setClassToggle("#"+parentname+"_image", "visible") // add class toggle
 				// .setClassToggle("#"+parentname+"_container", "inactive-section")

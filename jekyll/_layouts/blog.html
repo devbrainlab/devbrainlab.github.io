@@ -1,27 +1,46 @@
 ---
 layout: default
 ---
+{% if page.title %}
+{% include page_title.html %}
+{% endif %}
 <article class="post">
     {%- if site.posts.size > 0 -%}
     <header class="post-header">
-        <h1>{{ page.title | default: "News" }}</h1>
         <div class="description">
             {{ content }}
         </div>
     </header>
-    <ul class="post-list">
-        {%- for post in site.posts -%}
-        <li>
-            {% include post_summary.html post=post %}
-        </li>
-        {%- endfor -%}
-    </ul>
-    <!-- <div class="news-prefooter"> -->
-<!--     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
-    
-    <div id="tag-cloud">
-       <h4>tags</h4>
-        {{ site | tag_cloud }}
+    <div class="post-splitpage">
+        <div class="post-container">
+            <ul class="post-list">
+                {%- for post in site.posts -%}
+                <li>
+                    {% include post_summary.html post=post %}
+                </li>
+                {%- endfor -%}
+            </ul>
+        </div>
+        <!-- <div class="news-prefooter"> -->
+        <!--     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
+        <div class="archive-container">
+            {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %b'" %}
+            {% for yearMonth in postsByYearMonth %}
+            <!-- <h3>{{ yearMonth.name }}</h3> -->
+            <button type="button" class="archive-collapsible">{{ yearMonth.name }}</button>
+            <div class="archive-collapsible-content">
+                <ul>
+                    {% for post in yearMonth.items %}
+                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+            <div id="tag-cloud">
+                <h4>TAGS</h4>
+                {{ site | tag_cloud }}
+            </div>
+        </div>
     </div>
     <!-- </div> -->
     {%- endif -%}
