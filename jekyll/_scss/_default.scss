@@ -10,7 +10,10 @@
 // width of the largest container
 $container-width: 1000px;
 $title-container-width: 80%;
-$container-padding: 30px;
+$container-padding: 2rem;
+$container-padding-mobile: 1rem;
+
+$post-pad-left: $container-padding*2;
 
 // Width of the content area for .wrapper -- for smaller, text areas
 $content-width:    1000px !default;
@@ -18,10 +21,12 @@ $content-width:    1000px !default;
 // Page Titles
 $title-width: 100%;
 $title-top: 3rem;
+$title-top-mobile: 5rem;
 $title-shift: -50%;
 // page title on the homepage
 $title-top-home: 10%;
-$title-width-home: 30%;
+$title-top-home-mobile: 40%;
+$title-width-home: 100%;
 
 $red-accent-color: lighten(#EB1555,5%);
 $ltblu-accent-color: #8ECAEF;
@@ -55,11 +60,11 @@ $mono-font: "Cutive Mono",monospace;
 
 $font-size-home: 8rem;
 $font-title: 7rem;
-$font-xl: 58px;
-$font-lg: 48px;
-$font-ml: 32px;
-$font-md: 22px;
-$font-sm: 18px;
+$font-xl: 6em;
+$font-lg: 4em;
+$font-ml: 2em;
+$font-md: 1.5em;
+$font-sm: 1em;
 $font-xs: 16px;
 $font-xxs: 12px;
 $font-archive: 14px;

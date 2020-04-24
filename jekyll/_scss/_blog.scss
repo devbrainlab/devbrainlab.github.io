@@ -64,8 +64,14 @@ display: block;
 
   // @include container($container-padding);
   max-width: 80%;
+  margin: $container-padding;  
   margin-top: 10px;
-  margin: auto;
+  margin-left: $post-pad-left;
+
+  @include media-query($col-md-width){
+    margin: $container-padding-mobile;
+
+  }
   // background: adjust-color($background-color, $alpha: -.5);;
 
 

@@ -1,18 +1,17 @@
-
 .button {
-  display: inline-block;
-  border: 1px solid lighten($link-color, 40%);
-  border-radius: 50px;
-  padding: 15px 30px;
-  font-weight: 300;
+    display: inline-block;
+    border: 1px solid lighten($link-color, 40%);
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-weight: 300;
 
-  &:hover {
-    background-color: lighten($link-color, 49%);
-  }
+    &:hover {
+        background-color: lighten($link-color, 49%);
+    }
 }
 
 .accent {
-  color: $primary-color;
+    color: $primary-color;
 }
 
 
@@ -21,77 +20,84 @@
 
 .home {
 
-  // @include container($container-padding, $title-container-width);
-  // max-width: $title-width;
+    // @include container($container-padding, $title-container-width);
+    // max-width: $title-width;
 
-  height: 65vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 
-  &__headline-container {
-    padding: 0 $container-padding * 3;
-  }
+    &__headline-container {
+        padding: 0 $container-padding * 3;
+    }
 
-  &__headline {
-    font-size: $font-xl;
-  }
+    &__headline {
+        font-size: $font-xl;
+    }
 
 }
 
 .vignette {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
 }
 
 
 .page {
 
-  @include container($container-padding);
-  margin-top: 60px;
+    @include container($container-padding);
+    margin-top: 60px;
 
-  &__header {
-    padding: 0 $container-padding;
-  }
+    &__header {
+        padding: 0 $container-padding;
+    }
 
 
-  &__content {
-    padding: 0 $container-padding;
-  }
+    &__content {
+        padding: 0 $container-padding;
+    }
 }
 
 .page-heading {
-  // color: $background-color;
-  // position: absolute;
-  top: $title-top;
-  width: $title-container-width;
-  margin: auto;
-  margin-top: $title-top;
+    // color: $background-color;
+    // position: absolute;
+    top: $title-top;
+    width: $title-container-width;
+    margin: $container-padding;
+    margin-top: $title-top;
 
-  &.heading-home {
-    top: $title-top-home;
-    margin-top: $title-top-home;
+    @include media-query($col-md-width){
+      margin: $container-padding-mobile;
+      margin-top: $title-top-mobile;
 
-    div {
-      width: $title-width-home;
-
-      h1 {
-        transform: translateX(0);
-      }
     }
-  }
+
+    &.heading-home {
+        position: relative;
+        top: $title-top-home;
+        margin-top: $title-top-home;
+
+        @include media-query($col-md-width) {
+            margin-top: $title-top-home-mobile;
+        }
+
+        h1 {
+            width: $title-width-home;
+            transform: translateX(0);
+        }
+    }
 
 
 
-    div {
-      width: $title-width;
 
-      h1 {
+    h1 {
+        width: $title-width;
         text-align: left;
         font-weight: $title-weight;
         font-size: $font-title;
@@ -102,157 +108,156 @@
         letter-spacing: $title-spacing;
         // transform: translateX($title-shift);
         text-transform: uppercase;
-        text-shadow:  
-        -1px -1px 0 $text-color,
-        1px -1px 0 $text-color,
-        -1px 1px 0 $text-color,
-        1px 1px 0 $text-color;
-      }
-  }
-  
+        text-shadow:
+            -1px -1px 0 $text-color,
+            1px -1px 0 $text-color,
+            -1px 1px 0 $text-color,
+            1px 1px 0 $text-color;
+    }
+
 }
 
 .blog {
-  @include container($container-padding);
-  margin-top: 60px;
+    @include container($container-padding);
+    margin-top: 60px;
 
 
-  &__post {
+    &__post {
 
-    padding: 0 $container-padding;
-    display: flex;
-    flex-direction: row;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-bottom: 1px solid lighten($link-color, 40%);
+        padding: 0 $container-padding;
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid lighten($link-color, 40%);
 
-    @media (max-width: 900px) {
-      flex-direction: column;
+        @media (max-width: 900px) {
+            flex-direction: column;
+        }
+
+        &:first-child {
+            padding-top: 10px;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
     }
 
-    &:first-child {
-      padding-top: 10px;
+    &__date {
+        padding-top: 15px;
+        width: 30%;
+        color: $link-color;
     }
 
-    &:last-child {
-      border-bottom: none;
+    &__content {
+        width: 100%;
     }
-  }
-
-  &__date {
-    padding-top: 15px;
-    width: 30%;
-    color: $link-color;
-  }
-
-  &__content {
-    width: 100%;
-  }
 
 
-  &__link {
-    &:hover {
-      color: $link-color;
+    &__link {
+        &:hover {
+            color: $link-color;
+        }
     }
-  }
 
-  &__title {
-    color: $text-color;
-    font-size: $font-md;
-    padding-top: 0;
-  }
+    &__title {
+        color: $text-color;
+        font-size: $font-md;
+        padding-top: 0;
+    }
 
-  &__excerpt {
-    color: $link-color;
-  }
+    &__excerpt {
+        color: $link-color;
+    }
 }
 
 
 
 
 .footer {
-  border-top: 1px solid lighten($link-color, 40%);
-  padding: 30px 0;
-  margin-top: 80px;
+    border-top: 1px solid lighten($link-color, 40%);
+    padding: 30px 0;
+    margin-top: 80px;
 
-  &__container {
-    @include container($container-padding);
-    color: $link-color;
-  }
+    &__container {
+        @include container($container-padding);
+        color: $link-color;
+    }
 
 }
 
 .title_gutter {
-  height: 100%;
-  background-color: $text-color;
-  color: $background-color !important;
-  // padding-bottom: 100%;
-  // position:absolute;
+    height: 100%;
+    background-color: $text-color;
+    color: $background-color !important;
+    // padding-bottom: 100%;
+    // position:absolute;
 
-  text-align: center;
+    text-align: center;
 
-  @include media-query($col-md-width){
-    text-align: left;
-    padding-bottom: 1rem;
-  }
+    @include media-query($col-md-width) {
+        text-align: left;
+        padding-bottom: 1rem;
+    }
 }
 
 .gutter-heading {
-  text-align: center;
-  
-  @include media-query($col-md-width){
-    text-align: left;
-    padding-bottom: 1rem;
-  }
+    text-align: center;
+
+    @include media-query($col-md-width) {
+        text-align: left;
+        padding-bottom: 1rem;
+    }
 }
 
 .gutter-underlay {
-  top:0;
-  left:0;
-  bottom:0;
-  right:0;
-  margin-left: 0;
-  margin-right: 0;
-  height:100%;
-  width:100%;
-  position:absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 
 .stretch {
-  align-items: stretch;
-  position: relative;
+    align-items: stretch;
+    position: relative;
 }
 
 
 .generative-homepage {
-  position: fixed;
-  z-index:-1;
-  left:0;
-  top:0;
-  height: 100%;
-  width: 100%;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .generative-container {
-  position: fixed;
-  z-index:-2;
-  left:0;
-  top:0;
-  height: 100%;
-  width: 100%;
+    position: fixed;
+    z-index: -2;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .content-gradient {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(to right, rgba($background-color, 0.8) , rgba($background-color, 0) );
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba($background-color, 0.8), rgba($background-color, 0));
 }
 
 .section-container {
-  padding: 1rem 0 1rem 0;
+    padding: 1rem 0 1rem 0;
 }

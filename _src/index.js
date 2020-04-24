@@ -42,6 +42,7 @@ import './toggle_footer.js';
 // import './gallery_oridomi.js';
 import './gallery_masonry.js';
 import './post_image.js';
+import './fitty.js';
 
 /* When user clicks the Icon */
 $(".nav-toggle").click(function() {
