@@ -72,6 +72,10 @@ display: block;
     margin: $container-padding-mobile;
 
   }
+
+  @include media-query($on-palm){
+    max-width: 100%;
+  }
   // background: adjust-color($background-color, $alpha: -.5);;
 
 
@@ -142,6 +146,11 @@ display: block;
     @include media-query($on-laptop) {
       @include relative-font-size(1.75);
     }
+    
+    @include media-query($on-palm){
+      padding-top: 2rem;
+    }
+
   }
 
   h3 {

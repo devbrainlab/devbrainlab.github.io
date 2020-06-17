@@ -27,6 +27,8 @@ $title-shift: -50%;
 $title-top-home: 10%;
 $title-top-home-mobile: 40%;
 $title-width-home: 100%;
+$title-left-home: 64px;
+$title-left-home-mobile: 16px;
 
 $red-accent-color: lighten(#EB1555,5%);
 $ltblu-accent-color: #8ECAEF;
@@ -62,6 +64,7 @@ $font-size-home: 8rem;
 $font-title: 7rem;
 $font-xl: 6em;
 $font-lg: 4em;
+$font-mll: 3em;
 $font-ml: 2em;
 $font-md: 1.5em;
 $font-sm: 1em;
@@ -77,19 +80,31 @@ $table-text-align: left !default;
 $list-spacing: 10px;
 
 
+
+
+// Nav toggle
+$nav-toggle-left: $title-left-home;
+$nav-toggle-left-mobile: $title-left-home-mobile;
+$nav-toggle-width: 35px;
+
 // Navigation overlay
 $title-weight: 700;
 $title-spacing: 4px;
+$nav-padding: 100px;
+$nav-padding-top: 50px;
 $nav-weight: 700;
 $nav-n: 5;
 $nav-delay: 0.1;
 $nav-link-duration: 0.5;
 $nav-slidein: 0.2;
 $nav-font-size: $font-xl;
+$nav-font-size-mobile: $font-mll;
+$nav-heading-left: $nav-toggle-left * 2 + $nav-toggle-width;
+$nav-heading-left-mobile: $nav-toggle-left-mobile * 2 + $nav-toggle-width;
 
 
 // Sizes of different media
-$half-screen: 840px;
+$half-screen:      840px;
 $on-palm:          768px !default;
 $on-laptop:        800px !default;
 $col-md-width:     992px !default;

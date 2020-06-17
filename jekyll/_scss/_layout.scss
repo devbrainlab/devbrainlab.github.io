@@ -188,6 +188,8 @@
 
   @include media-query($on-palm){
     height: 100px;
+    padding: 0;
+    height: 90%;
     justify-content: flex-start;
     align-items: flex-start;
   }
@@ -215,6 +217,7 @@
 
   @include media-query($on-palm){
     height: 100px;
+    max-width: 25%;
     justify-content: flex-start;
     align-items: flex-start;
   }

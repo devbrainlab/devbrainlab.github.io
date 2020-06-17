@@ -70,12 +70,13 @@
     top: $title-top;
     width: $title-container-width;
     margin: $container-padding;
+    margin-left: $nav-heading-left;
     margin-top: $title-top;
 
-    @include media-query($col-md-width){
+    @include media-query($on-palm){
       margin: $container-padding-mobile;
       margin-top: $title-top-mobile;
-
+      margin-left: $container-padding-mobile;
     }
 
     &.heading-home {
@@ -83,8 +84,10 @@
         top: $title-top-home;
         margin-top: $title-top-home;
 
-        @include media-query($col-md-width) {
+        @include media-query($on-palm) {
             margin-top: $title-top-home-mobile;
+            margin: $container-padding-mobile;
+            margin-left: $title-left-home-mobile;
         }
 
         h1 {
@@ -113,6 +116,11 @@
             1px -1px 0 $text-color,
             -1px 1px 0 $text-color,
             1px 1px 0 $text-color;
+
+        @include media-query($on-palm){
+            font-size:$font-md;
+
+        }
     }
 
 }

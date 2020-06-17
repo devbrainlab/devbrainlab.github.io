@@ -27,3 +27,11 @@ ls
 
 * Generate a .bib file and put it in _bibliography
 * if there is a .pdf that matches the bibtex key, it will be linked to
+
+# Installation
+
+* (write up npm installation)
+* have to manually install blogdown
+
+# Build & Deploy
+
