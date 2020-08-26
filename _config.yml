@@ -70,6 +70,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - octopress-minify-html
+  - jekyll-include-cache
 
 # pages that have the footer hidden by default
 hidden_footer: 

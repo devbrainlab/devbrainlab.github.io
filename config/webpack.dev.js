@@ -49,4 +49,8 @@ module.exports = Merge(CommonConfig, {
     ],
     hot: false,
   },
+  watchOptions: {
+      aggregateTimeout: 1000,
+      ignored: ['**/cites/**']
+  }
 });

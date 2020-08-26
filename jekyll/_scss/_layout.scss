@@ -192,6 +192,7 @@
     height: 90%;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-right: 0;
   }
 
 }
@@ -217,9 +218,16 @@
 
   @include media-query($on-palm){
     height: 100px;
-    max-width: 25%;
+    max-width: 75%;
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  &.portrait-wrap {
+    @include media-query($on-palm){
+      min-height: 300px;
+      max-width: 65%;
+    }
   }
 }
 

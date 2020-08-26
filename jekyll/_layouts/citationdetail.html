@@ -4,7 +4,6 @@
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
 <head>
-    {% include head.html %}
     <link href="/assets/app.css" rel="stylesheet">
 </head>
 
@@ -13,6 +12,11 @@
     	<h4 class="paper-year">{{ page.entry.year }}</h4>
         <h2 class="paper-title">{{ page.entry.title }}</h2>
         <p class="paper-authors">{{ page.entry.author }}</p>
+        {%- if page.entry.url -%}
+        <p><a href="{{ page.entry.url }}" class="paper-link">{{ page.entry.url }}</a></p>
+        {%- elsif page.entry.doi -%}
+        <p><a href="https://doi.org/{{ page.entry.doi }}" class="paper-link">{{ page.entry.doi }}</a></p>
+        {%- endif -%}
         <p class="paper-abstract">{{ page.entry.abstract }}</p>
 		<h4>Cite this paper:</h4>
         <pre>{{ page.entry.bibtex }}</pre>

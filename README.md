@@ -31,7 +31,7 @@ ls
 # Installation
 
 * (write up npm installation)
-* have to manually install blogdown
+* have to manually install blogdown, or use npm run install:R
 
 # Build & Deploy
 

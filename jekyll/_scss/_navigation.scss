@@ -37,7 +37,7 @@ $underline-animate: all 0.2s ease-in-out;
     flex-wrap: nowrap;
     overflow: auto;
 
-    @include media-query($half-screen) {
+    @include media-query($three-quarter-screen) {
         max-width: 100%;
         flex-wrap: wrap;
         padding-bottom: 1rem;
@@ -51,7 +51,6 @@ $underline-animate: all 0.2s ease-in-out;
     transition: all #{$nav-slidein}s cubic-bezier(0.79, 0.33, 0.14, 0.53);
     transform: translateX(-100%);
 
-
     &__links {
         height: 100%;
         width: 50%;
@@ -60,7 +59,7 @@ $underline-animate: all 0.2s ease-in-out;
         padding: $nav-padding;
         padding-top: $nav-padding-top;
 
-        @include media-query($half-screen) {
+        @include media-query($three-quarter-screen) {
             max-width: 100%;
             width: 100%;
             padding-bottom: 1rem;
@@ -79,8 +78,9 @@ $underline-animate: all 0.2s ease-in-out;
             // padding-left: $nav-heading-left;
             border-bottom: 1px solid lighten($link-color, 40%);
             
-            @include media-query($half-screen){
+            @include media-query($three-quarter-screen){
                 padding-left: $nav-heading-left;
+
             }
 
 
@@ -141,7 +141,7 @@ $underline-animate: all 0.2s ease-in-out;
         font-weight: 300;
         font-size: $font-xs;
 
-        @include media-query($half-screen) {
+        @include media-query($three-quarter-screen) {
             max-width: 100%;
             width: 100%;
             padding-left: 30px;
@@ -169,14 +169,6 @@ $underline-animate: all 0.2s ease-in-out;
 
 
 
-
-
-
-
-
-
-
-
     // nav {
 
     // }
@@ -184,6 +176,7 @@ $underline-animate: all 0.2s ease-in-out;
     nav ul {
         position: relative;
         margin: 0 auto;
+        margin-top: 2rem;
         // padding: 100px;
         list-style: none;
         height: 100%;
@@ -337,14 +330,14 @@ Navigation
 ========================================================================== */
 .nav-toggle {
     position: absolute;
-    top: $title-top + ($font-title/2);
+    top: $nav-toggle-top + $title-top;
     left: $title-left-home;
     z-index: 999999;
     padding: 10px 35px 16px 0px;
     cursor: pointer;
 
     @include media-query($on-palm){
-        top: $title-top;
+        top: $nav-toggle-top-mobile;
         left: $title-left-home-mobile;
     }
 

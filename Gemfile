@@ -20,6 +20,7 @@ group :jekyll_plugins do
    gem 'jekyll-seo-tag'
    gem 'octopress-minify-html'
    gem 'jekyll-tagging'
+   gem 'jekyll-include-cache'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

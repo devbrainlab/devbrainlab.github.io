@@ -34,7 +34,11 @@ $pink-color: #ff00ff;
 	width: 250px;
 	background-color: #ffffff;
 	margin: 10px;
-	transform-style: preserve-3d
+	transform-style: preserve-3d;
+
+	@include media-query($on-palm){
+		width: 25%;
+	}
 }
 
 .gallery-folder-expanded {
@@ -52,6 +56,12 @@ $pink-color: #ff00ff;
 	// position: relative;
 	// overflow: hidden;
 	object-fit: cover;
+	@include media-query($on-palm){
+		width: 50%;
+		margin: 0;
+		padding-top:5%;
+	}
+
 }
 
 .gallery-square {
@@ -90,7 +100,7 @@ $underline-animate: all 0.2s ease-in-out;
 	font-size: 24px;
 
 	&.clicked {
-		background-color: $accent-color;
+		// background-color: $accent-color;
 
 	}
 
@@ -100,6 +110,8 @@ $underline-animate: all 0.2s ease-in-out;
     display: block;
     position: absolute;
     z-index: -1;
+
+
   }
   
   // SIDE
@@ -112,15 +124,7 @@ $underline-animate: all 0.2s ease-in-out;
     transform: skewY(-45deg);
   }
   
-  // // BOTTOM
-  // &:after {
-  //   border-image: linear-gradient(45deg, $blue-color 0%, $pink-color 100%);
-  //   border-image-slice: 1 1 1 0;
-  //   bottom: -0.61em; right: 0.16em;
-  //   width: 100%;
-  //   height: .31em;
-  //   transform: skewX(-45deg);
-  // }
+
 
 	&>div {
 		background-color: $background-color;
@@ -140,9 +144,18 @@ $underline-animate: all 0.2s ease-in-out;
 		transition: $underline-animate;
 		// box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
 
+		// @include media-query($on-palm){
+		// 	height: 40%;
+		// 	width: 40%;
+		// }
+
 		&.clicked {
 			background-color: $accent-color;
 			border-color: $text-color;
+
+			@include media-query($on-palm){
+				box-shadow: 5px 5px $accent-color;
+			}
 		}
 
 		&:before, &:after {
@@ -157,6 +170,9 @@ $underline-animate: all 0.2s ease-in-out;
 			opacity: 0;
 			background-color: $accent-color;
 			left: 20px;
+			@include media-query($on-palm){
+				// bottom: 0px;
+			}
 		}
 
 		&:hover {
@@ -167,6 +183,10 @@ $underline-animate: all 0.2s ease-in-out;
 			&:after {
 				width: 175px;
 				opacity: 1;
+
+				@include media-query($on-palm){
+					width: 50%;
+				}
 			}
 
 			// transition: text-decoration 500ms, color 500ms, border-color 500ms;
@@ -174,6 +194,11 @@ $underline-animate: all 0.2s ease-in-out;
 			// border-color: $accent-color;
 			// text-decoration: underline;
 			// text-decoration-color: $accent-color;
+		}
+
+		@include media-query($on-palm){
+			height: auto;
+			width: 95%;
 		}
 
 		&>div {
@@ -193,6 +218,12 @@ $underline-animate: all 0.2s ease-in-out;
 			line-height: $font-ml;
 			// width: 80%;
 			vertical-align: middle;
+
+			@include media-query($on-palm){
+				padding: 20px;
+				font-size: 1rem;
+
+			}
 		}
 
 		// line-height: 160px;
@@ -229,7 +260,10 @@ $underline-animate: all 0.2s ease-in-out;
 			//
 
 		//
-
+	@include media-query($on-palm){
+		width:95%;
+		height: auto;
+	}
 
 }
 

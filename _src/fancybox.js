@@ -32,7 +32,9 @@ $(document).ready(function() {
 			animationDuration: 500,
 			iframe : {
 				preload:true
-			}
+			},
+			scrolling: 'no',
+			hideScrollbar: true
 			// 'href': this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
 		});
 		return false;

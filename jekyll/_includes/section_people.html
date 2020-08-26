@@ -1,16 +1,17 @@
 <!-- <div class="row inactive-section section-container" id="{{ person.name | slugify }}_container"> -->
-    <div class="row section-container" id="{{ person.name | slugify }}_container">
-        <div class="col-md-3 horz-section-img-wrap" >
+<div class="row section-container portrait-container" id="{{ person.name | slugify }}_container">
+    <div class="col-sm-3 horz-section-img-wrap portrait-wrap" >
         {%- if person.image -%}
                     {% assign portrait_url = "/assets/images/people/" | append: person.image %}
         <div id="{{ person.name | slugify }}" imgsrc="{{ person.image }}" class="portrait-image" height=70% width=70%>
         </div>
         {%- endif -%}
     </div>
-        <div class="col-md-9 horz-section">
+    <div class="col-sm-9 horz-section">
         <h2 class='post-title'>{{ person.name }}</h2>
+        {%- if person.email -%}
+        <p><a href="mailto:{{ person.email }}" class="person-email">{{ person.email }}</a></p>
+        {%- endif -%}
         {{ person.body | markdownify}}
-    	</div>
-
-        
+    </div>
 </div>

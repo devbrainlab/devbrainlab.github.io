@@ -84,6 +84,7 @@ function trace_portraits(){
 			$(trace_overlay).attr('height', "100%");
 			$(trace_overlay).attr('width', "100%");
 			$(trace_overlay).attr('viewBox', "0 0 "+width+" "+height);
+			$(trace_overlay).attr('preserveAspectRatio', "xMidYMid slice");
 			// add class and id to path itself for morphing
 			trace_overlay.children()[0].id = parentname+"_tracepath";
 			trace_overlay.children()[0].classList.add('trace-path');

@@ -52,7 +52,7 @@ function resize_gallery() {
 	let win_width = $(window).width()
 
 	if (win_width <= 600 ){
-		n_cols = 1;
+		n_cols = 2;
 	} else {
 	n_cols = Math.ceil(win_width/400);
 	}

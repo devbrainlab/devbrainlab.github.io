@@ -52,7 +52,10 @@ body {
   min-height: 100vh;
   flex-direction: column;
   background-color: $background-color;
+
 }
+
+
 
 main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
@@ -170,6 +173,7 @@ code {
   border: 1px solid $grey-color-light;
   border-radius: 3px;
   background-color: #eef;
+  font-family: $mono-font;
 }
 
 code {

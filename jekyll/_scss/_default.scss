@@ -20,15 +20,19 @@ $content-width:    1000px !default;
 
 // Page Titles
 $title-width: 100%;
-$title-top: 3rem;
-$title-top-mobile: 5rem;
+$title-top: 6rem;
+$title-top-mobile: 7rem;
 $title-shift: -50%;
 // page title on the homepage
-$title-top-home: 10%;
-$title-top-home-mobile: 40%;
+$title-top-home: 15rem;
+$title-top-home-mobile: 10rem;
 $title-width-home: 100%;
 $title-left-home: 64px;
 $title-left-home-mobile: 16px;
+
+// nav toggle
+$nav-toggle-top: 3rem;
+$nav-toggle-top-mobile: 3rem;
 
 $red-accent-color: lighten(#EB1555,5%);
 $ltblu-accent-color: #8ECAEF;
@@ -87,6 +91,7 @@ $nav-toggle-left: $title-left-home;
 $nav-toggle-left-mobile: $title-left-home-mobile;
 $nav-toggle-width: 35px;
 
+
 // Navigation overlay
 $title-weight: 700;
 $title-spacing: 4px;
@@ -108,6 +113,7 @@ $half-screen:      840px;
 $on-palm:          768px !default;
 $on-laptop:        800px !default;
 $col-md-width:     992px !default;
+$three-quarter-screen: 1200px;
 
 
 // Mixins -- sorta like functions that can be used elsewhere in the style

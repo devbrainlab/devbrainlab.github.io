@@ -23,7 +23,7 @@
     // @include container($container-padding, $title-container-width);
     // max-width: $title-width;
 
-    height: 65vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,7 +67,7 @@
 .page-heading {
     // color: $background-color;
     // position: absolute;
-    top: $title-top;
+    // top: $title-top;
     width: $title-container-width;
     margin: $container-padding;
     margin-left: $nav-heading-left;
@@ -81,12 +81,15 @@
 
     &.heading-home {
         position: relative;
-        top: $title-top-home;
+        // top: $title-top-home;
         margin-top: $title-top-home;
+        // width: 50%;
+        height: 100%;
+        word-spacing: 100vw; // line breaks between each word
 
         @include media-query($on-palm) {
             margin-top: $title-top-home-mobile;
-            margin: $container-padding-mobile;
+            margin-right: $container-padding-mobile;
             margin-left: $title-left-home-mobile;
         }
 
@@ -264,6 +267,11 @@
     height: 100%;
     width: 100%;
     background-image: linear-gradient(to right, rgba($background-color, 0.8), rgba($background-color, 0));
+    
+    @include media-query($on-palm){
+        background-image: linear-gradient(to right, rgba($background-color, 0.8) 60%, rgba($background-color, 0));
+    
+    }
 }
 
 .section-container {
