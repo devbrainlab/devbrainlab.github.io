@@ -7,6 +7,7 @@
 
 * [Overview](#Overview)
 * [Use](#Use)
+	* [Commands](#Commands)
 	* [Basic Config](#Basic_Configuration)
 	* [About](#About)
 	* [Research](#Research)
@@ -31,6 +32,15 @@ The site is built into `/_site` when using the dev server or building locally, a
 # Use
 
 Daily use, the switches n knobs i made for ya to turn :)
+
+## Commands
+
+After [Installation](#Setup), from the repository root:
+
+* `npm run start` - Start the development server (at `http://localhost:8080/` by default), continually build the site, watching the source directories for changes.
+* `npm run build` - Build a deployable and minified site into `_site`
+* `npm run deploy` - Build a deployable and minified site, copies it into `/docs`, creates a git commit with the `/docs` folder stages, and pushes to github -- updating the served page.
+* `npm run install:R` - Install R dependencies for building `.Rmd` files (if ya upgrade or smth)
 
 ## Basic Configuration
 
@@ -61,7 +71,7 @@ sections:
 
 `/jekyll/research.markdown`
 
-Include your research from a `.bib` file! Bibliography generation uses [jekyll scholar](https://github.com/inukshuk/jekyll-scholar) and is configured in `_config.yml` . Any pdfs in `/jekyll/_papers/` that have the same as a citation key in the `.bib` file will be uploaded & linked from the site, eg. `/jekyll/_papers/authorPaperTitle2020.pdf` for 
+Include your research from a `.bib` file! Bibliography generation uses [jekyll scholar](https://github.com/inukshuk/jekyll-scholar) and is configured in the `scholar` dictionary in `_config.yml` . Text in the body of `research.markdown` will be rendered above the bibliography. For each bibliography entry, a sub-page will be generated with the full citation entry (default in `/cites/`) that loads as an iframe in the page when the details button is clicked -- make sure you have a `url` or `doi` field in the citation!  Any pdfs in `/jekyll/_papers/` that have the same as a citation key in the `.bib` file will be uploaded & linked from the site, eg. `/jekyll/_papers/authorPaperTitle2020.pdf` for 
 
 ```BibTeX
 @article{authorPaperTitle2020,
@@ -71,10 +81,41 @@ Include your research from a `.bib` file! Bibliography generation uses [jekyll s
 }
 ```
 
+### Bibliography Configuration
+
+Aside from the options in `_config.yml:scholar`, you can change...
+
+* Citation style: `/jekyll/_layouts/apa_web.csl` -- see https://github.com/citation-style-language/styles or https://www.zotero.org/styles
+* Layout for overlaid details page: `/jekyll/_layouts/citationdetail.html` 
+* Layout for entry in main bibliography: `/jekyll/_layouts/citation.html`
 
 ## People
 
+`/jekyll/people.markdown`
+
+Similar to [About](#About), for each person add an entry in the `people` array in the yaml header. Image filenames are relative to the `/jekyll/images/people` directory.
+
+```yaml
+people:
+  - name: Person 1
+    image: person_1.jpg
+    email: fake-email@domain.com
+    body: Description of person!!!
+  - name: Person 1
+    image: person_1.jpg
+    email: fake-email@domain.com
+    body: Description of person!!!
+```
+
+The portrait fading effect is implemented like:
+
+* `/config/webpack.common.js` - the `image-trace-loader` generates outline svgs when the site is built, and is configured with the `options` field
+* `/_src/portrait_trace_loader.js` - dynamically add generated images to page at build and configure scroll effect
+
+
 ## Gallery
+
+
 
 ## News
 
@@ -84,8 +125,10 @@ Include your research from a `.bib` file! Bibliography generation uses [jekyll s
 ## Locations reference
 
 where do i put this....
-* **Images** : `/jekyll/images/`
+* **General Images** : `/jekyll/images/` (use `/assets/images/...` in links)
+* **Portait Images** : `/jekyll/images/people/` (for People page)
 * **R Markdown Documents**: `/jekyll/_rmd/`
+
 
 
 # Setup
