@@ -1,4 +1,8 @@
-# kate_site
+# welcome to
+
+![Kate Site](jekyll/images/site_title_flaming.gif)
+
+
 
 ## Components
 
