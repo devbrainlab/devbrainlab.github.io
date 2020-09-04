@@ -45,7 +45,7 @@ Daily use, the switches n knobs i made for ya to turn :)
 
 `/jekyll/about.markdown`
 
-Declare each section in the about page in the yaml header `sections` array. The `body` can include markdown! I recommend using a set of visually related symbols for the images, but ofc do whatever you'd like :)
+Declare each section in the about page in the yaml header `sections` array. The `body` can include markdown! I recommend using a set of visually related symbols for the images, but ofc do whatever you'd like :). Any text outside of the yaml header will be rendered above the sections.
 
 ```yaml
 sections:
@@ -60,6 +60,17 @@ sections:
 ## Research
 
 `/jekyll/research.markdown`
+
+Include your research from a `.bib` file! Bibliography generation uses [jekyll scholar](https://github.com/inukshuk/jekyll-scholar) and is configured in `_config.yml` . Any pdfs in `/jekyll/_papers/` that have the same as a citation key in the `.bib` file will be uploaded & linked from the site, eg. `/jekyll/_papers/authorPaperTitle2020.pdf` for 
+
+```BibTeX
+@article{authorPaperTitle2020,
+  title = {Paper Title},
+  author = {Author},
+  year = {2020}
+}
+```
+
 
 ## People
 
