@@ -7,6 +7,12 @@
 
 * [Overview](#Overview)
 * [Use](#Use)
+	* [Basic Config](#Basic_Configuration)
+	* [About](#About)
+	* [Research](#Research)
+	* [People](#People)
+	* [Gallery](#Gallery)
+	* [News](#News)
 * [Setup](#Setup)
 * [Deployment](#Deployment)
 * [Hackin](#Hack_yr_own_site_why_dont_ya)
@@ -29,9 +35,9 @@ Daily use, the switches n knobs i made for ya to turn :)
 ## Basic Configuration
 
 * Most global site configuration options are in the jekyll configuration file: `_config.yml`
-** Metadata: the `title`, `email`, etc. fields are used in site elements as well as metadata used by search engines. The description and email appear in the nav menu, so be sure to change them!
-** Social: any defined usernames (like `github_username`) will be included in the site navigation menu
-** [Scholar](https://github.com/inukshuk/jekyll-scholar): Options for building the research page from a BibTeX `.bib` file. Set the `source` and `bibliography` options to locate the directory and `.bib` file, respectively. Detail pages for each citation are generated using the `details_layout` and stored in `details_dir`.
+	* Metadata: the `title`, `email`, etc. fields are used in site elements as well as metadata used by search engines. The description and email appear in the nav menu, so be sure to change them!
+	* Social: any defined usernames (like `github_username`) will be included in the site navigation menu
+	* [Scholar](https://github.com/inukshuk/jekyll-scholar): Options for building the research page from a BibTeX `.bib` file. Set the `source` and `bibliography` options to locate the directory and `.bib` file, respectively. Detail pages for each citation are generated using the `details_layout` and stored in `details_dir`.
 * Site stylesheets that control appearance are located in `jekyll/_scss` and most parameters are defined in `_default.scss`
 * Build scripts can be tweaked in the `scripts` dictionary in `package.json` 
 
@@ -55,6 +61,11 @@ sections:
 
 `/jekyll/research.markdown`
 
+## People
+
+## Gallery
+
+## News
 
 
 
