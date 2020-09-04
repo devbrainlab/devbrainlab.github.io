@@ -115,12 +115,64 @@ The portrait fading effect is implemented like:
 
 ## Gallery
 
+`/jekyll/
+
+Put folders of images in `/jekyll/images/gallery/` and add entries to the header like...
+
+```yaml
+folders:
+  - path: gallery/folder1
+    name: Folder One
+  - path: gallery/folder2
+    name: Folder Two
+```
 
 
 ## News
 
+`/jekyll/news.markdown` and `/jekyll/_posts/`
 
+Make blog posts by making `.markdown` files in `/jekyll/_posts/` with names with format `YYYY-MM-DD-short-post-title.markdown` . Start each post with the yaml header:
 
+```yaml
+---
+title: Post Title
+author: Author (optional)
+layout: post
+date:   2020-01-10
+tags: strawberries watermelon
+---
+```
+
+where `layout` must be `post` and `date` must be a jekyll-interpretable date, but all others can be any strings. Tags make the traditional blog interlink cloud. 
+
+Posts support all markdown features of jekyll + kramdown. One perhaps non-obvious feature is syntax highlighting like
+
+```r
+{% highlight r %}
+# just showin a lil syntax highlighting
+
+a <- 1
+b <- "apple"
+# who cares if we get errors
+c <- a+b
+
+{% endhighlight %}
+```
+
+### Posting R Markdown Documents
+
+Just for u, just for funzies, you can also use include R markdown documents!
+
+Include an .Rmd in `/jekyll/_rmd` with the same yaml header format as a normal post, sit back and dear lord it just might work. 
+
+Rmd integration uses the R scripts in `/R/`:
+
+* `blogdown_build.R` and `blogdown_serve.R` - called by scripts in `package.json`, build and serve site using custom build routine
+* `build.R` - build wrapper function, list rmd files and prepare arguments for build call
+* `build_one.R` - Build a single .Rmd file if it has been updated since the last build. 
+
+It requires `knitr`, `blogdown`, and `xfun` to be installed (see `install_deps.R`)
 
 ## Locations reference
 
@@ -129,17 +181,22 @@ where do i put this....
 * **Portait Images** : `/jekyll/images/people/` (for People page)
 * **R Markdown Documents**: `/jekyll/_rmd/`
 
-
-
 # Setup
 
 Configure local build, install packages.
 
-
-
-# Deployment
-
-Build the site and upload it!
+* If you haven't already, install `npm`: 
+	* macOS: use homebrew!
+	  ```
+	  brew install node
+	  ```
+	* windows: use their installer! https://www.npmjs.com/get-npm
+	* linux: it's probably something like `package-mgr install npm` !!
+* From the repository root, install packages:
+  ```
+  npm install
+  ```
+* You should be good! use the [commands](#Commands)!
 
 # Hack yr own site why dont ya
 
@@ -160,47 +217,4 @@ Getting a little deeper to customize the site
 
 ### layouts
 
-
-
-
-
-
-
-------------
-
-
-## Components
-
-### Jekyll
-
-jekyll structures the pages, handles the liquid tag conversion, templating, etc. 
-
-### Webpack
-
-webpack does tree-shaking js transpiling
-
-## Files
-
-* Gemfile - lists *logical* ruby package dependencies
-* Gemfile.lock - lists *actual* ruby versions used to build the page
-ls
-* \_config.yml - Jekyll configuration
-
-## Folders
-
-* config - webpack configurations
-* pages - jekyll folder w/ posts/pages etc.
-* src - webpack sources
-
-## Citations & References
-
-* Generate a .bib file and put it in _bibliography
-* if there is a .pdf that matches the bibtex key, it will be linked to
-
-# Installation
-
-* (write up npm installation)
-* have to manually install blogdown, or use npm run install:R
-
-# Build & Deploy
 

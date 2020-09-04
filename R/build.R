@@ -12,12 +12,6 @@ build_one = function(io) {
   }
 }
 
-
-
-
-
-
-
 # Rmd files under the root directory
 rmds = list.files("jekyll/_rmd", "[.]Rmd$", recursive = T, full.names = T)
 # change directory to _posts
