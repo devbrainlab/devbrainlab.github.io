@@ -10,16 +10,8 @@ const webpack = require('webpack');
 module.exports = {
   entry: {
     app: './_src/index.js',
-    // portraits: './_src/portrait_trace_loader.js',
   },
   plugins: [
-    // new FaviconsWebpackPlugin({
-    //   logo: './icon.png',
-    // }),
-    // new MiniCssExtractPlugin({
-    //   filename: isDevelopment ? '[name].css' : '[name].[hash].css',
-    //   chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css'
-    // }),
     new ExtractTextPlugin('[name].css'),
     new CopyWebpackPlugin([{
       from: path.resolve('jekyll/images'),
@@ -35,9 +27,6 @@ module.exports = {
       'window.jQuery': 'jquery'
     })
   ],
-  // resolve: {
-  //   extensions: ['.js', '.jsx', '.scss']
-  // },
   module: {
     rules: [
       {
@@ -66,24 +55,7 @@ module.exports = {
         test: /\.svg$/,
         loader: 'svg-inline-loader'
     },
-      // {
-      //   test: /\.(css|scss)$/,
-      //   use: ExtractTextPlugin.extract({
-      //     fallback: 'style-loader',
-      //     use: [
-      //       { loader: 'css-loader', options: { importLoaders: 1 } },
-      //       {
-      //         loader: 'postcss-loader',
-      //         options: {
-      //           config: {
-      //             path: 'config/postcss.config.js',
-      //           },
-      //         },
-      //       },
-      //       { loader: 'sass-loader' },
-      //     ],
-      //   }),
-      // },
+
             {
         test: /\.(css|scss)$/,
         use: ExtractTextPlugin.extract({
@@ -102,31 +74,6 @@ module.exports = {
           ],
         }),
       },
-      // {
-      //   test: /\.s(a|c)ss$/,
-      //   exclude: /\.module.(s(a|c)ss)$/,
-      //   loader: [
-      //     isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
-      //     'css-loader',
-      //     {
-      //       loader: 'sass-loader',
-      //       options: {
-      //         sourceMap: isDevelopment
-      //       }
-      //     }
-      //   ]
-      // },
-      // {
-      //   test: /\.s[ac]ss$/i,
-      //   use: [
-      //     // Creates `style` nodes from JS strings
-      //     'style-loader',
-      //     // Translates CSS into CommonJS
-      //     'css-loader',
-      //     // Compiles Sass to CSS
-      //     'sass-loader',
-      //   ],
-      // },
       {
         test: /\.(png|jpg|gif)$/,
         use: [
@@ -150,24 +97,6 @@ module.exports = {
           }
         ],
       },
-      // trace portraits for 'people' page from _images/people
-      // {
-      //   test: /\.(gif|png|jpe?g)$/i,
-      //   include: [
-      //   path.resolve(__dirname, "images/people")
-      //   ],
-      //   use: [
-      //     {
-      //       loader: 'image-trace-loader'
-      //     }
-      //   ]
-      // }
-      // {
-      //   test: /\.(woff|woff2|eot|ttf|otf)$/,
-      //   use: [
-      //     'file-loader',
-      //   ],
-      // },
     ],
   },
 };

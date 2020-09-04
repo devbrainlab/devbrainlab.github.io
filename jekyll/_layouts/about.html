@@ -16,6 +16,8 @@ layout: page
     - body
     -->
     <!-- iterate through sections -->
+    {{ content }}
+
     {%- for section in page.sections -%}
     {% include section_about.html section=section %}
     <!-- end iteration -->
