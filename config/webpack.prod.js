@@ -18,8 +18,8 @@ module.exports = Merge(CommonConfig, {
   mode:'production',
   plugins: [
     new HtmlWebpackPlugin({
-      template: './_src/template/default.html',
-      filename: '../jekyll/_layouts/default.html',
+      template: path.resolve('_src/template/default.html'),
+      filename: path.resolve('jekyll/_layouts/default.html'),
       // base:"https//devbrainlab.org"
     }),
     // new CleanWebpackPlugin(['_site/assets'], { root: path.resolve(__dirname, '../jekyll'), verbose: true }),
