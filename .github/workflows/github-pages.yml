@@ -3,7 +3,7 @@ name: Build and deploy lab website to github pages
 on:
   push:
     branches:
-      - autobuild
+      - master
 
 jobs:
   github-pages:
