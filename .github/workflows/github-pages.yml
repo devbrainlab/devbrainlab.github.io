@@ -19,13 +19,20 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '14'
+      - name: Install Ruby
+        uses: actions/setup-ruby@v1
       - name: Install and Build
         run: |
           npm install
           npm run install:R
+          gem install bundler
+          bundle install
+      - name: Build
+        run: |
           npm run build
       - name: Deploy to github pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
+          cname: devbrainlab.org
