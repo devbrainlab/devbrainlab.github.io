@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - bump-versions
 
 jobs:
   github-pages:
