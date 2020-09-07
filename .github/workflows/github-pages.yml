@@ -21,7 +21,9 @@ jobs:
           node-version: '14'
       - name: Install Ruby
         uses: actions/setup-ruby@v1
-      - name: Install and Build
+        with:
+          ruby-version: "2.6"
+      - name: Install Dependencies
         run: |
           npm install
           npm run install:R
