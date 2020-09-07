@@ -12,14 +12,14 @@ module.exports = Merge(CommonConfig, {
   output: {
     filename: '[name]-[hash].bundle.js',
     chunkFilename: '[name]-[chunkhash].js', 
-    path: path.resolve('assets'),
+    path: path.resolve('_site/assets'),
     publicPath: '/assets/',
   },
   mode:'production',
   plugins: [
     new HtmlWebpackPlugin({
-      template: './_src/template/default.html',
-      filename: '../jekyll/_layouts/default.html',
+      template: path.resolve('_src/template/default.html'),
+      filename: path.resolve('jekyll/_layouts/default.html'),
       // base:"https//devbrainlab.org"
     }),
     // new CleanWebpackPlugin(['_site/assets'], { root: path.resolve(__dirname, '../jekyll'), verbose: true }),
