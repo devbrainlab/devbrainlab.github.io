@@ -12,7 +12,7 @@ module.exports = Merge(CommonConfig, {
   output: {
     filename: '[name]-[hash].bundle.js',
     chunkFilename: '[name]-[chunkhash].js', 
-    path: path.resolve('assets'),
+    path: path.resolve('_site/assets'),
     publicPath: '/assets/',
   },
   mode:'production',
