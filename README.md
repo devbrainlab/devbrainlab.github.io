@@ -27,7 +27,7 @@ This site is built with **jekyll** and **webpack** and uses **npm** to manage pa
 * **Webpack** (https://webpack.js.org/) packages and minifies the site and handles the development server. (see `/config`)
 * **npm** (https://www.npmjs.com/) installs necessary packages and houses the scripts used to build, serve, and deploy the site (see `package.json`, particularly `"scripts"`)
 
-The site is built into `/_site` when using the dev server or building locally, and the site is deployed via github pages from the `/docs` folder.
+The site is built into `/_site` when using the dev server or building locally, and the site is deployed via github pages from the `gh-pages` branch built using github actions
 
 # Use
 

@@ -126,4 +126,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - '*.Rmd'
+
+keep_files:
+  - assets
   
