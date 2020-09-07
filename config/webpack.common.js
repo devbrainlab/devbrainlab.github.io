@@ -2,7 +2,7 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 // const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const isDevelopment = process.env.NODE_ENV === 'development'
 const webpack = require('webpack');
@@ -13,14 +13,18 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin('[name].css'),
-    new CopyWebpackPlugin([{
-      from: path.resolve('jekyll/images'),
-      to: 'images/',
-    }]),
-    new CopyWebpackPlugin([{
-      from: path.resolve('jekyll/_papers'),
-      to: 'papers/',
-    }]),
+    new CopyPlugin({
+      patterns: [
+      {
+        from: path.resolve('jekyll/images'),
+        to: 'images/',
+      },
+      {
+        from: path.resolve('jekyll/_papers'),
+        to: 'papers/',
+      } 
+      ]
+    }),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
