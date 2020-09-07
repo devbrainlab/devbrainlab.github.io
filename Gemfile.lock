@@ -124,13 +124,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bibtex-ruby (>= 5.1.0)
   jekyll (~> 4.1.1)
   jekyll-feed (~> 0.12)
   jekyll-include-cache
-  jekyll-scholar (~> 6.5)
+  jekyll-scholar (~> 6.8)
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-tagging
+  kramdown (>= 2.3.0)
   minima (~> 2.5)
   octopress-minify-html
   rouge (~> 3.14)
