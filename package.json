@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run-script clean:project && webpack --env=dev --progress --profile --colors && concurrently \"webpack-dev-server --env=dev\" \"bundle exec jekyll serve --profile\" \"Rscript R/blogdown_serve.R\"",
     "build": "npm run-script clean:project && Rscript R/blogdown_build.R; NODE_ENV=production webpack --env=prod --progress --profile --colors && JEKYLL_ENV=production bundle exec jekyll build",
-    "build:deploy": "npm run-script clean:project && Rscript R/blogdown_build.R; NODE_ENV=production webpack --env=prod --progress --profile --colors && JEKYLL_ENV=production bundle exec jekyll build --baseurl /kate_site",
+    "build:deploy": "npm run-script clean:project && Rscript R/blogdown_build.R; NODE_ENV=production webpack --env=prod --progress --profile --colors && JEKYLL_ENV=production bundle exec jekyll build",
     "deploy": "npm run-script clean:docs && npm run-script build:deploy && cp -r _site/ docs/ && cp -r assets docs && touch docs/.nojekyll && git add ./docs && git commit -m \"deploy site\" && git push",
     "clean:docs": "rimraf ./docs",
     "clean:project": "rimraf ./_site ./assets",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sneakers-the-rat/kate_site.git"
+    "url": "git+https://github.com/devbrainlab/lab_website.git"
   },
   "author": "jonny saunders",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sneakers-the-rat/kate_site/issues"
+    "url": "https://github.com/devbrainlab/lab_website/issues"
   },
-  "homepage": "https://github.com/sneakers-the-rat/kate_site#readme",
+  "homepage": "https://github.com/devbrainlab/lab_website/#readme",
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",

@@ -13,14 +13,14 @@ module.exports = Merge(CommonConfig, {
     filename: '[name]-[hash].bundle.js',
     chunkFilename: '[name]-[chunkhash].js', 
     path: path.resolve('assets'),
-    publicPath: '/kate_site/assets/',
+    publicPath: '/assets/',
   },
   mode:'production',
   plugins: [
     new HtmlWebpackPlugin({
       template: './_src/template/default.html',
       filename: '../jekyll/_layouts/default.html',
-      // base:"http://jon-e.net/kate_site/"
+      // base:"https//devbrainlab.org"
     }),
     // new CleanWebpackPlugin(['_site/assets'], { root: path.resolve(__dirname, '../jekyll'), verbose: true }),
     new webpack.LoaderOptionsPlugin({
