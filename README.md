@@ -39,7 +39,6 @@ After [Installation](#Setup), from the repository root:
 
 * `npm run start` - Start the development server (at `http://localhost:8080/` by default), continually build the site, watching the source directories for changes.
 * `npm run build` - Build a deployable and minified site into `_site`
-* `npm run deploy` - Build a deployable and minified site, copies it into `/docs`, creates a git commit with the `/docs` folder stages, and pushes to github -- updating the served page.
 * `npm run install:R` - Install R dependencies for building `.Rmd` files (if ya upgrade or smth)
 
 ## Basic Configuration
@@ -196,7 +195,25 @@ Configure local build, install packages.
   ```
   npm install
   ```
+* Install Ruby dependencies -- you may have to run these as root (`sudo`) depending on your ruby configuration. macOS has ruby preinstalled, other operating systems may need to manually install it.
+  * Install bundler (if you dont already have it)
+    ```
+    gem install bundler
+    ```
+  * Install ruby gems
+    ```
+    bundle install
+    ```
+* Install R and R Dependencies
+  * If you don't have R, install it! (`brew install r`)
+  * Use `npm run install:R` to install R dependencies
 * You should be good! use the [commands](#Commands)!
+
+# Deploying
+
+The page automatically builds and deploys on pushes to the `master` branch using Github Actions (as defined in `/.github/workflows/github-pages.yml`) to the `gh-pages` branch.
+
+To avoid work in progress being deployed to the main site, i recommend working in a different branch and pulling back to the main branch with pull requests.
 
 # Hack yr own site why dont ya
 
