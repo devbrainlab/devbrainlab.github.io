@@ -25,13 +25,13 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 #baseurl: "kate_site" # the subpath of your site, e.g. /blog
-url: "http://jon-e.net" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://devbrainlab.org" # the base hostname & protocol for your site, e.g. http://example.com
 author: Jonny Saunders
 logo: images/logo.png
 
 # facebook_username: 
 # flickr_username: "test"
-github_username: "test"
+github_username: "katemills"
 twitter_username: drkatemills
 # instagram_username: ""
 # linkedin_username: ""
