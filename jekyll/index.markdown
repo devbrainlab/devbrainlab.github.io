@@ -1,6 +1,6 @@
 ---
 layout: home
-title: The Kate Lab
+title: Developing Brains in Context Lab
 ---
 
 <div class="generative-homepage">
