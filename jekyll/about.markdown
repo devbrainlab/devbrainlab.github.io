@@ -2,19 +2,16 @@
 layout: about
 title: About
 sections:
-  - title: Section 1
-    image: /assets/images/glyph/placeholder_1.svg
-    body: Deserunt in reprehenderit elit eu ex dolore commodo voluptate exercitation dolor officia ut ea proident cillum in et excepteur pariatur [dolore](http://localhost:3000/1) in tempor et magna ut et cillum nisi qui reprehenderit ullamco excepteur amet pariatur ut excepteur non officia cillum dolore fugiat proident in esse deserunt cupidatat qui exercitation ex consectetur eiusmod eu consectetur ut sunt nulla sit sit [culpa fugiat consequat](http://localhost:3000/2) nostrud aliquip id consectetur proident laboris eiusmod consectetur ut ex tempor nisi 
-  - title: Section 2
+  - title: The developing brain is awesome
+    image: /assets/images/glyph/brain_spots.svg
+    body: Our research investigates how the prolonged course of brain development allows humans to learn how to navigate our complex social environment. We approach our research from a life course history perspective and endeavour to co-create our projects with members of the population we study. [Read this primer outlining how the adolescent brain is awesome.](https://kids.frontiersin.org/article/10.3389/frym.2020.00075)
+  - title: Science needs to be accessible to all 
     image: /assets/images/glyph/placeholder_2.svg
-    body: Id esse do ex pariatur veniam adipisicing ullamco pariatur esse duis in mollit in in id qui duis laborum sint esse id sunt est incididunt reprehenderit sit dolor veniam commodo et occaecat ad sint fugiat ex exercitation sint sed fugiat officia nostrud [sunt est reprehenderit nulla consectetur cupidatat](http://localhost:3000/3) in dolor in aliqua do et labore adipisicing ad ex reprehenderit sit deserunt est nisi culpa labore enim qui deserunt anim dolor sit culpa sunt irure sunt occaecat id aliquip eu est deserunt ad officia aute excepteur ullamco tempor pariatur magna nisi ea dolor cupidatat amet cillum excepteur deserunt amet ex occaecat.
-  - title: Section 3
-    image: /assets/images/glyph/placeholder_3.svg
-    body: Deserunt in reprehenderit elit eu ex dolore commodo voluptate exercitation dolor officia ut ea proident cillum in et excepteur pariatur dolore in tempor et magna ut et cillum nisi qui reprehenderit ullamco excepteur amet pariatur ut excepteur non officia cillum dolore fugiat proident in esse deserunt cupidatat qui exercitation ex consectetur eiusmod eu consectetur ut sunt nulla sit sit culpa fugiat consequat nostrud aliquip id consectetur proident laboris eiusmod consectetur ut ex tempor nisi 
+    body: 
 
 
 ---
 
 
 
-Id esse do ex pariatur veniam adipisicing ullamco pariatur esse duis in mollit in in id qui.
+The Developing Brains in Context Lab is part of the Department of Psychology at the University of Oregon
