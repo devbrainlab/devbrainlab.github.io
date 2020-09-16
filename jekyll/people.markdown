@@ -2,7 +2,7 @@
 layout: people
 title: people
 people:
-  - name: Kate Mills (she/her)
+  - name: Kate Mills she/her
     image: Kate.jpg
     email: klmills@uoregon.edu
     body:  [CV](http://devbrainlab.org/assets/CVs/KathrynLMills_CV.pdf)
