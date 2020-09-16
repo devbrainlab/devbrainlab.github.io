@@ -113,3 +113,4 @@ boilerplate
 _site
 screenshots
 .Rproj.user
+.Rhistory
