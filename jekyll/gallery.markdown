@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: Gallery
+title: Resources
 folders:
   - path: gallery/folder1
     name: Folder One
