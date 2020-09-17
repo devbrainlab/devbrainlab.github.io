@@ -32,7 +32,7 @@ url: "http://devbrainlab.org" # the base hostname & protocol for your site, e.g.
 
 # colors
 background_color: "#111111"
-accent_color: "#FF385A"
+accent_color: "#917396"
 
 navigation_pages:
   - about.markdown
