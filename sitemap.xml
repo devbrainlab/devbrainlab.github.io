@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://devbrainlab.org/2020/01/10/rmarkdown-demo_render.html</loc>
-<lastmod>2020-01-10T00:00:00+00:00</lastmod>
-</url>
-<url>
 <loc>http://devbrainlab.org/2020/09/15/new-website.html</loc>
 <lastmod>2020-09-15T00:00:00+00:00</lastmod>
 </url>
@@ -134,12 +130,6 @@
 </url>
 <url>
 <loc>http://devbrainlab.org/cites/fairAtypicalDefaultNetwork2010a.html</loc>
-</url>
-<url>
-<loc>http://devbrainlab.org/tag/strawberries.html</loc>
-</url>
-<url>
-<loc>http://devbrainlab.org/tag/watermelon.html</loc>
 </url>
 <url>
 <loc>http://devbrainlab.org/tag/hackers.html</loc>
