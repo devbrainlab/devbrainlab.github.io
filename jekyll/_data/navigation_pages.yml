@@ -4,14 +4,8 @@ pages:
   url: about.html
   image: test
 
-- title: Research
-  url: research.html
-
 - title: People
   url: people.html
 
-- title: Gallery
-  url: gallery.html
-
-- title: News
-  url: news.html
+- title: Research
+  url: research.html

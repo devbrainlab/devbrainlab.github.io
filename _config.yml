@@ -67,7 +67,7 @@ plugins:
 # pages that have the footer hidden by default
 hidden_footer: 
   - "home"
-  - "gallery"
+#  - "gallery"
 
 
 # where the site will build to
