@@ -30,15 +30,15 @@ Beginning in 2014, several junior researchers from sites around the world began 
 
 ABCD study secondary analyses & workshops
 ----------
-We actively use the ABCD dataset in investigations of how digital technology use relates to brain function, cognition, and behavior. In August 2019, we hosted an [NIMH-funded workshop]{https://abcdworkshop.github.io/} on using the ABCD data to relate brain development to mental health, We are planning to host another NIMH-funded workshop on longitudinal modeling of the ABCD dataset in summer 2021, 
+We actively use the ABCD dataset in investigations of how digital technology use relates to brain function, cognition, and behavior. In August 2019, we hosted an [NIMH-funded workshop](https://abcdworkshop.github.io/) on using the ABCD dataset to relate brain development to mental health, We are planning to host another NIMH-funded workshop on longitudinal modeling of the ABCD dataset in summer 2021,
 
 Navigating Networks
 ----------
 The Navigating Networks study focuses on adolescent social and cognitive development during the transition to middle school using longitudinal social network, brain, and cognitive assessments.
 
-Social and digital adaptation to social distancing
+Social and digital adaptation to "social" distancing
 ----------
-This 10-week longitudinal study examined how the use of digital technology impacts feelings of social connectedness and well-being in adolescents during a period of increased physical social distancing. 
+This 10-week longitudinal study examined how the use of digital technology impacts feelings of social connectedness and well-being in adolescents during a period of increased physical distancing. 
 
 MoM Study
 ----------
@@ -50,7 +50,7 @@ Co-created study with local middle school to examine how the use of in-class tab
 
 Peer influences study
 ----------
-We collaborate with researchers at the Oregon Research Institute on projects using data collected from the [Peer Influences study]{https://grantome.com/grant/NIH/R01-DA034062-01A1}.
+We collaborate with researchers at the Oregon Research Institute on projects using data collected from the [Peer Influences study](https://grantome.com/grant/NIH/R01-DA034062-01A1).
 
 Individual Differences in Functional Mentalizing
 ----------
