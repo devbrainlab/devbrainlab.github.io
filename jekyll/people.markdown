@@ -32,6 +32,6 @@ people:
     body: Bio forthcoming
   - name: Clare McCann
     image: Clare.png
-    email: mccann2@uoregon.edu
+    email: cmccann2@uoregon.edu
     body: Clare graduated June of 2020 from the University of Oregon with honors in Psychology, minors in Special Education and Women's Gender & Sexuality Studies. Her research interests include (1) understanding the impact of early life stress on mental health, academic performance, and self-perception and (2) identifying the best ways to support academic competence and confidence in children and adolescents who have experienced adversity, and/or have been diagnosed with neurodevelopmental disorders or mental illness. Clare’s pronouns are she/her/hers.
 ---
