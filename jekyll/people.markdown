@@ -5,7 +5,7 @@ people:
   - name: Kate Mills
     image: Kate.jpg
     email: klmills@uoregon.edu
-    body: Kate is the PI of the Developing Brains in Context Lab. She is a first generation student from Louisville KY and graduated with a PhD from University College London in 2015. [CV](/assets/papers/KathrynLMills_CV.pdf)
+    body: Kate (she/her) is the PI of the Developing Brains in Context Lab. She is a first generation student from Louisville KY and graduated with a PhD from University College London in 2015. [CV](/assets/papers/KathrynLMills_CV.pdf)
   - name: Lucy Whitmore
     image: Lucy.png
     email: lwhitmor@uoregon.edu
@@ -30,4 +30,8 @@ people:
     image: Elizabeth.jpg
     email: emcneill@uoregon.edu
     body: Bio forthcoming
+  - name: Clare McCann
+    image: Clare.png
+    email: mccann2@uoregon.edu
+    body: Clare graduated June of 2020 from the University of Oregon with honors in Psychology, minors in Special Education and Women's Gender & Sexuality Studies. Her research interests include (1) understanding the impact of early life stress on mental health, academic performance, and self-perception and (2) identifying the best ways to support academic competence and confidence in children and adolescents who have experienced adversity, and/or have been diagnosed with neurodevelopmental disorders or mental illness. Clare’s pronouns are she/her/hers.
 ---
