@@ -19,7 +19,7 @@ Social navigation
 
 Changes in brain structure reflect developmental tasks, and the prolonged development of certain neural systems reflects a level of plasticity in adolescence. Indeed, the areas of the brain undergoing the most structural change in adolescence are involved in higher-order processes such as complex social cognition. In our lab, we incorporate the particularly protracted development of complex social cognition in neurodevelopmental models of learning, decision making, and behavior.
 
-Current datasets/projects
+Current projects
 ===============
 
 International collaboration for replicable brain developmental trajectories
