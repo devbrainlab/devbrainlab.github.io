@@ -55,8 +55,3 @@ We collaborate with researchers at the Oregon Research Institute on projects usi
 Individual Differences in Functional Mentalizing
 ----------
 The goal of this project is to gain a better understanding of altercentric interference (the tendency to automatically compute the visual perspective of other people) and its relationship to inhibitory control and functional perspective-taking. The project utilizes a variety of questionnaires and behavioral tasks, and is conducted on an adult population.
-
-Publications
-============
-
-{% bibliography %}
