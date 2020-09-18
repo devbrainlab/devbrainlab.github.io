@@ -9,3 +9,9 @@ pages:
 
 - title: Research
   url: research.html
+
+- title: News
+  url: news.html
+  
+- title: Publications
+  url: publications.html

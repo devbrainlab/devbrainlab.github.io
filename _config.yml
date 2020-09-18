@@ -44,11 +44,12 @@ scholar:
   style: _layouts/apa_web.csl
   bibliography_template: citation
   source: _bibliography
-  bibliography: kate_site.bib
+  bibliography: references.bib
   sort_by: year,month
   order: descending
-  group_by: year
+  group_by: type,year
   group_order: descending
+  type_names: { techreport: Preprints, inproceedings: Presentations}
   repository: _papers
   details_layout: citationdetail.html
   details_link: ""
