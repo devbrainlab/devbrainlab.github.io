@@ -35,7 +35,7 @@ people:
     email: cmccann2@uoregon.edu
     body: Clare graduated June of 2020 from the University of Oregon with honors in Psychology, minors in Special Education and Women's Gender & Sexuality Studies. Her research interests include (1) understanding the impact of early life stress on mental health, academic performance, and self-perception and (2) identifying the best ways to support academic competence and confidence in children and adolescents who have experienced adversity, and/or have been diagnosed with neurodevelopmental disorders or mental illness. Clare’s pronouns are she/her/hers.
   - name: Jeya Anandakumar
-    image: Jeya.jpeg
+    image: Jeya.jpg
     email: anandakumar.jeya@gmail.com
     body: Jeya Anandakumar is an undergraduate student at Portland State University in Portland, Oregon. Jeya and Kate began working together when Kate was a post-doc at OHSU, while Jeya was still in high school. Jeya is majoring in biology and minoring in chemistry with a focus on neuroscience. Her research interest include developmental neuroscience and neurogenetics. In her free time, she enjoys playing the flute and taking dance classes.
 ---
