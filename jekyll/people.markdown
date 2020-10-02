@@ -29,7 +29,7 @@ people:
   - name: Elizabeth McNeilly
     image: Elizabeth.jpg
     email: emcneill@uoregon.edu
-    body: Bio forthcoming
+    body: Elizabeth McNeilly is a second-year doctoral student in Clinical Psychology at the University of Oregon, focusing on the intersection of adolescent development and internalizing psychopathology. In collaboration with Dr. Mills and researchers at UCLA and UC Berkeley, Elizabeth is currently investigating the role of neural and behavioral reward processes in the association of early puberty and internalizing symptoms in the ABCD Study. Under the supervision of Dr. Mills and Dr. Nick Allen, Elizabeth is also exploring linguistic features in daily digital social communication and the associations with well-being and internalizing symptoms in adolescent girls. An overarching aim of her work is to explore the social, cognitive, and affective processes that undergo immense development in the brain during adolescence, conferring potential risk for internalizing psychopathology, but also an opportunity for targeted intervention and the improvement of adolescents’ well-being.
   - name: Clare McCann
     image: Clare.png
     email: cmccann2@uoregon.edu
