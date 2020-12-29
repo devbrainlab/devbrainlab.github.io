@@ -5,7 +5,7 @@ people:
   - name: Kate Mills
     image: Kate.jpg
     email: klmills@uoregon.edu
-    body: Kate (she/her) is the PI of the Developing Brains in Context Lab. She is a first generation student from Louisville KY and graduated with a PhD from University College London in 2015. [CV](/assets/papers/KathrynLMills_CV.pdf)
+    body: Kate (she/her) is the PI of the Developing Brains in Context Lab. She is a first generation student from Louisville KY and received her PhD from University College London in 2015. [CV](/assets/papers/KathrynLMills_CV.pdf)
   - name: Lucy Whitmore
     image: Lucy.png
     email: lwhitmor@uoregon.edu
