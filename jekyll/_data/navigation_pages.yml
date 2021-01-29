@@ -2,7 +2,6 @@ pages:
 
 - title: About
   url: about.html
-  image: test
 
 - title: People
   url: people.html
@@ -15,3 +14,6 @@ pages:
   
 - title: Publications
   url: publications.html
+  
+- title: Anti-racism
+  url: antiracism.html
