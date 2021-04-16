@@ -21,18 +21,17 @@ $content-width:    1000px !default;
 // Page Titles
 $title-width: 100%;
 $title-top: 6rem;
-$title-top-mobile: 7rem;
+$title-top-mobile: 1.5rem;
+$title-right-mobile:7em;
 $title-shift: -50%;
 // page title on the homepage
 $title-top-home: 15rem;
 $title-top-home-mobile: 10rem;
 $title-width-home: 100%;
+$title-width-mobile: 75%;
 $title-left-home: 64px;
 $title-left-home-mobile: 16px;
-
-// nav toggle
-$nav-toggle-top: 3rem;
-$nav-toggle-top-mobile: 3rem;
+$title-home-margin-left: 15%;
 
 $red-accent-color: lighten(#EB1555,5%);
 $ltblu-accent-color: #8ECAEF;
@@ -65,13 +64,14 @@ $detail-font: "Raleway",sans-serif;
 $mono-font: "Cutive Mono",monospace;
 
 $font-size-home: 8rem;
-$font-title: 7rem;
+$font-title: 6.5rem;
 $font-xl: 6em;
 $font-lg: 4em;
 $font-mll: 3em;
 $font-ml: 2em;
 $font-md: 1.5em;
 $font-sm: 1em;
+$font-smrem: 3rem;
 $font-xs: 16px;
 $font-xxs: 12px;
 $font-archive: 14px;
@@ -87,6 +87,9 @@ $list-spacing: 10px;
 
 
 // Nav toggle
+// nav toggle
+$nav-toggle-top: 2rem;
+$nav-toggle-top-mobile: 4rem;
 $nav-toggle-left: $title-left-home;
 $nav-toggle-left-mobile: $title-left-home-mobile;
 $nav-toggle-width: 35px;
@@ -97,15 +100,17 @@ $title-weight: 700;
 $title-spacing: 4px;
 $nav-padding: 100px;
 $nav-padding-top: 50px;
+$nav-margin-left: 30px;
+$nav-margin-left-mobile:20px;
 $nav-weight: 700;
 $nav-n: 5;
 $nav-delay: 0.1;
 $nav-link-duration: 0.5;
 $nav-slidein: 0.2;
-$nav-font-size: $font-xl;
-$nav-font-size-mobile: $font-mll;
-$nav-heading-left: $nav-toggle-left * 2 + $nav-toggle-width;
-$nav-heading-left-mobile: $nav-toggle-left-mobile * 2 + $nav-toggle-width;
+$nav-font-size: $font-lg;
+$nav-font-size-mobile: 2.5em;
+$nav-heading-left: $spacing-unit;
+$nav-heading-left-mobile: $spacing-unit;
 
 
 // Sizes of different media

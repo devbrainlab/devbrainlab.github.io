@@ -85,10 +85,10 @@ module.exports = {
             loader: "image-trace-loader",
             options: {
               // turnPolicy: 'TURNPOLICY_MINORITY',
-              // turdSize: 100,
-              // alphaMax: 1,
+              turdSize: 50,
+              alphaMax: 2,
               // optCurve: true,
-              // optTolerance: 0.2,
+              optTolerance: 0.1,
               // threshold: 'THRESHOLD_AUTO',
               // flipColors: true,
               color: '#0B0B0B',

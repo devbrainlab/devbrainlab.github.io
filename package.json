@@ -5,7 +5,7 @@
   "main": "_src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run-script clean:project && webpack --env=dev --progress --profile --colors && concurrently \"webpack-dev-server --env=dev\" \"bundle exec jekyll serve --profile\" \"Rscript R/blogdown_serve.R\"",
+    "start": "npm run-script clean:project && webpack --env=dev --progress --profile --colors && concurrently \"webpack-dev-server --env=dev\" \"bundle exec jekyll serve\" \"Rscript R/blogdown_serve.R\"",
     "build": "npm run-script clean:project && Rscript R/blogdown_build.R; NODE_ENV=production webpack --env=prod --progress --profile --colors && JEKYLL_ENV=production bundle exec jekyll build --trace",
     "build:deploy": "npm run-script clean:project && Rscript R/blogdown_build.R; NODE_ENV=production webpack --env=prod --progress --profile --colors && JEKYLL_ENV=production bundle exec jekyll build",
     "deploy": "npm run-script clean:docs && npm run-script build:deploy && cp -r _site/ docs/ && cp -r assets docs && touch docs/.nojekyll && git add ./docs && git commit -m \"deploy site\" && git push",
