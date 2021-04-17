@@ -41,7 +41,7 @@ gem "jekyll-scholar", "~> 6.8"
 gem "rouge", "~> 3.14"
 
 
-gem "kramdown", ">= 2.3.0"
+gem "kramdown", ">= 2.3.1"
 
 gem "bibtex-ruby", ">= 5.1.0"
 
