@@ -38,8 +38,8 @@ people:
     image: Jeya.jpg
     email: anandakumar.jeya@gmail.com
     body: Jeya Anandakumar is an undergraduate student at Portland State University in Portland, Oregon. Jeya and Kate began working together when Kate was a post-doc at OHSU, while Jeya was still in high school. Jeya is majoring in biology and minoring in chemistry with a focus on neuroscience. Her research interest include developmental neuroscience and neurogenetics. In her free time, she enjoys playing the flute and taking dance classes.
-  - name: Natasha Freudmann
-    image: Natasha.jpg
-    email: natashaf@uoregon.edu
-    body: Natasha is an undergraduate research assistant in the Developing Brains in Context Lab. She is a senior in the psychology program at the University of Oregon, and is minoring in ethnic studies. Her research interests include developmental psychology, specifically the impact of early childhood adversity on development and mental health in at-risk populations. In her free time, she enjoys riding her bike and doing yoga.
+  - name: Aisha Ghorashian
+    image: Aisha.jpeg
+    email: aghorash@uoregon.edu
+    body: Aisha is an undergraduate student studying Psychology and Political Science with a minor in Global Health. She is interested in public health, specifically in the context of child development, women's health, and public policy. In her free time, she loves to read, listen to podcasts, and exercising!
 ---
