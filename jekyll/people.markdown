@@ -39,7 +39,7 @@ people:
     email: anandakumar.jeya@gmail.com
     body: Jeya Anandakumar is an undergraduate student at Portland State University in Portland, Oregon. Jeya and Kate began working together when Kate was a post-doc at OHSU, while Jeya was still in high school. Jeya is majoring in biology and minoring in chemistry with a focus on neuroscience. Her research interest include developmental neuroscience and neurogenetics. In her free time, she enjoys playing the flute and taking dance classes.
   - name: Aisha Ghorashian
-    image: Aisha.jpeg
+    image: Aisha.jpg
     email: aghorash@uoregon.edu
     body: Aisha is an undergraduate student studying Psychology and Political Science with a minor in Global Health. She is interested in public health, specifically in the context of child development, women's health, and public policy. In her free time, she loves to read, listen to podcasts, and exercising!
 ---
