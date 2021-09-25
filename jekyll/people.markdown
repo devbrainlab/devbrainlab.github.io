@@ -26,4 +26,7 @@ people:
     image: Aisha.jpg
     email: aghorash@uoregon.edu
     body: Aisha is an undergraduate student studying Psychology and Political Science with a minor in Global Health. She is interested in public health, specifically in the context of child development, women's health, and public policy. In her free time, she loves to read, listen to podcasts, and exercising!
+  - name: Alumni
+    image: Jeya.jpg
+    body: Our Alumni have their own page [here!](https://devbrainlab.org/alumni)
 ---
