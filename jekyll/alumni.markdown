@@ -18,7 +18,7 @@ people:
     image: Akhila.png
     email: akhilan@uoregon.edu
     body: Dr, Akhila Nekkanti came to the Prevention Science doctoral program with a B.S. in Neuroscience and is currently studying under the mentorship of Dr. Elizabeth Skowron in the Family Biobehavioral Health Lab. Her doctoral research examined the impacts of early adversity on children’s executive functioning capacities and resting-state neural activity. Her long-term goal is to delineate the type and extent of environmental enrichment necessary for enhancing lasting change in self-regulatory capacity in children facing early caregiving adversity and trauma.
-      - name: Clare McCann
+ - name: Clare McCann
     image: Clare.png
     email: cmccann2@uoregon.edu
     body: Clare graduated June of 2020 from the University of Oregon with honors in Psychology, minors in Special Education and Women's Gender & Sexuality Studies. She is now a graduate student in Jen Silvers' lab at UCLA. 

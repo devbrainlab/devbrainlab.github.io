@@ -18,11 +18,11 @@ people:
     image: Elizabeth.jpg
     email: emcneill@uoregon.edu
     body: Elizabeth McNeilly is a clinical psychology PhD student focusing on the intersection of adolescent development and internalizing psychopathology. In collaboration with researchers at UCLA and UC Berkeley, Elizabeth is currently investigating the [role of neural and behavioral reward processes in the association of early puberty and internalizing symptoms in the ABCD Study](https://osf.io/7u3jt/). Under the supervision of Kate and Dr. Nick Allen, Elizabeth is also exploring linguistic features in daily digital social communication and the associations with well-being and internalizing symptoms in adolescent girls. An overarching aim of her work is to explore the social, cognitive, and affective processes that undergo immense development in the brain during adolescence, conferring potential risk for internalizing psychopathology, but also an opportunity for targeted intervention and the improvement of adolescents’ well-being. [See a recent preprint of Elizabeth's work here!](https://psyarxiv.com/6gdkf/)
-    - name: Madison Root
+  - name: Madison Root
     image: Madison.jpg
     email: mroot@uoregon.edu
     body:  Madison is an undergraduate at the University of Oregon pursuing a B.S. in Human Physiology with a minor in chemistry with the goal of obtaining a career in medicine. Originally from am from West Linn, Oregon, Madison is a proud recipient of the Pathway Oregon grants and scholarships.
-    - name: Stephanie Gonzalez Villanueva
+  - name: Stephanie Gonzalez Villanueva
     image: Stephanie.jpg
     email: sgonzal7@uoregon.edu
     body:  Stephanie is an undergraduate double majoring in Psychology and Spanish and double minoring in sustainable business and Latinx studies. She is a psychology peer advisor, and is also involved in ASUO as well as Muxeres.
