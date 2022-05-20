@@ -22,6 +22,10 @@ people:
     image: Madison.jpg
     email: mroot@uoregon.edu
     body:  Madison is an undergraduate at the University of Oregon pursuing a B.S. in Human Physiology with a minor in chemistry with the goal of obtaining a career in medicine. Originally from am from West Linn, Oregon, Madison is a proud recipient of the Pathway Oregon grants and scholarships.
+  - name: Grant Sandler
+    image: Grant.jpg
+    email: gsandler@uoregon.edu
+    body:  Grant is the current lab manager of the Developing Brains in Context Lab. He graduated from the University of Oregon with a B.S. in psychology in 2022. He enjoys working with youth and recently spent 11 months as a Juvenile Justice Specialist for the Martin Luther King Jr. Education Center in Lane County. Grant’s one day hopes obtain a PhD in clinical developmental psychology. Research interests of his include racism prevention, social and cognitive neuroscience, mentalization, and how trauma and environmental influences impacts child development and behavior. Additionally, Grant would like to research Mentalization-based therapy (MBT). An overarching goal for Grant is to increase access to mental health treatment for all individuals.
   - name: Stephanie Gonzalez Villanueva
     image: Stephanie.jpg
     email: sgonzal7@uoregon.edu
