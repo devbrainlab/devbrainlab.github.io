@@ -30,7 +30,7 @@ Beginning in 2014, several junior researchers from sites around the world began 
 
 ABCD study secondary analyses & workshops
 ----------
-We actively use the ABCD dataset in investigations of how digital technology use relates to brain function, cognition, and behavior. In August 2019, we hosted an [NIMH-funded workshop](https://abcdworkshop.github.io/) on using the ABCD dataset to relate brain development to mental health, We are planning to host another NIMH-funded workshop on longitudinal modeling of the ABCD dataset in summer 2021,
+We actively use the ABCD dataset in investigations of how digital technology use relates to brain function, cognition, and behavior. In August 2019, we hosted an [NIMH-funded workshop](https://abcdworkshop.github.io/) on using the ABCD dataset to relate brain development to mental health, We hosted another NIMH-funded workshop on longitudinal modeling of the ABCD dataset in summer 2021.
 
 Navigating Networks
 ----------

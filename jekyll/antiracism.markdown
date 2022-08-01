@@ -15,4 +15,4 @@ Projects
 
 Addressing and preventing racist behaviors by children participating in research
 ----------
-The goal of this project is to create a more welcoming space for BIPOC scholars engaged in developmental research. We are developing a manual, protocol, and resources for developmental labs to use to help prevent, and better address, racist behaviors from children and families participating in laboratory studies.
+The goal of this project is to create a more welcoming space for BIPOC scholars engaged in developmental research. We are developed a protocol and resources for developmental labs to use to help prevent, and better address, racist behaviors from children and families participating in laboratory studies. Please contact us for these resources.
