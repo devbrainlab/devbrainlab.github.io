@@ -6,6 +6,10 @@ people:
     image: Kate.jpg
     email: klmills@uoregon.edu
     body: Kate leads the Developing Brains in Context Lab. She is a first generation student from Louisville KY and received her PhD from University College London in 2015. Her favorite part of science is working with good people to figure out things about development. [CV](/assets/papers/KathrynLMills_CV.pdf)
+  - name: Grant Sandler
+    image: Grant.jpg
+    email: gsandler@uoregon.edu
+    body:  Grant is the lab manager of the Developing Brains in Context Lab. He graduated from the University of Oregon with a B.S. in psychology in 2022. He enjoys working with youth and recently spent 11 months as a Juvenile Justice Specialist for the Martin Luther King Jr. Education Center in Lane County. Grant’s one day hopes obtain a PhD in clinical developmental psychology. Research interests of his include racism prevention, social and cognitive neuroscience, mentalization, and how trauma and environmental influences impacts child development and behavior. Additionally, Grant would like to research Mentalization-based therapy (MBT). An overarching goal for Grant is to increase access to mental health treatment for all individuals.
   - name: Lucy Whitmore
     image: Lucy.png
     email: lwhitmor@uoregon.edu
@@ -17,19 +21,11 @@ people:
   - name: Elizabeth McNeilly
     image: Elizabeth.jpg
     email: emcneill@uoregon.edu
-    body: Elizabeth McNeilly is a clinical psychology PhD student focusing on the intersection of adolescent development and internalizing psychopathology. In collaboration with researchers at UCLA and UC Berkeley, Elizabeth is currently investigating the [role of neural and behavioral reward processes in the association of early puberty and internalizing symptoms in the ABCD Study](https://osf.io/7u3jt/). Under the supervision of Kate and Dr. Nick Allen, Elizabeth is also exploring linguistic features in daily digital social communication and the associations with well-being and internalizing symptoms in adolescent girls. An overarching aim of her work is to explore the social, cognitive, and affective processes that undergo immense development in the brain during adolescence, conferring potential risk for internalizing psychopathology, but also an opportunity for targeted intervention and the improvement of adolescents’ well-being. [See a recent preprint of Elizabeth's work here!](https://psyarxiv.com/6gdkf/)
+    body: Elizabeth McNeilly is a clinical psychology PhD student focusing on the intersection of adolescent development and internalizing psychopathology. In collaboration with researchers at UCLA and UC Berkeley, Elizabeth is currently investigating the [role of neural and behavioral reward processes in the association of early puberty and internalizing symptoms in the ABCD Study](https://osf.io/7u3jt/). Under the supervision of Kate and Dr. Nick Allen, Elizabeth is also exploring linguistic features in daily digital social communication and the associations with well-being and internalizing symptoms in adolescent girls. An overarching aim of her work is to explore the social, cognitive, and affective processes that undergo immense development in the brain during adolescence, conferring potential risk for internalizing psychopathology, but also an opportunity for targeted intervention and the improvement of adolescents’ well-being.
   - name: Madison Root
     image: Madison.jpg
     email: mroot@uoregon.edu
-    body:  Madison is an undergraduate at the University of Oregon pursuing a B.S. in Human Physiology with a minor in chemistry with the goal of obtaining a career in medicine. Originally from am from West Linn, Oregon, Madison is a proud recipient of the Pathway Oregon grants and scholarships.
-  - name: Grant Sandler
-    image: Grant.jpg
-    email: gsandler@uoregon.edu
-    body:  Grant is the current lab manager of the Developing Brains in Context Lab. He graduated from the University of Oregon with a B.S. in psychology in 2022. He enjoys working with youth and recently spent 11 months as a Juvenile Justice Specialist for the Martin Luther King Jr. Education Center in Lane County. Grant’s one day hopes obtain a PhD in clinical developmental psychology. Research interests of his include racism prevention, social and cognitive neuroscience, mentalization, and how trauma and environmental influences impacts child development and behavior. Additionally, Grant would like to research Mentalization-based therapy (MBT). An overarching goal for Grant is to increase access to mental health treatment for all individuals.
-  - name: Stephanie Gonzalez Villanueva
-    image: Stephanie.jpg
-    email: sgonzal7@uoregon.edu
-    body:  Stephanie is an undergraduate double majoring in Psychology and Spanish and double minoring in sustainable business and Latinx studies. She is a psychology peer advisor, and is also involved in ASUO as well as Muxeres.
+    body:  Madison is an undergraduate at the University of Oregon pursuing a B.S. in Human Physiology with a minor in chemistry with the goal of obtaining a career in medicine. Originally from am from West Linn, Oregon, Madison is a proud recipient of the Pathway Oregon grants and scholarships. Madison is working with Victoria on a pre-registered study investigating how social status relates to mentalizing and mental health in young women.
   - name: Alumni
     image: Jeya.jpg
     body: Our Alumni have their own page [here!](https://devbrainlab.org/alumni)
