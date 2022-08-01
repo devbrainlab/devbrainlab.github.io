@@ -13,7 +13,7 @@ people:
   - name: Lucy Whitmore
     image: Lucy.png
     email: lwhitmor@uoregon.edu
-    body: Lucy Whitmore is a graduate student and former lab manager of the Developing Brains in Context Lab. She graduated from UC Berkeley with a degree in Cognitive Science. She is interested in how adolescents create flexible behavioral strategies to navigate the world around them, and how these strategies may be affected by social connections and their environment. She is currently working on a project validating the machine-learning based metric of brain maturity called BrainAGE [CV](/assets/papers/WhitmoreCVSept2020.pdf)
+    body: Lucy Whitmore is a graduate student and former lab manager of the Developing Brains in Context Lab. She graduated from UC Berkeley with a degree in Cognitive Science. She is interested in how adolescents create flexible behavioral strategies to navigate the world around them, and how these strategies may be affected by social connections and their environment. She is currently working on a project validating the machine-learning based metric of brain maturity called BrainAGE [CV](/assets/papers/whitmore_cv_aug2022.pdf)
   - name: Victoria Guazzelli Williamson
     image: Victoria.png
     email: vgw@uoregon.edu
