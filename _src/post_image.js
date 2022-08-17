@@ -13,26 +13,33 @@ function gaussianRand() {
   return rand / 4;
 }
 
+let consecutive_resizes = 0;
+const max_consecutive_resizes = 5;
 // https://webglfundamentals.org/webgl/lessons/webgl-resizing-the-canvas.html
     function resize(canvas) {
       // // Lookup the size the browser is displaying the canvas.
-      var displayWidth  = canvas.clientWidth;
-      var displayHeight = canvas.clientHeight;
-     
+      if (consecutive_resizes <= max_consecutive_resizes){
+      let displayWidth  =  Math.floor(canvas.clientWidth);
+      let displayHeight = Math.floor(canvas.clientHeight);
+      // console.log('client dim: ' + displayWidth +" "+ displayHeight + "canvas dims " + canvas.height + " " + canvas.width);
       // Check if the canvas is not the same size.
       if (canvas.width  != displayWidth ||
           canvas.height != displayHeight) {
-     
+        
         // Make the canvas the same size
         canvas.width  = displayWidth;
         canvas.height = displayHeight;
+        consecutive_resizes += 1;
+      } else {
+        consecutive_resizes = 0;
       }
+  }
 
       // cgl. viewport(0, 0, gl.canvas.width, gl.canvas.height);
     }
 
 function generateThumb(canvas_id, time){
-	var TAU, button, canvas, ctx, draw, f, fpselem, h, p1, particles, period, raf, w, _i;
+	let TAU, button, canvas, ctx, draw, f, fpselem, h, p1, particles, period, raf, w, _i;
 	// var ncalls = 0;
 	// var total_calls = 10;
 
@@ -41,11 +48,12 @@ function generateThumb(canvas_id, time){
 	let class_list = $(canvas)[0].classList;
 	// debugger;
 	fpselem = document.getElementById('fps');
-
+    // canvas.width
+     // = canvas.height
 	w = canvas.width = $(canvas).parent().width();
 
-	h = canvas.height = $(canvas).parent().height();
-	console.log(h);
+	h = canvas.height= $(canvas).parent().height();
+	// console.log(h);
 
 	TAU = 2 * Math.PI;
 
@@ -209,9 +217,9 @@ function generateThumb(canvas_id, time){
 	}
 
 	draw = function() {
-	  var a, p, v, _j, _len, _results;
+	  let a, p, v, _j, _len, _results;
 	  _results = [];
-	  resize(canvas);
+	  // resize(canvas);
 
 	  // TAU += (Math.random()-0.5)*tau_movement;
 	  TAU += (Math.random()-0.5)*0.5;
@@ -227,6 +235,9 @@ function generateThumb(canvas_id, time){
       var iter_until = particles.length;
 	  for (_j = 0;  _j < iter_until; _j++) {
 	    p = particles[_j];
+        if (p == null){
+            continue;
+        }
 	    v = noise.perlin2(p.x * period, p.y * period, seed.perm, seed.gradP);
 	    ctx.fillStyle = "hsla(" + (Math.floor(v * 360)) + ", 90%, 60%, 0.05)";
 	    ctx.fillRect(p.x, p.y, 2, 2);
@@ -315,8 +326,8 @@ $(function() {
     // $('.generative').height($('.generative').parent().height());
 
     $(window).resize(function() {
-        $('.generative').width($('.generative').parent().width());
-        $('.generative').height($('.generative').parent().height());
+        $('.generative').width($('.generative').clientWidth);
+        $('.generative').height($('.generative').clientHeight);
     });
 
 });

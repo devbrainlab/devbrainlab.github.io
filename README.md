@@ -230,6 +230,8 @@ Getting a little deeper to customize the site
 
 ### sass
 
+It's all in `jekyll/_scss` but i have to admit that the structure got away from me at some point. Get ready to "find in files" your way through this one... while running the development page renderer, open the developer tools in your browser. highlight elements to see what css rules affect them, and then search for where those rules are. `_default.scss` holds variables used in the rest of the .scss
+
 ### includes
 
 ### layouts

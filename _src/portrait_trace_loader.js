@@ -11,7 +11,7 @@ import ScrollMagic from 'scrollmagic';
 function trace_portraits() {
     window.controller = new ScrollMagic.Controller({
         globalSceneOptions: {
-            duration: 500
+            duration: 700
         }
     });
 
@@ -62,12 +62,18 @@ function trace_portraits() {
             new ScrollMagic.Scene({
                     triggerElement: "#" + parentname + "_container",
                     triggerHook: 'onCenter',
-                    duration: 500,
+                    duration: 1000,
                     offset: -200
                 })
-                .on("enter leave", function() {
-                    $("#" + parentname + "_image").toggleClass('visible');
+                .on("enter", function(){
+                    $("#" + parentname + "_image").addClass('visible');
                 })
+                .on("leave", function(){
+                    $("#" + parentname + "_image").removeClass('visible');
+                })
+                // .on("enter leave", function() {
+                //     $("#" + parentname + "_image").toggleClass('visible');
+                // })
                 .addTo(controller);
         });
 
