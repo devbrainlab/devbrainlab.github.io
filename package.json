@@ -46,7 +46,7 @@
     "fs": "0.0.1-security",
     "gsap": "^3.5.1",
     "image-trace-loader": "^0.1.0",
-    "imagemin-webpack-plugin": "^2.1.5",
+    "imagemin-webpack-plugin": "^2.4.2",
     "jquery": "^3.5.1",
     "jquery-bridget": "^2.0.1",
     "just-curves": "^0.2.0",
