@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           persist-credentials: False
       - name: Install R
@@ -22,7 +22,7 @@ jobs:
       - name: Install Ruby
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: "2.6"
+          ruby-version: "3.0"
       - name: Install Dependencies
         run: |
           npm install
