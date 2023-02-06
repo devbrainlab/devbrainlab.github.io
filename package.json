@@ -45,7 +45,7 @@
     "fitty": "^2.3.2",
     "fs": "0.0.1-security",
     "gsap": "^3.5.1",
-    "image-trace-loader": "^0.1.0",
+    "image-trace-loader": "^1.0.2",
     "imagemin-webpack-plugin": "^2.1.5",
     "jquery": "^3.5.1",
     "jquery-bridget": "^2.0.1",
