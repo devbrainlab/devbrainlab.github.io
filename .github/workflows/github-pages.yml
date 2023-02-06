@@ -20,9 +20,9 @@ jobs:
         with:
           node-version: '14'
       - name: Install Ruby
-        uses: actions/setup-ruby@v1
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.0"
+          ruby-version: "2.6"
       - name: Install Dependencies
         run: |
           npm install
