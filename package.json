@@ -10,6 +10,7 @@
     "build:deploy": "npm run-script clean:project && Rscript R/blogdown_build.R; NODE_ENV=production webpack --env=prod --progress --profile --colors && JEKYLL_ENV=production bundle exec jekyll build",
     "deploy": "npm run-script clean:docs && npm run-script build:deploy && cp -r _site/ docs/ && cp -r assets docs && touch docs/.nojekyll && git add ./docs && git commit -m \"deploy site\" && git push",
     "clean:docs": "rimraf ./docs",
+    "rimraf": "./node_modules/rimraf/bin.js",
     "clean:project": "rimraf ./_site ./assets",
     "install:R": "Rscript R/install_deps.R"
   },
@@ -45,8 +46,8 @@
     "fitty": "^2.3.2",
     "fs": "0.0.1-security",
     "gsap": "^3.5.1",
-    "image-trace-loader": "^1.0.2",
-    "imagemin-webpack-plugin": "^2.4.2",
+    "image-trace-loader": "^0.1.0",
+    "imagemin-webpack-plugin": "^2.1.5",
     "jquery": "^3.5.1",
     "jquery-bridget": "^2.0.1",
     "just-curves": "^0.2.0",
