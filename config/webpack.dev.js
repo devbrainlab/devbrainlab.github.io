@@ -44,9 +44,9 @@ module.exports = Merge(CommonConfig, {
     ],
   },
   devServer: {
-    contentBase: [
-      path.resolve('_site'),
-    ],
+    static: {
+      directory: path.resolve('_site'),
+    },
     hot: false,
   },
   watchOptions: {

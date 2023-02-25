@@ -113,17 +113,17 @@ $underline-animate: all 0.2s ease-in-out;
 
 
   }
-  
+
   // SIDE
   &:before {
-    border-image: linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color,10%) 100%);
+    border-image: linear-gradient(45deg, $blue-color 0%, adjust-hue($blue-color,36deg) 100%);
     border-image-slice: 1 1 0 1;
     left: -0.59em; top: .15em;
     width: .31em;
     height: 100%;
     transform: skewY(-45deg);
   }
-  
+
 
 
 	&>div {

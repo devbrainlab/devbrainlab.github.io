@@ -2,7 +2,6 @@ import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
 
-const path = require('path');
 
 // import scrollmagic for scroll fx
 import ScrollMagic from 'scrollmagic';
@@ -22,8 +21,6 @@ function trace_portraits() {
         var parentname = this_div[0].id;
         var imgSrc = this_div.attr('imgsrc');
 
-        // console.log(imgSrc);
-        import (path.resolve('jekyll/images/people/', imgSrc))
         import ("../jekyll/images/people/" + imgSrc)
 
 

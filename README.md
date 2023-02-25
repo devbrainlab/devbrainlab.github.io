@@ -215,9 +215,84 @@ The page automatically builds and deploys on pushes to the `master` branch using
 
 To avoid work in progress being deployed to the main site, i recommend working in a different branch and pulling back to the main branch with pull requests.
 
+# Debugging
+
+I won't be able to describe *all* the possible ways the site could break, this was 
+mostly a learning opportunity for me at the time, and so the code is much worse than
+it could be!
+
+## Installation issues
+
+The javascript/npm world moves quickly, and while there are some prescribed ways to fix version
+incompatibilities, it's not always obvious. 
+
+When you're presented with an error in a package that doesn't even look like it's required in the `package.json` file,
+you can use `npm explain` and `npm ls` to figure out what other package requires it. 
+
+So, if we are getting this error:
+
+```
+npm ERR! code 1
+npm ERR! path /Users/jonny/git/devbrainlab.github.io/node_modules/gifsicle
+npm ERR! command failed
+npm ERR! command sh -c node lib/install.js
+npm ERR! fs.js:47
+npm ERR! } = primordials;
+npm ERR!     ^
+npm ERR! 
+npm ERR! ReferenceError: primordials is not defined
+npm ERR!     at fs.js:47:5
+npm ERR!     at req_ (/Users/jonny/git/devbrainlab.github.io/node_modules/natives/index.js:143:24)
+npm ERR!     at Object.req [as require] (/Users/jonny/git/devbrainlab.github.io/node_modules/natives/index.js:55:10)
+npm ERR!     at Object.<anonymous> (/Users/jonny/git/devbrainlab.github.io/node_modules/vinyl-fs/node_modules/graceful-fs/fs.js:1:37)
+npm ERR!     at Module._compile (node:internal/modules/cjs/loader:1105:14)
+npm ERR!     at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+npm ERR!     at Module.load (node:internal/modules/cjs/loader:981:32)
+npm ERR!     at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+npm ERR!     at Module.require (node:internal/modules/cjs/loader:1005:19)
+npm ERR!     at require (node:internal/modules/cjs/helpers:102:18)
+
+```
+
+what the heck! We don't even depend on `gifsicle`! We can check what does
+
+```bash
+npm ls gifsicle
+kate_site@1.0.0 /Users/jonny/git/devbrainlab.github.io
+└─┬ imagemin-webpack-plugin@2.4.2
+  └─┬ imagemin-gifsicle@6.0.1
+    └── gifsicle@4.0.1
+```
+
+From there we might want to upgrade the parent package:
+
+```bash
+npm upgrade imagemin-webpack-plugin
+```
+
+
+
+
 # Hack yr own site why dont ya
 
-Getting a little deeper to customize the site
+The scripts that control how the site is built and served in a dev environment are in the `package.json` file in the `scripts` object.
+You can reverse engineer your way back from there.
+
+For example the current `build` script is (breaking into newlines)
+
+```bash
+npm run-script clean:project && \
+ Rscript R/blogdown_build.R; \
+ NODE_ENV=production webpack --env=prod --progress --profile --colors && \
+ JEKYLL_ENV=production bundle exec jekyll build --trace
+```
+
+Or, transcribed
+
+* Run another script that cleans any previously built files
+* Run an R script (`R/blogdown_build.R`) that builds any rmarkdown files in `/jekyll/_rmd` (described above)
+* Run the webpack build, which compiles the javascript and scss used on the site (in `/_src`)
+* Run the jekyll build, which actually builds the site from the markdown.
 
 ## webpack
 

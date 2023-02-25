@@ -1,7 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 // const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const isDevelopment = process.env.NODE_ENV === 'development'
@@ -12,7 +11,7 @@ module.exports = {
     app: './_src/index.js',
   },
   plugins: [
-    new ExtractTextPlugin('[name].css'),
+    new MiniCssExtractPlugin(),
     new CopyPlugin({
       patterns: [
       {
@@ -22,7 +21,7 @@ module.exports = {
       {
         from: path.resolve('jekyll/_papers'),
         to: 'papers/',
-      } 
+      }
       ]
     }),
     new webpack.ProvidePlugin({
@@ -58,25 +57,22 @@ module.exports = {
       {
         test: /\.svg$/,
         loader: 'svg-inline-loader'
-    },
-
-            {
+      },
+      {
         test: /\.(css|scss)$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            { loader: 'css-loader', options: { importLoaders: 1 } },
-            {
-              loader: 'postcss-loader',
-              options: {
-                config: {
-                  path: 'config/postcss.config.js',
-                },
-              },
-            },
-            { loader: 'sass-loader' },
-          ],
-        }),
+        use: [
+          MiniCssExtractPlugin.loader,
+          { loader: 'css-loader', options: { importLoaders: 1 } },
+          {
+            loader: 'postcss-loader',
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              implementation: require("sass")
+            }
+          },
+        ]
       },
       {
         test: /\.(png|jpg|gif)$/,
@@ -103,4 +99,9 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    fallback: {
+      "path": require.resolve("path-browserify")
+    }
+  }
 };
