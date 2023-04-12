@@ -18,6 +18,10 @@ people:
     image: Elizabeth.jpg
     email: emcneill@uoregon.edu
     body: Elizabeth McNeilly is a clinical psychology PhD candidate studying the intersection of adolescent development, digital mental health, and internalizing psychopathology. Under the supervision of Kate and Dr. Nick Allen, Elizabeth recently published a study that identified dynamic linguistic features of daily social communication (social media, text, email) that relate to depression symptoms and changes in mood in adolescent girls. Elizabeth is currently working on a study with Kate and Dr. Allen investigating potential neural mechanisms related to developmental sensitivity to social media as it relates to adverse mental health outcomes in adolescence using the Adolescent Brain Cognitive Development (ABCD) Study. An overarching aim of Elizabeth’s work is to understand how the social, cognitive, and affective processes undergoing immense development in the brain during adolescence interact with digital contexts to confer not only risk for internalizing psychopathology, but also an opportunity for targeted intervention and the improvement of adolescents’ well-being.
+  - name: Rachel Jacobson
+    image: Rachel.jpg
+    email: rjacobs2@uoregon.edu
+    body: Rachel Jacobson is interested in how individuals’ social identities influence their identity development, social perceptions and interactions with others. In particular, her work focuses on populations with multiple identities (e.g., biracials and biculturals), in both how they are perceived and the impressions they form of others.
   - name: Madison Root
     image: Madison.jpg
     email: mroot@uoregon.edu
