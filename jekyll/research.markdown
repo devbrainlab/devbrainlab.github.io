@@ -3,11 +3,11 @@ layout: page
 title: research
 ---
 
-How do we develop the skills needed to navigate our specific social environment? How do cognitive capacities interact with social cognitive processes to facilitate the completion of developmental tasks? What aspects of brain maturation are impacted by the social environment, and can this inform our understanding of mental health disorders?
+Note: Our lab is beginning research on climate anxiety and nature-based learning in children and adolescents. Please contact us if you'd like to be involved in research on how to support children and adolescents navigate the changing natural environment.
+
+How do we develop the skills needed to navigate our specific social environment? How do cognitive capacities interact with social cognitive processes to facilitate the completion of developmental tasks? What aspects of brain maturation are impacted by the social environment, and can this inform our understanding of mental health and wellbeing during adolescence?
 
 Our lab applies longitudinal research methods to investigate the intertwined social, biological, and cognitive processes that underlie the development of skills needed to navigate the social environment. We broadly examine how brain development and social environmental influences interact and impact on social cognitive development during the transition into adolescence. 
-
-Our lab is also beginning research on climate anxiety and nature-based learning in children and adolescents. Please contact us if you'd like to be involved in research on how to support children and adolescents navigate the changing natural environment.
 
 
 Research overview
