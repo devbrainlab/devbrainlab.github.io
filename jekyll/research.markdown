@@ -3,7 +3,7 @@ layout: page
 title: research
 ---
 
-Note: Our lab is beginning research on climate anxiety and nature-based learning in children and adolescents. Please contact us if you'd like to be involved in research on how to support children and adolescents navigate the changing natural environment.
+Note: Our lab is beginning research on how children and adolescents are navigating the changing climate. Please contact us if you'd like to be involved in this research!
 
 How do we develop the skills needed to navigate our specific social environment? How do cognitive capacities interact with social cognitive processes to facilitate the completion of developmental tasks? What aspects of brain maturation are impacted by the social environment, and can this inform our understanding of mental health and wellbeing during adolescence?
 
@@ -37,7 +37,7 @@ Completed projects
 
 [ABCD workshops](https://abcdworkshop.github.io/)
 ----------
-In August 2019, we hosted an NIMH-funded workshop on using the ABCD dataset to relate brain development to mental health, We hosted another NIMH-funded workshop on longitudinal modeling of the ABCD dataset in summer 2021.
+In August 2019, we hosted an NIMH-funded workshop on using the ABCD dataset to relate brain development to mental health, We hosted another NIMH-funded workshop on longitudinal modeling of the ABCD dataset in summer 2021. [Workshop website with resources galore.](https://abcdworkshop.github.io/)
 
 Social and digital adaptation to "social" distancing
 ----------

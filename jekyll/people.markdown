@@ -30,6 +30,14 @@ people:
     image: Stephanie.jpg
     email: sgonzal7@uoregon.edu
     body:  Stephanie is an undergraduate research assistant in the lab double majoring in Psychology and Spanish and double minoring in sustainable business and Latinx studies.
+  - name: Keegan Alvarado
+    image: Keegan.jpg
+    email: kalvarad@uoregon.edu
+    body:   Keegan is the lab manager for Dr. Skowron’s Family Biobehavioral Health Lab. He is a senior at the University of Oregon and will graduate with a B.S. in Psychology in Spring of 2023. Keegan hopes to pursue a Ph.D. in clinical psychology, where he is interested in researching the biobehavioral patterns that underlie chronic mental health struggles. He hopes to increase existing therapeutic efficacy by investigating mindful parenting, inflammation, metabolic function, stress, diet, and nutritional deficiencies. Keegan’s long-term goal is to expand upon Multisystemic Therapy (MST) to help at-risk youth and families achieve and maintain lasting wellness.
+  - name: Valerie Owusu-Hienno
+    image: Valerie.jpg
+    email: vowusuhi@uoregon.edu
+    body:   Valerie is an Undergraduate Research Assistant majoring in Neuroscience and minoring in Chemistry and Global Health (UO Class of 2026). Valerie is working with Victoria through the Hui Undergraduate Research Scholars Program.
   - name: Alumni
     image: Jeya.jpg
     body: Our Alumni have their own page [here!](https://devbrainlab.org/alumni)
