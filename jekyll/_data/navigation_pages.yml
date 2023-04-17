@@ -14,6 +14,9 @@ pages:
   
 - title: Publications
   url: publications.html
+
+- title: Photos
+  url: gallery.html
   
 - title: Anti-racism
   url: antiracism.html

@@ -22,6 +22,10 @@ people:
     image: Rachel.jpg
     email: rjacobs2@uoregon.edu
     body: Rachel Jacobson is interested in how individuals’ social identities influence their identity development, social perceptions and interactions with others. In particular, her work focuses on populations with multiple identities (e.g., biracials and biculturals), in both how they are perceived and the impressions they form of others.
+  - name: Amala Someshwar
+    image: Amala.jpg
+    email: asomeshw@uoregon.edu
+    body: Amala is a developmental psychology PhD student in the DBIC lab, the DSN lab, and the PIE lab. In 2018 she graduated from Bryn Mawr College with a Bachelor of Arts in Psychology. Amala is interested in understanding the impacts of the socioemotional environment of adolescents both on development and the onset of psychopathology as well as the role of personality in dyadic relationships during adolescence. Outside of lab, she enjoys swimming, climbing, embroidery, and knitting.
   - name: Madison Root
     image: Madison.jpg
     email: mroot@uoregon.edu
