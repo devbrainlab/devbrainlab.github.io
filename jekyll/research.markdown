@@ -3,34 +3,25 @@ layout: page
 title: research
 ---
 
-Note: Our lab is beginning research on how children and adolescents are navigating the changing climate. Please contact us if you'd like to be involved in this research!
+Our lab is beginning research on how children and adolescents are navigating the changing climate. Please contact us if you'd like to be involved in this research!
 
-How do we develop the skills needed to navigate our specific social environment? How do cognitive capacities interact with social cognitive processes to facilitate the completion of developmental tasks? What aspects of brain maturation are impacted by the social environment, and can this inform our understanding of mental health and wellbeing during adolescence?
+Our lab applies longitudinal research methods to investigate the intertwined social, biological, and cognitive processes that underlie the development of skills needed to navigate the changing environment. We broadly examine how brain development and social environmental influences interact and impact on social cognitive development during the transition into adolescence. 
 
-Our lab applies longitudinal research methods to investigate the intertwined social, biological, and cognitive processes that underlie the development of skills needed to navigate the social environment. We broadly examine how brain development and social environmental influences interact and impact on social cognitive development during the transition into adolescence. 
-
-
-Research overview
-===============
-
-Brain development 
-----------
-A fundamental task in neuroscience is to characterize the brain’s developmental course. It is only with this knowledge that we can begin to identify individuals who deviate in neurotypical development and tailor intervention efforts to impact processes when they are most malleable. The lab is engaged in several projects characterizing typical brain development trajectories in longitudinal samples of MRI data. Further, the pace of brain development differs between individuals. We examine how individual differences in structural brain changes and functional brain orgnaization relate to behavior, cognition, and well-being in children and adolescence.
-
-Social navigation
-----------
-Changes in brain structure reflect developmental tasks, and the prolonged development of certain neural systems reflects a level of plasticity in adolescence. Indeed, the areas of the brain undergoing the most structural change in adolescence are involved in higher-order processes such as complex social cognition. In our lab, we incorporate the particularly protracted development of complex social cognition in neurodevelopmental models of learning, decision making, and behavior.
 
 Current projects
 ===============
+
+Navigating Networks
+----------
+The Navigating Networks study focuses on adolescent social and cognitive development during the transition to middle school using longitudinal social network, brain, and cognitive assessments. As of Spring 2023, we are finishing our first year collecting data from two local middle schools!
 
 International collaboration for replicable brain development
 ----------
 Beginning in 2014, several junior researchers from sites around the world began a project together with the goal of creating replicable trajectories of brain development. Our current project is led by Ann-Marie Barrett, and examines how brain centile scores relate to internalizing symptoms in adolescence.
 
-Navigating Networks
+Young women social cognition study
 ----------
-The Navigating Networks study focuses on adolescent social and cognitive development during the transition to middle school using longitudinal social network, brain, and cognitive assessments. As of Spring 2023, we are finishing our first year collecting data from two local middle schools!
+Does other-oriented social cognition mediate the relationship between low social status and internalizing symptoms in young adult women? Both young women and individuals with low subjective social status have been shown to have a heightened risk of internalizing disorders, such as anxiety and depression. Interestingly, social status and gender have also been linked with altered other-oriented social cognition, such as hyper-mentalizing and increased sensitivity to others. Madison, Valerie, Kate, and Victoria are trying to figure out whether young women with lower subjective social status might adaptively respond to their environments by developing greater other-oriented social cognition and whether this adaptation, in turn, puts them at risk for internalizing disorders. Do you have thoughts on the study, feedback, or questions for us? Email us at [vgw@uoregon.edu](vgw@uoregon.edu) -- we're eager to hear from you!
 
 Completed projects
 ===============

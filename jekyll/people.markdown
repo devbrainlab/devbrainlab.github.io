@@ -25,7 +25,7 @@ people:
   - name: Amala Someshwar
     image: Amala.jpg
     email: asomeshw@uoregon.edu
-    body: Amala is a developmental psychology PhD student in the DBIC lab, the DSN lab, and the PIE lab. In 2018 she graduated from Bryn Mawr College with a Bachelor of Arts in Psychology. Amala is interested in understanding the impacts of the socioemotional environment of adolescents both on development and the onset of psychopathology as well as the role of personality in dyadic relationships during adolescence. Outside of lab, she enjoys swimming, climbing, embroidery, and knitting.
+    body: Amala is a developmental psychology PhD student in the DBIC lab, the DSN lab, and the PIE lab. In 2018 she graduated from Bryn Mawr College with a Bachelor of Arts in Psychology. Amala is interested in understanding the impacts of the socioemotional environment of adolescents both on development and the onset of psychopathology as well as the role of personality in dyadic relationships during adolescence. Outside of lab, she enjoys swimming, climbing, embroidery, and knitting. [CV](/assets/papers/Someshwar_CV.pdf)
   - name: Madison Root
     image: Madison.jpg
     email: mroot@uoregon.edu
