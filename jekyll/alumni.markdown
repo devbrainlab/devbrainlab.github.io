@@ -21,9 +21,13 @@ people:
   - name: Clare McCann
     image: Clare.png
     email: cmccann2@uoregon.edu
-    body: Clare graduated June of 2020 from the University of Oregon with honors in Psychology, minors in Special Education and Women's Gender & Sexuality Studies. She is now a graduate student in Jen Silvers' lab at UCLA. 
+    body: Clare graduated June of 2020 from the University of Oregon with honors in Psychology, minors in Special Education and Women's Gender & Sexuality Studies. She is now a graduate student in Jen Silvers' lab at UCLA.
   - name: Aisha Ghorashian
     image: Aisha.jpg
     email: aghorash@uoregon.edu
     body: Aisha was an undergraduate student studying Psychology and Political Science with a minor in Global Health. She is interested in public health, specifically in the context of child development, women's health, and public policy.
+   - name: Stephanie Gonzalez Villanueva
+    image: Stephanie.jpg
+    email: sgonzal7@uoregon.edu
+    body:  Stephanie was an undergraduate research assistant in the lab. She is double majoring in Psychology and Spanish and double minoring in sustainable business and Latinx studies.
 ---

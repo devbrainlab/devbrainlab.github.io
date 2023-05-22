@@ -26,14 +26,14 @@ people:
     image: Amala.jpg
     email: asomeshw@uoregon.edu
     body: Amala is a developmental psychology PhD student in the DBIC lab, the DSN lab, and the PIE lab. In 2018 she graduated from Bryn Mawr College with a Bachelor of Arts in Psychology. Amala is interested in understanding the impacts of the socioemotional environment of adolescents both on development and the onset of psychopathology as well as the role of personality in dyadic relationships during adolescence. Outside of lab, she enjoys swimming, climbing, embroidery, and knitting. [CV](/assets/papers/Someshwar_CV.pdf)
+  - name: Kellie Gunther
+    image: Kellie.jpg
+    email: kgunthe2@uoregon.edu
+    body:   Kellie is a fourth-year undergraduate student, who will graduate in spring of 2023 with a B.A. in Psychology and a minor in Spanish. She is very interested in the developing brain and how early life experiences impact this process. Additionally, she is interested in social and personality Psychology and the ways in which individuals interact with each other and form relationships. Kellie hopes to pursue further schooling after graduation. Currently, Kellie is working on a thesis with Kate for the Clark Honor’s College. In this project, we are exploring the relationship between perceived social support and anxiety symptoms for adolescents in the context of the COVID-19 pandemic.
   - name: Madison Root
     image: Madison.jpg
     email: mroot@uoregon.edu
     body:  Madison is an undergraduate at the University of Oregon pursuing a B.S. in Human Physiology with a minor in chemistry with the goal of obtaining a career in medicine. Originally from am from West Linn, Oregon, Madison is a proud recipient of the Pathway Oregon grants and scholarships. Madison is working with Victoria on a pre-registered study investigating how social status relates to mentalizing and mental health in young women.
-  - name: Stephanie Gonzalez Villanueva
-    image: Stephanie.jpg
-    email: sgonzal7@uoregon.edu
-    body:  Stephanie is an undergraduate research assistant in the lab double majoring in Psychology and Spanish and double minoring in sustainable business and Latinx studies.
   - name: Keegan Alvarado
     image: Keegan.jpg
     email: kalvarad@uoregon.edu
