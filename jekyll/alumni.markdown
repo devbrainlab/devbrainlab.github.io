@@ -1,6 +1,6 @@
 ---
 layout: people
-title: people
+title: alumni
 people:
   - name: Jeya Anandakumar
     image: Jeya.jpg
@@ -26,8 +26,8 @@ people:
     image: Aisha.jpg
     email: aghorash@uoregon.edu
     body: Aisha was an undergraduate student studying Psychology and Political Science with a minor in Global Health. She is interested in public health, specifically in the context of child development, women's health, and public policy.
-   - name: Stephanie Gonzalez Villanueva
+  - name: Stephanie Gonzalez Villanueva
     image: Stephanie.jpg
     email: sgonzal7@uoregon.edu
-    body:  Stephanie was an undergraduate research assistant in the lab. She is double majoring in Psychology and Spanish and double minoring in sustainable business and Latinx studies.
+    body: Stephanie was an undergraduate research assistant in the lab. She is double majoring in Psychology and Spanish and double minoring in sustainable business and Latinx studies.
 ---
