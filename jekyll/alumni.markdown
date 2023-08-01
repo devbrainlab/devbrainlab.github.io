@@ -30,4 +30,16 @@ people:
     image: Stephanie.jpg
     email: sgonzal7@uoregon.edu
     body: Stephanie was an undergraduate research assistant in the lab. She is double majoring in Psychology and Spanish and double minoring in sustainable business and Latinx studies.
+  - name: Elizabeth McNeilly
+    image: Elizabeth.jpg
+    email: emcneill@uoregon.edu
+    body: Elizabeth McNeilly is a clinical psychology PhD candidate studying the intersection of adolescent development, digital mental health, and internalizing psychopathology. Under the supervision of Kate and Dr. Nick Allen, Elizabeth recently published a study that identified dynamic linguistic features of daily social communication (social media, text, email) that relate to depression symptoms and changes in mood in adolescent girls. An overarching aim of Elizabeth’s work is to understand how the social, cognitive, and affective processes undergoing immense development in the brain during adolescence interact with digital contexts to confer not only risk for internalizing psychopathology, but also an opportunity for targeted intervention and the improvement of adolescents’ well-being.
+  - name: Madison Root
+    image: Madison.jpg
+    email: mroot@uoregon.edu
+    body:  Madison is an undergraduate at the University of Oregon pursuing a B.S. in Human Physiology with a minor in chemistry with the goal of obtaining a career in medicine. Originally from am from West Linn, Oregon, Madison is a proud recipient of the Pathway Oregon grants and scholarships. Madison is working with Victoria on a pre-registered study investigating how social status relates to mentalizing and mental health in young women.
+  - name: Kellie Gunther
+    image: Kellie.jpg
+    email: kgunthe2@uoregon.edu
+    body:   Kellie is a fourth-year undergraduate student, who will graduate in spring of 2023 with a B.A. in Psychology and a minor in Spanish. She is very interested in the developing brain and how early life experiences impact this process. Additionally, she is interested in social and personality Psychology and the ways in which individuals interact with each other and form relationships. Kellie hopes to pursue further schooling after graduation. Currently, Kellie is working on a thesis with Kate for the Clark Honor’s College. In this project, we are exploring the relationship between perceived social support and anxiety symptoms for adolescents in the context of the COVID-19 pandemic.
 ---

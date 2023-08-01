@@ -14,10 +14,6 @@ people:
     image: Victoria.png
     email: vgw@uoregon.edu
     body: Victoria is a clinical psychology PhD student interested in social cognitive development and mental health across adolescence. She is particularly interested in how self- and other-understanding impacts risk for internalizing disorders during adolescence. Victoria takes a mixed methods approach to this research, using experimental and longitudinal studies, clinical interviews, and task-based fMRI. Victoria’s most recent work focuses on how adolescents’ views of others interact with their understanding of themselves–and how facets of this cross-talk may relate to risk for internalizing disorders. A long-term goal of her research is to develop interventions and influence policies that equitably promote positive development, wellbeing, and health for all adolescents. [CV](/assets/papers/Guazzelli_Williamson_CV.pdf)
-  - name: Elizabeth McNeilly
-    image: Elizabeth.jpg
-    email: emcneill@uoregon.edu
-    body: Elizabeth McNeilly is a clinical psychology PhD candidate studying the intersection of adolescent development, digital mental health, and internalizing psychopathology. Under the supervision of Kate and Dr. Nick Allen, Elizabeth recently published a study that identified dynamic linguistic features of daily social communication (social media, text, email) that relate to depression symptoms and changes in mood in adolescent girls. An overarching aim of Elizabeth’s work is to understand how the social, cognitive, and affective processes undergoing immense development in the brain during adolescence interact with digital contexts to confer not only risk for internalizing psychopathology, but also an opportunity for targeted intervention and the improvement of adolescents’ well-being.
   - name: Rachel Jacobson
     image: Rachel.jpg
     email: rjacobs2@uoregon.edu
@@ -26,14 +22,6 @@ people:
     image: Amala.jpg
     email: asomeshw@uoregon.edu
     body: Amala is a developmental psychology PhD student in the DBIC lab, the DSN lab, and the PIE lab. In 2018 she graduated from Bryn Mawr College with a Bachelor of Arts in Psychology. Amala is interested in understanding the impacts of the socioemotional environment of adolescents both on development and the onset of psychopathology as well as the role of personality in dyadic relationships during adolescence. Outside of lab, she enjoys swimming, climbing, embroidery, and knitting. [CV](/assets/papers/Someshwar_CV.pdf)
-  - name: Kellie Gunther
-    image: Kellie.jpg
-    email: kgunthe2@uoregon.edu
-    body:   Kellie is a fourth-year undergraduate student, who will graduate in spring of 2023 with a B.A. in Psychology and a minor in Spanish. She is very interested in the developing brain and how early life experiences impact this process. Additionally, she is interested in social and personality Psychology and the ways in which individuals interact with each other and form relationships. Kellie hopes to pursue further schooling after graduation. Currently, Kellie is working on a thesis with Kate for the Clark Honor’s College. In this project, we are exploring the relationship between perceived social support and anxiety symptoms for adolescents in the context of the COVID-19 pandemic.
-  - name: Madison Root
-    image: Madison.jpg
-    email: mroot@uoregon.edu
-    body:  Madison is an undergraduate at the University of Oregon pursuing a B.S. in Human Physiology with a minor in chemistry with the goal of obtaining a career in medicine. Originally from am from West Linn, Oregon, Madison is a proud recipient of the Pathway Oregon grants and scholarships. Madison is working with Victoria on a pre-registered study investigating how social status relates to mentalizing and mental health in young women.
   - name: Keegan Alvarado
     image: Keegan.jpg
     email: kalvarad@uoregon.edu
