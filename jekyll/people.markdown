@@ -30,6 +30,14 @@ people:
     image: Valerie.jpg
     email: vowusuhi@uoregon.edu
     body:   Valerie is an Undergraduate Research Assistant majoring in Neuroscience and minoring in Chemistry and Global Health (UO Class of 2026). Valerie is working with Victoria through the Hui Undergraduate Research Scholars Program.
+  - name: Riley Stevens
+    image: Riley.jpg
+    email: rsteven5@uoregon.edu
+    body:   Riley is an Undergraduate Research Assistant majoring in Psychology and Philosophy (UO Class of 2025). They are interested in both a psychological and phenomenological approach to trauma and dissociation, especially with how it affects adolescents and adults with eating disorders.
+  - name: Tyler Chisholm
+    image: Tyler.jpg
+    email: tchisho2@uoregon.edu
+    body: Tyler is an undergraduate research assistant majoring in Neuroscience and minoring in Sociology and Public Policy, Planning & Management. UO class of 2026.
   - name: Alumni
     image: Jeya.jpg
     body: Our Alumni have their own page [here!](https://devbrainlab.org/alumni)
