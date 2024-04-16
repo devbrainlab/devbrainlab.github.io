@@ -38,6 +38,10 @@ people:
     image: Tyler.jpg
     email: tchisho2@uoregon.edu
     body: Tyler is an undergraduate research assistant majoring in Neuroscience and minoring in Sociology and Public Policy, Planning & Management. UO class of 2026.
+  - name: Tieler Brown
+    image: Tieler.jpg
+    email: tielerb@uoregon.edu
+    body: Tieler is a first-generation undergraduate student and research assistant at the University of Oregon (class of 2025). They are majoring in Women, Gender, and Sexuality Studies with a sub-focus in Psychology. They are interested in utilizing an interdisciplinary approach to understanding adolescent mental development.
   - name: Alumni
     image: Jeya.jpg
     body: Our Alumni have their own page [here!](https://devbrainlab.org/alumni)
