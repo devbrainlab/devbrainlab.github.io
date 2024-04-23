@@ -9,7 +9,7 @@ people:
   - name: Lucy Whitmore
     image: Lucy.png
     email: lwhitmor@uoregon.edu
-    body: Lucy Whitmore is a graduate student and former lab manager of the Developing Brains in Context Lab. She is interested in how adolescents create flexible behavioral strategies to navigate the world around them, and how these strategies might be affected by external factors. Currently, she is working on a project validating the machine-learning based metric of brain maturity called BrainAGE, as well as a qualitative project focusing on how adolescents think about maturity. Lucy is also excited about science communication and outreach, and working closely with adolescents to answer the questions they're interested in. [CV](/assets/papers/whitmore_cv_aug2022.pdf)
+    body: Lucy Whitmore is a graduate student and former lab manager of the Developing Brains in Context Lab. She is interested in how adolescents create flexible behavioral strategies to navigate the world around them, and how these strategies might be affected by external factors. You can read Lucy's most recent empirical on BrainAGE as a measure of brain maturation in adolescence [here](https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00037/118105)! Lucy is also excited about science communication and outreach, and working closely with adolescents to answer the questions they're interested in. [CV](/assets/papers/whitmore_cv_aug2022.pdf)
   - name: Victoria Guazzelli Williamson
     image: Victoria.png
     email: vgw@uoregon.edu
@@ -22,14 +22,10 @@ people:
     image: Amala.jpg
     email: asomeshw@uoregon.edu
     body: Amala is a developmental psychology PhD student in the DBIC lab, the DSN lab, and the PIE lab. In 2018 she graduated from Bryn Mawr College with a Bachelor of Arts in Psychology. Amala is interested in understanding the impacts of the socioemotional environment of adolescents both on development and the onset of psychopathology as well as the role of personality in dyadic relationships during adolescence. Outside of lab, she enjoys swimming, climbing, embroidery, and knitting. [CV](/assets/papers/Someshwar_CV.pdf)
-  - name: Keegan Alvarado
-    image: Keegan.jpg
-    email: kalvarad@uoregon.edu
-    body:   Keegan is the lab manager for Dr. Skowron’s Family Biobehavioral Health Lab. He is a senior at the University of Oregon and will graduate with a B.S. in Psychology in Spring of 2023. Keegan hopes to pursue a Ph.D. in clinical psychology, where he is interested in researching the biobehavioral patterns that underlie chronic mental health struggles. He hopes to increase existing therapeutic efficacy by investigating mindful parenting, inflammation, metabolic function, stress, diet, and nutritional deficiencies. Keegan’s long-term goal is to expand upon Multisystemic Therapy (MST) to help at-risk youth and families achieve and maintain lasting wellness.
   - name: Valerie Owusu-Hienno
     image: Valerie.jpg
     email: vowusuhi@uoregon.edu
-    body:   Valerie is an Undergraduate Research Assistant majoring in Neuroscience and minoring in Chemistry and Global Health (UO Class of 2026). Valerie is working with Victoria through the Hui Undergraduate Research Scholars Program.
+    body:   Valerie is an Undergraduate Research Assistant majoring in Neuroscience and minoring in Chemistry and Global Health (UO Class of 2026). Valerie started working with Victoria through the Hui Undergraduate Research Scholars Program, and continues to work in our lab as a research assistant.
   - name: Riley Stevens
     image: Riley.jpg
     email: rsteven5@uoregon.edu
@@ -42,6 +38,14 @@ people:
     image: Tieler.jpg
     email: tielerb@uoregon.edu
     body: Tieler is a first-generation undergraduate student and research assistant at the University of Oregon (class of 2025). They are majoring in Women, Gender, and Sexuality Studies with a sub-focus in Psychology. They are interested in utilizing an interdisciplinary approach to understanding adolescent mental development.
+  - name: Tiana Littlejohn
+    image: Tiana.jpg
+    email: tlittlej@uoregon.edu
+    body: Tiana is an undergraduate student at the University of Oregon majoring in Environmental Studies and Psychology and minoring in Global Health. She is a part of the Research More or Worry Less (WORM) Lab and is a Lab Technician in the Stress Physiology Investigative Team (SPIT). Additionally, Tiana interns as an Outdoor Educator with the Environmental Leadership Program (ELP) and is a Peer Advisor for the Department of Psychology and Pathway Oregon. She plans to pursue a Ph.D. in Clinical Psychology post-grad. Tiana’s hobbies include hiking, camping, and trying new things. 
+  - name: Lakia Buckwald
+    image: Lakia.jpg
+    email: lakiab@uoregon.edu
+    body: Lakia is an Undergraduate Researcher (UO class of 2025) majoring in Psychology and minoring in Global Health. Her research interests include expanding on Environmental Psychology and increasing social emotional wellbeing. She is looking to create more comprehensive and effective interventions within this research.
   - name: Alumni
     image: Jeya.jpg
     body: Our Alumni have their own page [here!](https://devbrainlab.org/alumni)

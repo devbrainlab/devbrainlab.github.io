@@ -42,4 +42,8 @@ people:
     image: Kellie.jpg
     email: kgunthe2@uoregon.edu
     body:   Kellie was an undergraduate honors thesis student in our lab, who graduated in spring of 2023 with a B.A. in Psychology and a minor in Spanish. She is very interested in the developing brain and how early life experiences impact this process. Additionally, she is interested in social and personality Psychology and the ways in which individuals interact with each other and form relationships. Kellie hopes to pursue further schooling after graduation. Kellie's Clark Honor’s College thesis examined the relationship between perceived social support and anxiety symptoms for adolescents in the context of the COVID-19 pandemic.
+  - name: Keegan Alvarado
+    image: Keegan.jpg
+    email: kalvarad@uoregon.edu
+    body:   Keegan worked with our lab in 2022-2024 to collect pilot data as part of a collaboration with Dr. Skowron’s Family Biobehavioral Health Lab. Keegan hopes to pursue a Ph.D. in clinical psychology, where he is interested in researching the biobehavioral patterns that underlie chronic mental health struggles. He hopes to increase existing therapeutic efficacy by investigating mindful parenting, inflammation, metabolic function, stress, diet, and nutritional deficiencies. Keegan’s long-term goal is to expand upon Multisystemic Therapy (MST) to help at-risk youth and families achieve and maintain lasting wellness.
 ---
