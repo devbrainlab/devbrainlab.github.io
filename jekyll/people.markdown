@@ -46,6 +46,10 @@ people:
     image: Lakia.jpg
     email: lakiab@uoregon.edu
     body: Lakia is an Undergraduate Researcher (UO class of 2025) majoring in Psychology and minoring in Global Health. Her research interests include expanding on Environmental Psychology and increasing social emotional wellbeing. She is looking to create more comprehensive and effective interventions within this research.
+  - name: Analise Levy
+    image: Analise.jpg
+    email: alevy@uoregon.edu
+    body: Analise is an undergraduate student at the University of Oregon (class of 2025) majoring in Psychology and participating in the Clark Honors College 3+3 Law Program. She is conducting research under the guidance of Kate Mills to ultimately defend her honors thesis regarding Oregon’s juvenile transfer waiver and its rationale in relation to developmental literature in Neuroscience and Psychology. She hopes that with this research she can help to advance the discussion for active improvements and changes to this waiver. 
   - name: Alumni
     image: Jeya.jpg
     body: Our Alumni have their own page [here!](https://devbrainlab.org/alumni)
