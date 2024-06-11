@@ -14,6 +14,10 @@ people:
     image: Victoria.png
     email: vgw@uoregon.edu
     body: Victoria is a clinical psychology PhD student interested in social cognitive development and mental health across adolescence. She is particularly interested in how self- and other-understanding impacts risk for internalizing disorders during adolescence. Victoria takes a mixed methods approach to this research, using experimental and longitudinal studies, clinical interviews, and task-based fMRI. Victoria’s most recent work focuses on how adolescents’ views of others interact with their understanding of themselves–and how facets of this cross-talk may relate to risk for internalizing disorders. A long-term goal of her research is to develop interventions and influence policies that equitably promote positive development, wellbeing, and health for all adolescents. [CV](/assets/papers/Guazzelli_Williamson_CV.pdf)
+  - name: Kellyn Blaisdell
+    image: Kellyn.jpg
+    email: kblaisd2@uoregon.edu
+    body:  Kellyn is a doctoral candidate in Clinical Psychology, under the mentorship of Dr. Kate Mills and Dr. Phil Fisher. Kellyn is interested in research questions related to operationalizing adversity and understanding pathways between different dimensions of adversity and mental health outcomes, particularly among refugee and asylum-seeking populations, as a step towards informing intervention and policy. Outside of research, Kellyn loves all things purple, jigsaw puzzles with friends, the Oregon rain, and spending time with her little cat Melody Sunflower (the fluffiest study buddy).
   - name: Rachel Jacobson
     image: Rachel.jpg
     email: rjacobs2@uoregon.edu
