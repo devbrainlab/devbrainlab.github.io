@@ -13,7 +13,15 @@ Current projects
 
 Navigating Networks
 ----------
-The Navigating Networks study focuses on adolescent social and cognitive development during the transition to middle school using longitudinal social network, brain, and cognitive assessments. As of Spring 2023, we are finishing our first year collecting data from two local middle schools!
+The Navigating Networks study focuses on adolescent social and cognitive development during the transition to middle school using longitudinal social network assessments. As of Spring 2024, we’ve wrapped up 2 years of data collection, and are starting in on analyses! Keep an eye out for our first preprint focused on perspective-taking and peer connections, coming soon.
+
+Navigating Networks: Climate Cognition Edition
+----------
+Our latest study focuses on understanding how adolescent peer connections interact with the navigation of new issues facing adolescents, like the climate crisis. In this upcoming study, we’ll be using longitudinal social network assessments and questionnaire data to understand how adolescents communicate with their friends about climate change, and how this relates to well-being!
+
+Environmental Education & Human Connection
+----------
+Starting in Winter 2025, we’ll be collecting data for a new project, focused on understanding how environmental education within a college-level psychology class influences connections to nature. We’ll be looking at measures of young people’s attitudes towards nature over the course of their enrollment in Dr. Mills’ new class, Conservation Psychology!
 
 International collaboration for replicable brain development
 ----------
