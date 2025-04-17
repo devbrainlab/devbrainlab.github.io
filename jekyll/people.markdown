@@ -7,9 +7,9 @@ people:
     email: klmills@uoregon.edu
     body: Kate leads the Developing Brains in Context Lab. She is a first generation student from Louisville KY and received her PhD from University College London in 2015. Her favorite part of science is working with good people to figure out things about development. [CV](/assets/papers/KathrynLMills_CV.pdf)
   - name: Lucy Whitmore
-    image: Lucy.png
+    image: LucyUpdated.png
     email: lwhitmor@uoregon.edu
-    body: Lucy Whitmore is a graduate student and former lab manager of the Developing Brains in Context Lab. She is interested in how adolescents create flexible behavioral strategies to navigate the world around them, and how these strategies might be affected by external factors. You can read Lucy's most recent empirical on BrainAGE as a measure of brain maturation in adolescence [here](https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00037/118105)! Lucy is also excited about science communication and outreach, and working closely with adolescents to answer the questions they're interested in. [CV](/assets/papers/whitmore_cv_aug2022.pdf)
+    body: Lucy Whitmore is a graduate student and former lab manager of the Developing Brains in Context Lab. She is interested in how adolescents create flexible behavioral strategies to navigate the world around them, and how these strategies might be affected by external factors. You can read Lucy's most recent empirical on BrainAGE as a measure of brain maturation in adolescence [here](https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00037/118105)! Lucy is also excited about science communication and outreach, and working closely with adolescents to answer the questions they're interested in. [CV](/assets/papers/WhitmoreCV_2025)
   - name: Victoria Guazzelli Williamson
     image: Victoria.png
     email: vgw@uoregon.edu
@@ -23,7 +23,7 @@ people:
     email: rjacobs2@uoregon.edu
     body: Rachel Jacobson is interested in how individuals’ social identities influence their identity development, social perceptions and interactions with others. In particular, her work focuses on populations with multiple identities (e.g., biracials and biculturals), in both how they are perceived and the impressions they form of others.
   - name: Amala Someshwar
-    image: Amala.jpg
+    image: AmalaUpdated.jpg
     email: asomeshw@uoregon.edu
     body: Amala is a developmental psychology PhD student in the DBIC lab, the DSN lab, and the PIE lab. In 2018 she graduated from Bryn Mawr College with a Bachelor of Arts in Psychology. Amala is interested in understanding the impacts of the socioemotional environment of adolescents both on development and the onset of psychopathology as well as the role of personality in dyadic relationships during adolescence. Outside of lab, she enjoys swimming, climbing, embroidery, and knitting. [CV](/assets/papers/Someshwar_CV.pdf)
   - name: Valerie Owusu-Hienno
