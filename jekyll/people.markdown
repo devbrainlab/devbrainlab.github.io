@@ -9,7 +9,7 @@ people:
   - name: Lucy Whitmore
     image: LucyUpdated.png
     email: lwhitmor@uoregon.edu
-    body: Lucy Whitmore is a graduate student and former lab manager of the Developing Brains in Context Lab. She is interested in how adolescents create flexible behavioral strategies to navigate the world around them, and how these strategies might be affected by external factors. You can read Lucy's most recent empirical on BrainAGE as a measure of brain maturation in adolescence [here](https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00037/118105)! Lucy is also excited about science communication and outreach, and working closely with adolescents to answer the questions they're interested in. [CV](/assets/papers/WhitmoreCV_2025)
+    body: Lucy Whitmore is a graduate student and former lab manager of the Developing Brains in Context Lab. She is interested in how adolescents create flexible behavioral strategies to navigate the world around them, and how these strategies might be affected by external factors. You can read Lucy's most recent empirical on BrainAGE as a measure of brain maturation in adolescence [here](https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00037/118105)! Lucy is also excited about science communication and outreach, and working closely with adolescents to answer the questions they're interested in. [CV](/assets/papers/WhitmoreCV_2025.pdf)
   - name: Victoria Guazzelli Williamson
     image: Victoria.png
     email: vgw@uoregon.edu
