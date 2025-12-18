@@ -14,14 +14,6 @@ people:
     image: AmalaUpdated.png
     email: asomeshw@uoregon.edu
     body: Amala is a developmental psychology PhD student in the DBIC lab, the DSN lab, and the PIE lab. In 2018 she graduated from Bryn Mawr College with a Bachelor of Arts in Psychology. Amala is interested in understanding the impacts of the socioemotional environment of adolescents both on development and the onset of psychopathology as well as the role of personality in dyadic relationships during adolescence. Outside of lab, she enjoys swimming, climbing, embroidery, and knitting. [CV](/assets/papers/Someshwar_CV.pdf)
-  - name: Tiana Littlejohn
-    image: Tiana.jpg
-    email: tlittlej@uoregon.edu
-    body: Tiana is an undergraduate student at the University of Oregon majoring in Environmental Studies and Psychology and minoring in Global Health. She is a part of the Research More or Worry Less (WORM) Lab and is a Lab Technician in the Stress Physiology Investigative Team (SPIT). Additionally, Tiana interns as an Outdoor Educator with the Environmental Leadership Program (ELP) and is a Peer Advisor for the Department of Psychology and Pathway Oregon. She plans to pursue a Ph.D. in Clinical Psychology post-grad. Tiana’s hobbies include hiking, camping, and trying new things. 
-  - name: Lakia Buckwald
-    image: Lakia.jpg
-    email: lakiab@uoregon.edu
-    body: Lakia is an Undergraduate Researcher (UO class of 2025) majoring in Psychology and minoring in Global Health. Her research interests include expanding on Environmental Psychology and increasing social emotional wellbeing. She is looking to create more comprehensive and effective interventions within this research.
   - name: Analise Levy
     image: Analise.jpg
     email: alevy@uoregon.edu
