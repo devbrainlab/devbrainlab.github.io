@@ -27,7 +27,7 @@ GEM
     execjs (2.7.0)
     ffi (1.15.5)
     forwardable-extended (2.6.0)
-    google-protobuf (3.22.0)
+    google-protobuf (3.25.5)
     html_press (0.8.2)
       htmlentities
       multi_css (>= 0.1.0)
