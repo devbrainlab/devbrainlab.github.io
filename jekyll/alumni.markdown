@@ -73,5 +73,13 @@ people:
   - name: Tieler Brown
     image: Tieler.jpg
     email: tielerb@uoregon.edu
-    body: Tieler is a first-generation undergraduate student and research assistant at the University of Oregon (class of 2025). They are majoring in Women, Gender, and Sexuality Studies with a sub-focus in Psychology. They are interested in utilizing an interdisciplinary approach to understanding adolescent mental development.
+    body: Tieler was a first-generation undergraduate student and research assistant at the University of Oregon (class of 2025). They majored in Women, Gender, and Sexuality Studies with a sub-focus in Psychology. They are interested in utilizing an interdisciplinary approach to understanding adolescent mental development.
+  - name: Tiana Littlejohn
+    image: Tiana.jpg
+    email: tlittlej@uoregon.edu
+    body: Tiana was an undergraduate student at the University of Oregon majoring in Environmental Studies and Psychology and minoring in Global Health. She was a part of the Research More or Worry Less (WORM) Lab and is a Lab Technician in the Stress Physiology Investigative Team (SPIT). Additionally, Tiana interns as an Outdoor Educator with the Environmental Leadership Program (ELP) and is a Peer Advisor for the Department of Psychology and Pathway Oregon. She plans to pursue a Ph.D. in Clinical Psychology post-grad. Tiana’s hobbies include hiking, camping, and trying new things. 
+  - name: Lakia Buckwald
+    image: Lakia.jpg
+    email: lakiab@uoregon.edu
+    body: Lakia was an Undergraduate Researcher (UO class of 2025) majoring in Psychology and minoring in Global Health. Her research interests include expanding on Environmental Psychology and increasing social emotional wellbeing. She is looking to create more comprehensive and effective interventions within this research.
 ---
