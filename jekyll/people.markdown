@@ -13,7 +13,11 @@ people:
   - name: Amala Someshwar
     image: AmalaUpdated.png
     email: asomeshw@uoregon.edu
-    body: Amala is a developmental psychology PhD student in the DBIC lab, the DSN lab, and the PIE lab. In 2018 she graduated from Bryn Mawr College with a Bachelor of Arts in Psychology. Amala is interested in understanding the impacts of the socioemotional environment of adolescents both on development and the onset of psychopathology as well as the role of personality in dyadic relationships during adolescence. Outside of lab, she enjoys swimming, climbing, embroidery, and knitting. [CV](/assets/papers/Someshwar_CV.pdf)
+    body: Amala is a developmental psychology PhD student in the DBIC lab, the DSN lab, and the PIE lab. In 2018 she graduated from Bryn Mawr College with a Bachelor of Arts in Psychology. Amala is interested in understanding the impacts of the socioemotional environment of adolescents both on development and the onset of psychopathology as well as the role of personality in dyadic relationships during adolescence. Outside of lab, she enjoys swimming, climbing, embroidery, and knitting. [CV](/assets/papers/Someshwar_CV.pdf)   
+  - name: Fiona DeBernardi
+    image: Fiona.png
+    email: fionadeb@uoregon.edu
+    body: Fiona is a graduate student in the social-personality psychology department. In 2022, she graduated from U.C. Santa Cruz with a Bachelor of Arts in Psychology. Her research focuses on how people think and make decisions about moral issues like climate change and dishonesty. She is interested in how insights from moral psychology can enhance understanding of children's empathic concern for the environment. She is also involved in the open-science community and is passionate about making science openly available and accessible. In her spare time, she likes looking for amphibians and hiking!
   - name: Analise Levy
     image: Analise.jpg
     email: alevy@uoregon.edu
